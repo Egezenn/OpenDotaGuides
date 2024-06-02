@@ -14,4 +14,7 @@ for hero in heroes:
 # converting
 hero_ids = os.listdir("data")
 for id in hero_ids:
-    convert_scrape_to_guide(f"{id[:-5]}")
+    if id == "hero_ids.json":
+        pass
+    else:
+        convert_scrape_to_guide(f"{id[:-5]}")
