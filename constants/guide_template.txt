@@ -1,0 +1,34 @@
+"itembuilds"
+{
+	"author"		"<author_name>"
+	"hero"			"npc_dota_hero_<hero_name>"
+	"Title"			"Recommended items for <hero_name>"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Starting_Items"
+		{
+			"item"		"<item_name>"
+		}
+
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"<item_name>"
+		}
+
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"<item_name>"
+		}
+
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"<item_name>"
+		}
+
+		"#DOTA_Item_Build_Other_Items"
+		{
+			"item"		"<item_name>"
+		}
+	}
+}
