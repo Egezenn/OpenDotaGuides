@@ -32,19 +32,19 @@ def convert_scrape_to_guide(hero_id):
         file.write(f'\t"hero"\t\t\t"{hero}"\n')
         file.write(f'\t"Title"\t\t\t"{title}"\n')
         file.write('\n\t"Items"\n\t{\n')
-        file.write('\t\t"#DOTA_Item_Build_Starting_Items"\t\t\n\t\t{\n')
+        file.write('\t\t"#DOTA_Item_Build_Starting_Items"\n\t\t{\n')
         for item in hero_stages[0]:
             file.write(f'\t\t\t"item"\t\t"{item}"\n')
         file.write('\t\t}\n')
-        file.write('\t\t"#DOTA_Item_Build_Early_Game"\t\t\n\t\t{\n')
+        file.write('\t\t"#DOTA_Item_Build_Early_Game"\n\t\t{\n')
         for item in hero_stages[1]:
             file.write(f'\t\t\t"item"\t\t"{item}"\n')
         file.write('\t\t}\n')
-        file.write('\t\t"#DOTA_Item_Build_Mid_Items"\t\t\n\t\t{\n')
+        file.write('\t\t"#DOTA_Item_Build_Mid_Items"\n\t\t{\n')
         for item in hero_stages[2]:
             file.write(f'\t\t\t"item"\t\t"{item}"\n')
         file.write('\t\t}\n')
-        file.write('\t\t"#DOTA_Item_Build_Late_Items"\t\t\n\t\t{\n')
+        file.write('\t\t"#DOTA_Item_Build_Late_Items"\n\t\t{\n')
         for item in hero_stages[3]:
             file.write(f'\t\t\t"item"\t\t"{item}"\n')
         file.write('\t\t}\n')
