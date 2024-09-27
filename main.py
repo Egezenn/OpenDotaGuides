@@ -39,3 +39,7 @@ if __name__ == "__main__":
                 f"C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota/itembuilds/{itembuild}",
             )
             print(f"MOVE {i}/{build_amt} {itembuild}")
+    else:
+        print(
+            "Couldn't find steam installation path, manually replace itembuilds folder."
+        )
