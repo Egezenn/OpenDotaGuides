@@ -49,7 +49,7 @@ item_cloak,cloak,component
 item_boots,boots,component
 item_gem,gem,
 item_lifesteal,lifesteal,
-item_voodoo_mask,voodoo_mask,component
+item_voodoo_mask,voodoo_mask,
 item_shadow_amulet,shadow_amulet,component
 item_ghost,ghost,
 item_blink,blink,
