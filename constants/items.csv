@@ -85,14 +85,14 @@ item_mask_of_madness,mask_of_madness,
 item_hand_of_midas,hand_of_midas,
 item_helm_of_the_dominator,helm_of_the_dominator,
 item_travel_boots,travel_boots,
-item_travel_boots_2,travel_boots_2,
+item_travel_boots_2,travel_boots_2,component
 item_moon_shard,moon_shard,
 item_buckler,buckler,component
 item_ring_of_basilius,ring_of_basilius,
 item_headdress,headdress,component
 item_urn_of_shadows,urn_of_shadows,
 item_tranquil_boots,tranquil_boots,
-item_pavise,pavise,
+item_pavise,pavise,ignore
 item_arcane_boots,arcane_boots,
 item_ancient_janggo,ancient_janggo,
 item_mekansm,mekansm,
@@ -142,7 +142,7 @@ item_assault,assault,
 item_bloodstone,bloodstone,
 item_helm_of_the_overlord,helm_of_the_overlord,
 item_eternal_shroud,eternal_shroud,
-item_lesser_crit,lesser_crit,
+item_lesser_crit,lesser_crit,component
 item_meteor_hammer,meteor_hammer,
 item_armlet,armlet,
 item_basher,basher,
