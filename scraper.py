@@ -15,7 +15,7 @@ options.page_load_strategy = "none"
 def get_soup(url, selector):
     driver = webdriver.Firefox(options=options)
     driver.get(url)
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 120)
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, selector)))
     html = driver.page_source
     driver.quit()
@@ -25,8 +25,6 @@ def get_soup(url, selector):
 
 
 def initialize_hero_lib():
-    os.makedirs("data", exist_ok=True)
-
     if f"hero_ids.json" not in os.listdir("data"):
         hero_selector = "tbody > tr > td > div > div > div[class=textContainer] > span"
         soup = get_soup("https://www.opendota.com/heroes", hero_selector)

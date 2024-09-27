@@ -14,7 +14,7 @@ if __name__ == "__main__":
         heroes = json.load(f)
 
     for i, (hero, id) in enumerate(heroes.items(), start=1):
-        if str(id) != "131":  # rubberpatch
+        if str(id) != "131":  # rubberpatch until there is data for ringmaster
             get_hero_guide(id)
             print(f"SCRAPE {i}/{(len(heroes))} {hero}")
 
