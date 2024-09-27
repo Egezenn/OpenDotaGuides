@@ -4,17 +4,17 @@ Tired of streamlined, opinionated and slowly updating guides? Want to see many i
 
 Then you're in luck, this project scrapes what [OpenDota](https://www.opendota.com) has to offer in `opendota.com/heroes/<hero_id>/items` and aims to replace *pretty* outdated default guides in `..<steam_folder_or_library_path>/dota 2 beta/game/dota/itembuilds`.
 
-How to use?
+Example screenie of a windranger guide:
+
+![example](assets/image.png)
+
+## How to use?
 
 1. Replace the `itembuilds` folder with
     1. the one from the release
     2. the one you locally make. Refer to [here](#local-installation).
 2. Select the default guide in game
 3. Have fun!
-
-Example screenie of a windranger guide:
-
-![example](image.png)
 
 ## Local installation
 
