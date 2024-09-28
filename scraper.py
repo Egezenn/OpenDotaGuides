@@ -80,5 +80,5 @@ def get_hero_guide(hero_id):
             "late_game": late_game_items_list,
         }
 
-        with open(data_hero_ids, "w") as json_file:
+        with open(os.path.join(data_directory, f"{hero_id}.json"), "w") as json_file:
             dump(hero_item_dict, json_file, indent=2)

@@ -1,15 +1,21 @@
-import os
 import csv
+import datetime
+import os
+
+utc_now = datetime.datetime.now(datetime.timezone.utc)
+utc_date_iso = utc_now.date().isoformat()
 
 constants_directory = r"constants"
 constants_file__heroes = r"heroes.csv"
 constants_file__items = r"items.csv"
+cwd = os.getcwd()
 data_directory = r"data"
 data_file__hero_ids = r"hero_ids.json"
 itembuilds_directory = r"itembuilds"
 project_name = r"ScrapedDotaGuides"
 project_name_shorthand = r"SDG"
-cwd = os.getcwd()
+API_CALLS_FILE_OPENDOTA = f"API_CALL_AMOUNT_{utc_date_iso}"
+
 
 constants_heroes = os.path.join(constants_directory, constants_file__heroes)
 constants_items = os.path.join(constants_directory, constants_file__items)
@@ -56,3 +62,7 @@ def remove_repeated_elements(input_list):
         result.append(new_lst)
 
     return result
+
+
+def check_if_day_changed():
+    datetime.datetime.now(datetime.timezone.utc).date().isoformat()
