@@ -1,36 +1,31 @@
-import csv
 import datetime
 import json
 import os
+
+from utils import (
+    checkFlags,
+    constants_heroes,
+    constants_items,
+    data_directory,
+    itembuilds_directory,
+    project_name_shorthand,
+    project_name,
+    remove_repeated_elements,
+    search_csv,
+)
 
 removed_items = ["ignore", "component"]
 categorized_items = ["team", "risky"]
 
 
-def search_csv(file_path, search_string):
-    with open(file_path, "r") as file:
-        reader = csv.reader(file)
-        for row in reader:
-            if len(row) >= 3 and row[1] == search_string:
-                return row[2]
-
-
-def checkFlags(file_path, search_string):
-    with open(file_path, "r") as file:
-        reader = csv.reader(file)
-        for row in reader:
-            if len(row) == 3 and row[0] == search_string:
-                return row[2]
-
-
-def convert_scrape_to_guide(hero_id):
-    with open(f"data/{hero_id}.json") as f:
+def compile_scrape_to_guide(hero_id):
+    with open(f"{os.path.join(data_directory, hero_id)}.json") as f:
         hero_data = json.load(f)
 
-    guide_name = search_csv("constants/heroes.csv", hero_id)
-    author = "ScrapedDotaGuides"
+    guide_name = search_csv(constants_heroes, hero_id)
+    author = project_name
     hero = f"npc_dota_hero_{guide_name}"
-    title = f"SDG {datetime.date.today().isoformat()}"
+    title = f"{project_name_shorthand} {datetime.date.today().isoformat()}"
     hero_stages = []
     for stage in hero_data:
         hero_stage = []
@@ -45,11 +40,11 @@ def convert_scrape_to_guide(hero_id):
     for stage in hero_stages:
         modified_hero_stage = []
         for item in stage:
-            if checkFlags("constants/items.csv", item) not in removed_items:
-                if checkFlags("constants/items.csv", item) in categorized_items:
-                    if checkFlags("constants/items.csv", item) == "team":
+            if checkFlags(constants_items, item) not in removed_items:
+                if checkFlags(constants_items, item) in categorized_items:
+                    if checkFlags(constants_items, item) == "team":
                         team_category.append(item)
-                    if checkFlags("constants/items.csv", item) == "risky":
+                    if checkFlags(constants_items, item) == "risky":
                         risky_category.append(item)
                 else:
                     modified_hero_stage.append(item)
@@ -58,7 +53,9 @@ def convert_scrape_to_guide(hero_id):
     team_category.sort()
     risky_category.sort()
 
-    with open(f"itembuilds/default_{guide_name}.txt", "w", newline="") as file:
+    with open(
+        os.path.join(itembuilds_directory, f"default_{guide_name}.txt"), "w", newline=""
+    ) as file:
         file.write('"itembuilds"\n{\n')
         file.write(f'\t"author"\t\t"{author}"\n')
         file.write(f'\t"hero"\t\t\t"{hero}"\n')
@@ -92,15 +89,3 @@ def convert_scrape_to_guide(hero_id):
             file.write("\t\t}\n")
         file.write("\t}\n")
         file.write("}")
-
-
-def remove_repeated_elements(input_list):
-    seen = set()
-    result = []
-
-    for lst in input_list:
-        new_lst = [element for element in lst if element not in seen]
-        seen.update(new_lst)
-        result.append(new_lst)
-
-    return result

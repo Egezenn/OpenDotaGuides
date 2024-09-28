@@ -7,6 +7,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
+from utils import data_file__hero_ids, data_directory, data_hero_ids
+
 options = webdriver.FirefoxOptions()
 options.add_argument("-headless")
 options.page_load_strategy = "none"
@@ -25,7 +27,7 @@ def get_soup(url, selector):
 
 
 def initialize_hero_lib():
-    if f"hero_ids.json" not in os.listdir("data"):
+    if data_file__hero_ids not in os.listdir(data_directory):
         hero_selector = "tbody > tr > td > div > div > div[class=textContainer] > span"
         soup = get_soup("https://www.opendota.com/heroes", hero_selector)
         heroes = soup.select(hero_selector)
@@ -36,12 +38,12 @@ def initialize_hero_lib():
             hero_id = item.find("a")["href"].split("/")[2]
             hero_dict[hero_name] = hero_id
 
-        with open("data/hero_ids.json", "w") as json_file:
+        with open(data_hero_ids, "w") as json_file:
             dump(hero_dict, json_file, indent=2)
 
 
 def get_hero_guide(hero_id):
-    if f"{hero_id}.json" not in os.listdir("data"):
+    if f"{hero_id}.json" not in os.listdir(data_directory):
         start_game_selector = "tbody > tr > td:nth-of-type(1) > div"
         early_game_selector = "tbody > tr > td:nth-of-type(2) > div"
         mid_game_selector = "tbody > tr > td:nth-of-type(3) > div"
@@ -78,5 +80,5 @@ def get_hero_guide(hero_id):
             "late_game": late_game_items_list,
         }
 
-        with open(f"data/{hero_id}.json", "w") as json_file:
+        with open(data_hero_ids, "w") as json_file:
             dump(hero_item_dict, json_file, indent=2)
