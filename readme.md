@@ -16,6 +16,8 @@ Example screenie of a windranger guide:
 2. Select the default guide in game
 3. Have fun!
 
+NOTE: If you've modified the contents folder while you were in Dota and in a match, disconnect & reconnect to see the changes.
+
 ## Local compilation
 
 Assuming you already have python (I'm currently using python3.11, change version if needed) and git installed:
@@ -38,7 +40,10 @@ Assuming you already have python (I'm currently using python3.11, change version
 
 ## TODO
 
-- [ ] Make use of the [OpenDota API](https://docs.opendota.com/)
+- [ ] Assign variables to directories and files used throughout the project for easy management
+- [ ] Make use of the [OpenDota API](https://docs.opendota.com/) and change repo name, *again*
+  - Check if stratz has item popularity built into their api
+- [ ] Get more information about the guide template
 - [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
   - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
 - [ ] Add item display names to `items.csv` and sort items based on it (looking at you, angels_demise)
