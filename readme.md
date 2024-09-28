@@ -29,7 +29,7 @@ Assuming you already have python(3.11), node(22.9) and git installed:
 5. `pip install -r requirements`
 6. `nodeenv .nodeenv`
 7. `.nodeenv/Scripts/activate.bat` <ive got no idea how you activate this in linux without the bat and source i assume it probably isnt generating the file in windows>
-8. `npm install`
+8. `npm install dotaconstants`
 9. `python main.py`
 10. If the steam installation isn't detected
     1. Remove `itembuilds` folder from dota2:

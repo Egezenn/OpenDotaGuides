@@ -35,7 +35,7 @@ if __name__ == "__main__":
             if str(id) != "131":  # rubberpatch until there is data for ringmaster
                 get_hero_guide(id)
                 if task_debug:
-                    print(f"SCRAPE {i}/{(len(heroes))} {hero}")
+                    print(f"SCRAPE {i}/{(len(heroes) - 1)} {hero}")
     elif api:
         if os.path.isdir(dotaconstants_directory):
             with open(dotaconstants_heroes) as f:
@@ -63,7 +63,7 @@ if __name__ == "__main__":
         if id != data_file__hero_ids:
             compile_scrape_to_guide(id.split(".")[0])
             if task_debug:
-                print(f"COMPILE {i}/{(len(data_hero_ids)) - 1} {id}")
+                print(f"COMPILE {i}/{(len(data_hero_ids))} {id}")
 
     # copying it to steamfolder
     if os.path.exists(default_dota_itembuilds_windows_directory):
