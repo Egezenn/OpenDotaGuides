@@ -4,7 +4,7 @@
 
 Tired of streamlined, opinionated and slowly updating guides? Want to see many item recommendations from the pros for the newest patch?
 
-Then you're in luck, this project scrapes what [OpenDota](https://www.opendota.com) has to offer in `opendota.com/heroes/<hero_id>/items` and aims to replace *pretty* outdated default guides in `..<steam_folder_or_library_path>/dota 2 beta/game/dota/itembuilds`.
+Then you're in luck, this project uses what [OpenDota](https://www.opendota.com) has to offer in `opendota.com/heroes/<hero_id>/items` and aims to replace *pretty* outdated default guides in `..<steam_folder_or_library_path>/dota 2 beta/game/dota/itembuilds`.
 
 ## How to use?
 
