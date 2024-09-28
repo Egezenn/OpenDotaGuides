@@ -16,9 +16,9 @@ Example screenie of a windranger guide:
 2. Select the default guide in game
 3. Have fun!
 
-## Local installation
+## Local compilation
 
-Assuming you already have python and git installed:
+Assuming you already have python (I'm currently using python3.11, change version if needed) and git installed:
 
 1. `git clone https://github.com/Egezenn/ScrapedDotaGuides.git`
 2. `cd ScrapedDotaGuides`
