@@ -35,7 +35,7 @@ if __name__ == "__main__":
             if str(id) != "131":  # rubberpatch until there is data for ringmaster
                 get_hero_guide(id)
                 if task_debug:
-                    print(f"SCRAPE {i}/{(len(heroes) - 1)} {hero}")
+                    print(f"SCRAPE {i}/{(len(heroes))} {hero}")
     elif api:
         if os.path.isdir(dotaconstants_directory):
             with open(dotaconstants_heroes) as f:
@@ -55,7 +55,7 @@ if __name__ == "__main__":
                             get_hero_popularity_guide(hero)
                             call_successful = 1
                     if task_debug:
-                        print(f"API CALL {i}/{(len(heroes))}")
+                        print(f"API CALL {i}/{(len(heroes)) - 1}")
 
     # compiling
     data_hero_ids = os.listdir(data_directory)
