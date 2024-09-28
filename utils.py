@@ -47,7 +47,7 @@ def checkFlags(file_path, search_string):
     with open(file_path, "r") as file:
         reader = csv.reader(file)
         for row in reader:
-            if len(row) == 3 and row[0] == search_string:
+            if len(row) == 3 and row[1] == search_string.lstrip("item_"):
                 return row[2]
 
 
