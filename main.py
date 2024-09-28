@@ -5,6 +5,8 @@ import shutil
 from compiler import convert_scrape_to_guide
 from scraper import get_hero_guide, initialize_hero_lib
 
+task_debug = 0
+
 if __name__ == "__main__":
     os.makedirs("data", exist_ok=True)
     os.makedirs("itembuilds", exist_ok=True)
@@ -16,7 +18,8 @@ if __name__ == "__main__":
     for i, (hero, id) in enumerate(heroes.items(), start=1):
         if str(id) != "131":  # rubberpatch until there is data for ringmaster
             get_hero_guide(id)
-            print(f"SCRAPE {i}/{(len(heroes))} {hero}")
+            if task_debug:
+                print(f"SCRAPE {i}/{(len(heroes))} {hero}")
 
     # converting
     hero_ids = os.listdir("data")
@@ -25,7 +28,8 @@ if __name__ == "__main__":
             pass
         else:
             convert_scrape_to_guide(id[:-5])
-            print(f"CONVERT {i}/{(len(hero_ids)) - 1} {id}")
+            if task_debug:
+                print(f"CONVERT {i}/{(len(hero_ids)) - 1} {id}")
 
     # copy it to steamfolder
     cwd = os.getcwd()
@@ -38,7 +42,8 @@ if __name__ == "__main__":
                 f"{cwd}/itembuilds/{itembuild}",
                 f"C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota/itembuilds/{itembuild}",
             )
-            print(f"MOVE {i}/{build_amt} {itembuild}")
+            if task_debug:
+                print(f"MOVE {i}/{build_amt} {itembuild}")
     else:
         print(
             "Couldn't find steam installation path, manually replace itembuilds folder."

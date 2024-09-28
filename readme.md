@@ -38,6 +38,7 @@ Assuming you already have python (I'm currently using python3.11, change version
 
 ## TODO
 
+- [ ] Make use of the [OpenDota API](https://docs.opendota.com/)
 - [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
   - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
 - [ ] Add item display names to `items.csv` and sort items based on it (looking at you, angels_demise)
