@@ -85,7 +85,7 @@ def convert_scrape_to_guide(hero_id):
             for item in team_category:
                 file.write(f'\t\t\t"item"\t\t"{item}"\n')
             file.write("\t\t}\n")
-        if team_category != []:
+        if risky_category != []:
             file.write('\t\t"RISKY"\n\t\t{\n')
             for item in risky_category:
                 file.write(f'\t\t\t"item"\t\t"{item}"\n')
