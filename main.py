@@ -5,12 +5,12 @@ import shutil
 from compiler import compile_scrape_to_guide
 from scraper import get_hero_guide, initialize_hero_lib
 from utils import (
-    data_directory,
-    data_hero_ids,
     cwd,
-    itembuilds_directory,
-    default_dota_itembuilds_windows_directory,
+    data_directory,
     data_file__hero_ids,
+    data_hero_ids,
+    default_dota_itembuilds_windows_directory,
+    itembuilds_directory,
 )
 
 task_debug = 1

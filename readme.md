@@ -38,11 +38,14 @@ Assuming you already have python (I'm currently using python3.11, change version
 
 ## TODO
 
-- [x] Assign variables to directories and files used throughout the project for easy management
 - [ ] Make use of the [OpenDota API](https://docs.opendota.com/) and change repo name, *again*
 - [ ] Get more information about the guide template
 - [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
   - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
 - [ ] Add item display names to `items.csv` and sort items based on it (looking at you, `angels_demise`)
-- [x] Categorize items like pipe, crimson guard in `team` category (items that you manage who should be the carrier or just support items like solar crest, glimmer cape)
 - [ ] Create a function that automatically builds `constants/items.csv` using [dotaconstants](https://github.com/odota/dotaconstants) provided by OpenDota or by accessing vpk. Then inject flags from another csv
+
+### DONE
+
+- [x] Assign variables to directories and files used throughout the project for easy management
+- [x] Categorize items like pipe, crimson guard in `team` category (items that you manage who should be the carrier or just support items like solar crest, glimmer cape)

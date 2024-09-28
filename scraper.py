@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from utils import data_file__hero_ids, data_directory, data_hero_ids
+from utils import data_directory, data_file__hero_ids, data_hero_ids
 
 options = webdriver.FirefoxOptions()
 options.add_argument("-headless")
