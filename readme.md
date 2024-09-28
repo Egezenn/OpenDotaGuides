@@ -38,5 +38,10 @@ Assuming you already have python and git installed:
 
 ## TODO
 
+- [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
+  - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
+- [ ] Add item display names to `items.csv` and sort items based on it (looking at you, angels_demise)
+- [x] Categorize items like pipe, crimson guard in `team` category (items that you manage who should be the carrier or just support items like solar crest, glimmer cape)
 - [ ] Cache page data via selenium if possible
+- [ ] Use any webdriver rather than just firefox
 - [ ] Create a function that automatically builds `constants/items.csv` by accessing vpk and inject flags from another csv

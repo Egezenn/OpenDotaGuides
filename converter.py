@@ -3,7 +3,8 @@ import datetime
 import json
 import os
 
-removedItems = ["ignore", "component"]
+removed_items = ["ignore", "component"]
+categorized_items = ["team", "risky"]
 
 
 def search_csv(file_path, search_string):
@@ -27,9 +28,9 @@ def convert_scrape_to_guide(hero_id):
         hero_data = json.load(f)
 
     guide_name = search_csv("constants/heroes.csv", hero_id)
-    author = "OpenDotaGuides"
+    author = "ScrapedDotaGuides"
     hero = f"npc_dota_hero_{guide_name}"
-    title = f"ODG {datetime.date.today().isoformat()}"
+    title = f"SDG {datetime.date.today().isoformat()}"
     hero_stages = []
     for stage in hero_data:
         hero_stage = []
@@ -39,15 +40,23 @@ def convert_scrape_to_guide(hero_id):
 
     hero_stages = remove_repeated_elements(hero_stages)
     modified_hero_stages = []
+    team_category = []
+    risky_category = []
     for stage in hero_stages:
         modified_hero_stage = []
         for item in stage:
-            if checkFlags("constants/items.csv", item) not in removedItems:
-                modified_hero_stage.append(item)
+            if checkFlags("constants/items.csv", item) not in removed_items:
+                if checkFlags("constants/items.csv", item) in categorized_items:
+                    if checkFlags("constants/items.csv", item) == "team":
+                        team_category.append(item)
+                    if checkFlags("constants/items.csv", item) == "risky":
+                        risky_category.append(item)
+                else:
+                    modified_hero_stage.append(item)
         modified_hero_stage.sort()
         modified_hero_stages.append(modified_hero_stage)
-
-        os.makedirs("itembuilds", exist_ok=True)
+    team_category.sort()
+    risky_category.sort()
 
     with open(f"itembuilds/default_{guide_name}.txt", "w", newline="") as file:
         file.write('"itembuilds"\n{\n')
@@ -71,6 +80,16 @@ def convert_scrape_to_guide(hero_id):
         for item in modified_hero_stages[3]:
             file.write(f'\t\t\t"item"\t\t"{item}"\n')
         file.write("\t\t}\n")
+        if team_category != []:
+            file.write('\t\t"TEAM UTILITIES"\n\t\t{\n')
+            for item in team_category:
+                file.write(f'\t\t\t"item"\t\t"{item}"\n')
+            file.write("\t\t}\n")
+        if team_category != []:
+            file.write('\t\t"RISKY"\n\t\t{\n')
+            for item in risky_category:
+                file.write(f'\t\t\t"item"\t\t"{item}"\n')
+            file.write("\t\t}\n")
         file.write("\t}\n")
         file.write("}")
 
