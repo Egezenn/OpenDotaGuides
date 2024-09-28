@@ -1,9 +1,5 @@
 import csv
-import datetime
 import os
-
-utc_now = datetime.datetime.now(datetime.timezone.utc)
-utc_date_iso = utc_now.date().isoformat()
 
 constants_directory = r"constants"
 constants_file__heroes = r"heroes.csv"
@@ -12,11 +8,8 @@ cwd = os.getcwd()
 data_directory = r"data"
 data_file__hero_ids = r"hero_ids.json"
 itembuilds_directory = r"itembuilds"
-project_name = r"ScrapedDotaGuides"
-project_name_shorthand = r"SDG"
-API_CALLS_FILE_OPENDOTA = f"API_CALL_AMOUNT_{utc_date_iso}"
-
-
+project_name = r"OpenDotaGuides"
+project_name_shorthand = r"ODG"
 constants_heroes = os.path.join(constants_directory, constants_file__heroes)
 constants_items = os.path.join(constants_directory, constants_file__items)
 data_hero_ids = os.path.join(data_directory, data_file__hero_ids)
@@ -34,6 +27,12 @@ default_dota_itembuilds_windows_directory = os.path.join(
     r"dota",
     r"itembuilds",
 )
+
+dotaconstants_directory = os.path.join(r"node_modules", r"dotaconstants")
+dotaconstants_item_ids = os.path.join(
+    dotaconstants_directory, r"build", r"item_ids.json"
+)
+dotaconstants_heroes = os.path.join(dotaconstants_directory, r"build", r"heroes.json")
 
 
 def search_csv(file_path, search_string):
@@ -62,7 +61,3 @@ def remove_repeated_elements(input_list):
         result.append(new_lst)
 
     return result
-
-
-def check_if_day_changed():
-    datetime.datetime.now(datetime.timezone.utc).date().isoformat()

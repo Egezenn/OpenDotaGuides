@@ -1,5 +1,5 @@
 import os
-from json import dump
+import json
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -39,7 +39,7 @@ def initialize_hero_lib():
             hero_dict[hero_name] = hero_id
 
         with open(data_hero_ids, "w") as json_file:
-            dump(hero_dict, json_file, indent=2)
+            json.dump(hero_dict, json_file, indent=2)
 
 
 def get_hero_guide(hero_id):
@@ -81,4 +81,4 @@ def get_hero_guide(hero_id):
         }
 
         with open(os.path.join(data_directory, f"{hero_id}.json"), "w") as json_file:
-            dump(hero_item_dict, json_file, indent=2)
+            json.dump(hero_item_dict, json_file, indent=2)

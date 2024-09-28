@@ -1,2 +1,4 @@
-selenium
 beautifulsoup4
+requests
+selenium
+nodeenv

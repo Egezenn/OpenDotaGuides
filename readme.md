@@ -1,4 +1,4 @@
-# ScrapedDotaGuides
+# OpenDotaGuides
 
 <img alt="Windranger guide" style="padding-left:20px;" align="right" src="assets/image.png">
 
@@ -9,7 +9,7 @@ Then you're in luck, this project scrapes what [OpenDota](https://www.opendota.c
 ## How to use?
 
 1. Replace the `itembuilds` folder with
-    1. the one from the [release](https://github.com/Egezenn/ScrapedDotaGuides/releases)
+    1. the one from the [release](https://github.com/Egezenn/OpenDotaGuides/releases)
     2. the one you locally make. Refer to [here](#local-compilation).
 2. Select the default guide in game
 3. Have fun!
@@ -18,23 +18,26 @@ NOTE: If you've modified the contents folder while you were in Dota and in a mat
 
 ## Local compilation
 
-Assuming you already have python (I'm currently using python3.11, change version if needed) and git installed:
+Assuming you already have python(3.11), node(22.9) and git installed:
 
-1. `git clone https://github.com/Egezenn/ScrapedDotaGuides.git`
-2. `cd ScrapedDotaGuides`
+1. `git clone https://github.com/Egezenn/OpenDotaGuides.git`
+2. `cd OpenDotaGuides`
 3. `python -m venv .venv`
 4. Activate the virtual environment:
-   1. 1 `.venv\Scripts\activate.bat`
-   2. 2 `source .venv/Scripts/activate`
+   1. `.venv\Scripts\activate.bat`
+   2. `source .venv/Scripts/activate`
 5. `pip install -r requirements`
-6. `python main.py`
-7. If the steam installation isn't detected
+6. `nodeenv .nodeenv`
+7. `.nodeenv/Scripts/activate.bat` <ive got no idea how you activate this in linux without the bat and source i assume it probably isnt generating the file in windows>
+8. `npm install`
+9. `python main.py`
+10. If the steam installation isn't detected
     1. Remove `itembuilds` folder from dota2:
         1. `rmdir <steam_folder_or_library_path>\dota 2 beta\game\dota\itembuilds`
         2. `rm -r <steam_folder_or_library_path>/dota 2 beta/game/dota/itembuilds`
-8. 8 Move newly created guides:
-   1. `move .\itembuilds <steam_folder_or_library_path>\steamapps\common\dota 2 beta\game\dota\itembuilds`
-   2. `mv ./itembuilds <steam_folder_or_library_path>\steamapps\common/dota 2 beta/game/dota/itembuilds`
+11. Move newly created guides:
+12. `move .\itembuilds <steam_folder_or_library_path>\steamapps\common\dota 2 beta\game\dota\itembuilds`
+13. `mv ./itembuilds <steam_folder_or_library_path>\steamapps\common/dota 2 beta/game/dota/itembuilds`
 
 ## TODO
 

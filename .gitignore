@@ -1,6 +1,8 @@
+# py
 .venv
-.vscode
 __pycache__
-api
 data
 itembuilds
+# js
+.nodeenv
+node_modules
