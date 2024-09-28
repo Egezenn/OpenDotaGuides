@@ -12,7 +12,7 @@ Example screenie of a windranger guide:
 
 1. Replace the `itembuilds` folder with
     1. the one from the release
-    2. the one you locally make. Refer to [here](#local-installation).
+    2. the one you locally make. Refer to [here](#local-compilation).
 2. Select the default guide in game
 3. Have fun!
 
