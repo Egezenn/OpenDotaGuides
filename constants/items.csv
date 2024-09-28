@@ -70,7 +70,7 @@ item_mystic_staff,mystic_staff,component
 item_reaver,reaver,component
 item_eagle,eagle,component
 item_relic,relic,component
-item_magic_wand,magic_wand,
+item_magic_wand,magic_wand,ignore
 item_null_talisman,null_talisman,
 item_wraith_band,wraith_band,
 item_bracer,bracer,
@@ -144,7 +144,7 @@ item_bloodstone,bloodstone,
 item_helm_of_the_overlord,helm_of_the_overlord,
 item_eternal_shroud,eternal_shroud,
 item_lesser_crit,lesser_crit,component
-item_meteor_hammer,meteor_hammer,
+item_meteor_hammer,meteor_hammer,risky
 item_armlet,armlet,
 item_basher,basher,
 item_invis_sword,invis_sword,

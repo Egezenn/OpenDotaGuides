@@ -2,7 +2,7 @@ import json
 import os
 import shutil
 
-from converter import convert_scrape_to_guide
+from compiler import convert_scrape_to_guide
 from scraper import get_hero_guide, initialize_hero_lib
 
 if __name__ == "__main__":
