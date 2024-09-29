@@ -18,44 +18,35 @@ from utils import (
 )
 
 task_debug = 1
-scrape = 0
-api = 1
 
 if __name__ == "__main__":
     os.makedirs(data_directory, exist_ok=True)
     os.makedirs(itembuilds_directory, exist_ok=True)
 
     # getting data
-    if scrape:
-        initialize_hero_lib()
-        with open(data_hero_ids) as f:
+
+    if os.path.isdir(dotaconstants_directory):
+        with open(dotaconstants_heroes) as f:
             heroes = json.load(f)
 
-        for i, (hero, id) in enumerate(heroes.items(), start=1):
-            if str(id) != "131":  # rubberpatch until there is data for ringmaster
-                get_hero_guide(id)
+        for i, hero in enumerate(heroes, start=1):
+            if hero != "131" and f"{hero}.json" not in os.listdir(
+                data_directory
+            ):  # rubberpatch until there is data for ringmaster
+                call_successful = 0
+                while not call_successful:
+                    try:
+                        get_hero_popularity_guide(hero)
+                        call_successful = 1
+                    except:
+                        time.sleep(15)
+                        get_hero_popularity_guide(hero)
+                        call_successful = 1
                 if task_debug:
-                    print(f"SCRAPE {i}/{(len(heroes))} {hero}")
-    elif api:
-        if os.path.isdir(dotaconstants_directory):
-            with open(dotaconstants_heroes) as f:
-                heroes = json.load(f)
-
-            for i, hero in enumerate(heroes, start=1):
-                if hero != "131" and f"{hero}.json" not in os.listdir(
-                    data_directory
-                ):  # rubberpatch until there is data for ringmaster
-                    call_successful = 0
-                    while not call_successful:
-                        try:
-                            get_hero_popularity_guide(hero)
-                            call_successful = 1
-                        except:
-                            time.sleep(60)
-                            get_hero_popularity_guide(hero)
-                            call_successful = 1
-                    if task_debug:
-                        print(f"API CALL {i}/{(len(heroes)) - 1}")
+                    print(f"API CALL {i}/{(len(heroes)) - 1}")
+    else:
+        print(f"{dotaconstants_directory} couldn't be found")
+        exit()
 
     # compiling
     data_hero_ids = os.listdir(data_directory)
