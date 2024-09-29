@@ -47,8 +47,8 @@ def checkFlags(file_path, search_string):
     with open(file_path, "r") as file:
         reader = csv.reader(file)
         for row in reader:
-            if len(row) == 3 and row[1] == search_string.lstrip("item_"):
-                return row[2]
+            if len(row) == 4 and row[1] == search_string:
+                return row[3]
 
 
 def remove_repeated_elements(input_list):
