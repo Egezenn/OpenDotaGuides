@@ -1,0 +1,41 @@
+"guidedata"
+{
+	"Hero"		"npc_dota_hero_<hero_name>|<hero_name>"
+	"Title"		"<anything>"
+	"Role"		"<#DOTA_HeroGuide_Role_Core|#DOTA_HeroGuide_Role_OffLane|...>" other assumptions are: #DOTA_HeroGuide_Role_Support, #DOTA_HeroGuide_Role_Jungle, #DOTA_HeroGuide_Role_Initiator, #DOTA_HeroGuide_Role_Roamer
+	"GameplayVersion"		"<dota_version>"
+	"Overview"		"<[img][/img] supports the markdown format of steam, it doesn't render in-game, but could put the project logo here (if i make one that is), i don't see why not>"
+	"GuideRevision"		"<integer>"
+	"AssociatedWorkshopItemID"		"<workshop related 16 bit hex>"
+	"OriginalCreatorID"		"<workshop related 16 bit hex>"
+	"GuideFormatVersion"		"<integer, workshop guides have 2 as defaultbut i don't know what the difference would be>"
+	"TimeUpdated"		"16 bit unix hex timestamp"
+	"TimePublished"		"16 bit unix hex timestamp"
+	"ItemBuild"
+	{
+		"Items"
+		{
+			"<#DOTA_Item_Build_Starting_Items|#DOTA_Item_Build_Early_Game|#DOTA_Item_Build_Mid_Items|#DOTA_Item_Build_Late_Items|#DOTA_Item_Build_Other_Items>"
+			{
+				"item"		"<item_name>"
+			}
+		}
+		"ItemTooltips"
+		{
+			"<item_name>"		"<description, multiline is allowed.
+
+anything after the double quote is treated as codeblock.>"
+		}
+	}
+	"AbilityBuild"
+	{
+		"AbilityOrder"
+		{
+			"1..25"		"<ability_name|special_bonus...|attribute_bonus>"
+		}
+		"AbilityTooltips"
+		{
+			"<ability_name|special_bonus...|attribute_bonus>"		"<description>"
+		}
+	}
+}

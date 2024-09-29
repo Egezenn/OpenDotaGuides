@@ -29,8 +29,8 @@ id,dname,guide_name,item_name,flag
 0,,item_quelling_blade,quelling_blade,start
 0,,item_ring_of_protection,ring_of_protection,component
 0,,item_infused_raindrop,infused_raindrop,start
-0,,item_orb_of_venom,orb_of_venom,
-0,,item_blight_stone,blight_stone,
+0,,item_orb_of_venom,orb_of_venom,early
+0,,item_blight_stone,blight_stone,early
 0,,item_blades_of_attack,blades_of_attack,component
 0,,item_gloves,gloves,component
 0,,item_chainmail,chainmail,component
@@ -71,9 +71,9 @@ id,dname,guide_name,item_name,flag
 0,,item_eagle,eagle,component
 0,,item_relic,relic,component
 0,,item_magic_wand,magic_wand,ignore
-0,,item_null_talisman,null_talisman,
-0,,item_wraith_band,wraith_band,
-0,,item_bracer,bracer,
+0,,item_null_talisman,null_talisman,early
+0,,item_wraith_band,wraith_band,early
+0,,item_bracer,bracer,early
 0,,item_soul_ring,soul_ring,
 0,,item_orb_of_corrosion,orb_of_corrosion,
 0,,item_falcon_blade,falcon_blade,
@@ -88,7 +88,7 @@ id,dname,guide_name,item_name,flag
 0,,item_travel_boots_2,travel_boots_2,component
 0,,item_moon_shard,moon_shard,
 0,,item_buckler,buckler,component
-0,,item_ring_of_basilius,ring_of_basilius,
+0,,item_ring_of_basilius,ring_of_basilius,early
 0,,item_headdress,headdress,component
 0,,item_urn_of_shadows,urn_of_shadows,team
 0,,item_tranquil_boots,tranquil_boots,
@@ -103,7 +103,7 @@ id,dname,guide_name,item_name,flag
 0,,item_guardian_greaves,guardian_greaves,team
 0,,item_boots_of_bearing,boots_of_bearing,team
 0,,item_devastator,devastator,
-0,,item_veil_of_discord,veil_of_discord,
+0,,item_veil_of_discord,veil_of_discord,component
 0,,item_glimmer_cape,glimmer_cape,team
 0,,item_force_staff,force_staff,team
 0,,item_aether_lens,aether_lens,

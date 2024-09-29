@@ -5,12 +5,10 @@ import time
 
 from compiler import compile_scrape_to_guide
 from opendota_api import get_hero_popularity_guide
-from scraper import get_hero_guide, initialize_hero_lib
 from utils import (
     cwd,
     data_directory,
     data_file__hero_ids,
-    data_hero_ids,
     default_dota_itembuilds_windows_directory,
     itembuilds_directory,
     dotaconstants_directory,
@@ -18,8 +16,13 @@ from utils import (
 )
 
 task_debug = 1
+refresh_data = 0
+remove_start_items = 1
 
 if __name__ == "__main__":
+    if refresh_data:
+        os.remove(data_directory)
+        os.remove(itembuilds_directory)
     os.makedirs(data_directory, exist_ok=True)
     os.makedirs(itembuilds_directory, exist_ok=True)
 
@@ -49,12 +52,17 @@ if __name__ == "__main__":
         exit()
 
     # compiling
-    data_hero_ids = os.listdir(data_directory)
-    for i, id in enumerate(data_hero_ids, start=1):
+    data__ids = [file.split(".")[0] for file in os.listdir(data_directory)]
+    for i, id in enumerate(data__ids, start=1):
+        # if id == "1.json":  # GuideFormatVersion 2 test
+        #     compile_scrape_to_guide(id.split(".")[0], 1, 2)
+        #     if task_debug:
+        #         print(f"v2 COMPILE!! {i}/{(len(data_ids))} {id}")
+
         if id != data_file__hero_ids:
-            compile_scrape_to_guide(id.split(".")[0])
+            compile_scrape_to_guide(id, remove_starting_items=remove_start_items)
             if task_debug:
-                print(f"COMPILE {i}/{(len(data_hero_ids))} {id}")
+                print(f"COMPILE {i}/{(len(data__ids))} {id}")
 
     # copying it to steamfolder
     if os.path.exists(default_dota_itembuilds_windows_directory):

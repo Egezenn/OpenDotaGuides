@@ -1,0 +1,50 @@
+"guidedata"
+{
+	"Hero"		"antimage"
+	"Title"		"ODG 2024-09-29"
+	"Role"		"#DOTA_HeroGuide_Role_Core"
+	"GameplayVersion"		"7.37c"
+	"Overview"		"i20v0EPbB1iPsdMujTq06O5KC2GcKofs"
+	"GuideRevision"		"8342"
+	"AssociatedWorkshopItemID"		"0x0000000000000001"
+	"OriginalCreatorID"		"0x0000000000000001"
+	"GuideFormatVersion"		"2"
+	"TimeUpdated"		"0x0000000000000001"
+	"TimePublished"		"0x0000000000000001"
+	"ItemBuild"
+	{
+		"Items"
+		{
+			"#DOTA_Item_Build_Starting_Items"
+			{
+				"item"		"item_angels_demise"
+			}
+		}
+		"ItemTooltips"
+		{
+			"item_angels_demise"		"UYgGymhcQvUesFLc"
+		}
+	}
+	"AbilityBuild"
+	{
+		"AbilityOrder"
+		{
+			"1"		"antimage_mana_break"
+			"2"		"antimage_blink"
+			"3"		"antimage_mana_break"
+			"4"		"antimage_blink"
+			"5"		"antimage_counterspell"
+			"6"		"antimage_mana_void"
+			"7"		"antimage_mana_break"
+			"8"		"antimage_blink"
+			"9"		"antimage_mana_break"
+			"10"		"antimage_blink"
+			"11"		"special_bonus_unique_antimage_4"
+			"12"		"antimage_mana_void"
+		}
+		"AbilityTooltips"
+		{
+			"antimage_mana_break"		"dDLphB5MM1mo5wiI"
+		}
+	}
+}
