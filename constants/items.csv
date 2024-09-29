@@ -11,7 +11,7 @@ id,dname,guide_name,item_name,flag
 0,,item_tango_single,tango_single,ignore
 0,,item_blood_grenade,blood_grenade,start
 0,,item_dust,dust,ignore
-0,,item_bottle,bottle,start
+0,,item_bottle,bottle,early
 0,,item_aghanims_shard,aghanims_shard,
 0,,item_branches,branches,start
 0,,item_gauntlets,gauntlets,component
@@ -70,7 +70,7 @@ id,dname,guide_name,item_name,flag
 0,,item_reaver,reaver,component
 0,,item_eagle,eagle,component
 0,,item_relic,relic,component
-0,,item_magic_wand,magic_wand,ignore
+0,,item_magic_wand,magic_wand,early
 0,,item_null_talisman,null_talisman,early
 0,,item_wraith_band,wraith_band,early
 0,,item_bracer,bracer,early
