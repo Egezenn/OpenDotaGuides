@@ -35,13 +35,13 @@ Assuming you already have [python](https://www.python.org/downloads/)(3.11), [no
    2. `source .nodeenv/Scripts/activate`
 8. `npm install dotaconstants`
 9. `python main.py`
-10. If the steam installation isn't detected
+10. If the dota installation isn't detected
     1. Remove `itembuilds` folder from dota2:
         1. `rmdir <dota_install_path>\dota 2 beta\game\dota\itembuilds`
         2. `rm -r <dota_install_path>/dota 2 beta/game/dota/itembuilds`
-11. Move newly created guides:
-    1. `move .\itembuilds <dota_install_path>\game\dota\itembuilds`
-    2. `mv ./itembuilds <dota_install_path>/game/dota/itembuilds`
+    2. Move newly created guides:
+        1. `move .\itembuilds <dota_install_path>\game\dota\itembuilds`
+        2. `mv ./itembuilds <dota_install_path>/game/dota/itembuilds`
 
 ## TODO
 

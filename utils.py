@@ -19,10 +19,10 @@ default_dota_installation_windows_directory = os.path.join(
     r"Steam",
     r"steamapps",
     r"common",
+    r"dota 2 beta",
 )
 default_dota_itembuilds_windows_directory = os.path.join(
     default_dota_installation_windows_directory,
-    r"dota 2 beta",
     r"game",
     r"dota",
     r"itembuilds",
