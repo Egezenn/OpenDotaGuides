@@ -18,7 +18,9 @@ removed_items = ["ignore", "component"]
 categorized_items = ["team", "risky"]
 
 
-def compile_scrape_to_guide(hero_id):
+def compile_scrape_to_guide(hero_id, remove_starting_items=0):
+    if remove_starting_items:
+        removed_items.append("start")
     with open(f"{os.path.join(data_directory, hero_id)}.json") as f:
         hero_data = json.load(f)
 
@@ -61,10 +63,11 @@ def compile_scrape_to_guide(hero_id):
         file.write(f'\t"hero"\t\t\t"{hero}"\n')
         file.write(f'\t"Title"\t\t\t"{title}"\n')
         file.write('\n\t"Items"\n\t{\n')
-        file.write('\t\t"#DOTA_Item_Build_Starting_Items"\n\t\t{\n')
-        for item in modified_hero_stages[0]:
-            file.write(f'\t\t\t"item"\t\t"{item}"\n')
-        file.write("\t\t}\n")
+        if modified_hero_stages[0] != []:
+            file.write('\t\t"#DOTA_Item_Build_Starting_Items"\n\t\t{\n')
+            for item in modified_hero_stages[0]:
+                file.write(f'\t\t\t"item"\t\t"{item}"\n')
+            file.write("\t\t}\n")
         file.write('\t\t"#DOTA_Item_Build_Early_Game"\n\t\t{\n')
         for item in modified_hero_stages[1]:
             file.write(f'\t\t\t"item"\t\t"{item}"\n')

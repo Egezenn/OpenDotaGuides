@@ -45,16 +45,19 @@ Assuming you already have [python](https://www.python.org/downloads/)(3.11), [no
 
 ## TODO
 
+- [ ] for the complete removal of starting items category, would need to add items like basilius, bracer, orb of venom, blight stone etc
+- [ ] Create a function that automatically builds `constants/items.csv` using [dotaconstants](https://github.com/odota/dotaconstants) provided by OpenDota or by accessing vpk. Then inject flags from another json
+- [ ] Add item display names to `items.csv` and sort items based on it (looking at you, `angels_demise`)
 - [ ] Get more information about the guide template
 - [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
   - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
-- [ ] Add item display names to `items.csv` and sort items based on it (looking at you, `angels_demise`)
-- [ ] Create a function that automatically builds `constants/items.csv` using [dotaconstants](https://github.com/odota/dotaconstants) provided by OpenDota or by accessing vpk. Then inject flags from another csv
   - don't create any constants and just use `dotaconstants`?
   - or generate everything through it?
 
 ### DONE
 
+- [x] Add an option to reduce or remove starting items category. I think that you should be using the normal shop panel for them anyway.
+  - 500- gold, not a component and items not like soul booster and perseverance which you only buy it for the build up of items (like no one buying a buckler but basilius for the early mana regen)
 - [x] Make use of the [OpenDota API](https://docs.opendota.com/) and change repo name, *again*
 - [x] Assign variables to directories and files used throughout the project for easy management
 - [x] Categorize items like pipe, crimson guard in `team` category (items that you manage who should be the carrier or just support items like solar crest, glimmer cape)

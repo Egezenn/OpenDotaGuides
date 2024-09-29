@@ -39,7 +39,7 @@ def search_csv(file_path, search_string):
     with open(file_path, "r") as file:
         reader = csv.reader(file)
         for row in reader:
-            if len(row) >= 3 and row[1] == search_string:
+            if len(row) == 3 and row[1] == search_string:
                 return row[2]
 
 
@@ -47,8 +47,8 @@ def checkFlags(file_path, search_string):
     with open(file_path, "r") as file:
         reader = csv.reader(file)
         for row in reader:
-            if len(row) == 4 and row[1] == search_string:
-                return row[3]
+            if len(row) == 5 and row[2] == search_string:
+                return row[4]
 
 
 def remove_repeated_elements(input_list):
