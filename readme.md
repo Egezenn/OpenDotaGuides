@@ -4,7 +4,7 @@
 
 Tired of streamlined, opinionated and slowly updating guides? Want to see many item recommendations from the pros for the newest patch?
 
-Then you're in luck, this project uses what [OpenDota](https://www.opendota.com) has to offer in `opendota.com/heroes/<hero_id>/items` and aims to replace *pretty* outdated default guides in `..<dota_install_path>/game/dota/itembuilds`.
+Then you're in luck, this project uses what [OpenDota](https://www.opendota.com) has to offer in in their [API](https://docs.opendota.com) and aims to replace *pretty* outdated default guides in `..<dota_install_path>/game/dota/itembuilds`.
 
 ## How to install?
 
@@ -45,15 +45,20 @@ Assuming you already have [python](https://www.python.org/downloads/)(3.11), [no
 
 ## TODO
 
-- [ ] Create a function that automatically builds `constants/items.csv` using [dotaconstants](https://github.com/odota/dotaconstants) provided by OpenDota or by accessing vpk. Then inject flags from another json
-- [ ] Add item display names to `items.csv` and sort items based on it (looking at you, `angels_demise`)
+- [ ] Remove npm, nodeenv and dotaconstants dependencies, the data is available on OpenDota API. Adjust compilation steps.
+  - GET /heroes
+  - GET /constants/{resource}
+  - [ ] Create a function that builds `constants/items.csv`. Then inject flag metadata from another json
+    - [ ] Add item display names and ids to `items.csv` and sort items based on it (looking at you, `angels_demise`)
+  - [ ] Create a function that builds `heroes.csv`
+    - [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
+      - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
 - [ ] Add ability guides and also maybe mayyyyyyyyyyyyybe add item tooltips
   - Workshop guide format doesn't work. see [example](constants/default_antimage.txt)
     - Might have something to do with GuideFormatVersion
-- [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
-  - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
-- [ ] don't create any constants and just use `dotaconstants`?
-  - or generate everything through it?
+- [ ] Make CLI
+  - [ ] Add optionals/customizations
+- [ ] Make the project an executable
 
 ### DONE
 
