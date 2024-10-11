@@ -1,8 +1,6 @@
-# py
 .venv
 __pycache__
 data
 itembuilds
-# js
-.nodeenv
-node_modules
+
+testfile.py

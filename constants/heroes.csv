@@ -1,126 +1,126 @@
-localized_name,id,name
-Abaddon,102,abaddon
-Alchemist,73,alchemist
-Ancient Apparition,68,ancient_apparition
-Anti-Mage,1,antimage
-Arc Warden,113,arc_warden
-Axe,2,axe
-Bane,3,bane
-Batrider,65,batrider
-Beastmaster,38,beastmaster
-Bloodseeker,4,bloodseeker
-Bounty Hunter,62,bounty_hunter
-Brewmaster,78,brewmaster
-Bristleback,99,bristleback
-Broodmother,61,broodmother
-Centaur Warrunner,96,centaur
-Chaos Knight,81,chaos_knight
-Chen,66,chen
-Clinkz,56,clinkz
-Clockwerk,51,rattletrap
-Crystal Maiden,5,crystal_maiden
-Dark Seer,55,dark_seer
-Dark Willow,119,dark_willow
-Dawnbreaker,135,dawnbreaker
-Dazzle,50,dazzle
-Death Prophet,43,death_prophet
-Disruptor,87,disruptor
-Doom,69,doom_bringer
-Dragon Knight,49,dragon_knight
-Drow Ranger,6,drow_ranger
-Earth Spirit,107,earth_spirit
-Earthshaker,7,earthshaker
-Elder Titan,103,elder_titan
-Ember Spirit,106,ember_spirit
-Enchantress,58,enchantress
-Enigma,33,enigma
-Faceless Void,41,faceless_void
-Grimstroke,121,grimstroke
-Gyrocopter,72,gyrocopter
-Hoodwink,123,hoodwink
-Huskar,59,huskar
-Invoker,74,invoker
-Io,91,wisp
-Jakiro,64,jakiro
-Juggernaut,8,juggernaut
-Keeper of the Light,90,keeper_of_the_light
-Kunkka,23,kunkka
-Legion Commander,104,legion_commander
-Leshrac,52,leshrac
-Lich,31,lich
-Lifestealer,54,life_stealer
-Lina,25,lina
-Lion,26,lion
-Lone Druid,80,lone_druid
-Luna,48,luna
-Lycan,77,lycan
-Magnus,97,magnataur
-Marci,136,marci
-Mars,129,mars
-Medusa,94,medusa
-Meepo,82,meepo
-Mirana,9,mirana
-Monkey King,114,monkey_king
-Morphling,10,morphling
-Muerta,138,muerta
-Naga Siren,89,naga_siren
-Nature's Prophet,53,furion
-Necrophos,36,necrolyte
-Night Stalker,60,night_stalker
-Nyx Assassin,88,nyx_assassin
-Ogre Magi,84,ogre_magi
-Omniknight,57,omniknight
-Oracle,111,oracle
-Outworld Devourer,76,obsidian_destroyer
-Pangolier,120,pangolier
-Phantom Assassin,44,phantom_assassin
-Phantom Lancer,12,phantom_lancer
-Phoenix,110,phoenix
-Primal Beast,137,primal_beast
-Puck,13,puck
-Pudge,14,pudge
-Pugna,45,pugna
-Queen of Pain,39,queenofpain
-Razor,15,razor
-Riki,32,riki
-Ringmaster,131,ringmaster
-Rubick,86,rubick
-Sand King,16,sand_king
-Shadow Demon,79,shadow_demon
-Shadow Fiend,11,nevermore
-Shadow Shaman,27,shadow_shaman
-Silencer,75,silencer
-Skywrath Mage,101,skywrath_mage
-Slardar,28,slardar
-Slark,93,slark
-Snapfire,128,snapfire
-Sniper,35,sniper
-Spectre,67,spectre
-Spirit Breaker,71,spirit_breaker
-Storm Spirit,17,storm_spirit
-Sven,18,sven
-Techies,105,techies
-Templar Assassin,46,templar_assassin
-Terrorblade,109,terrorblade
-Tidehunter,29,tidehunter
-Timbersaw,98,shredder
-Tinker,34,tinker
-Tiny,19,tiny
-Treant Protector,83,treant
-Troll Warlord,95,troll_warlord
-Tusk,100,tusk
-Underlord,108,abyssal_underlord
-Undying,85,undying
-Ursa,70,ursa
-Vengeful Spirit,20,vengefulspirit
-Venomancer,40,venomancer
-Viper,47,viper
-Visage,92,visage
-Void Spirit,126,void_spirit
-Warlock,37,warlock
-Weaver,63,weaver
-Windranger,21,windrunner
-Winter Wyvern,112,winter_wyvern
-Witch Doctor,30,witch_doctor
-Wraith King,42,skeleton_king
-Zeus,22,zuus
+id,localized_name,name,guide_name,attack_type
+1,Anti-Mage,npc_dota_hero_antimage,default_antimage,Melee
+2,Axe,npc_dota_hero_axe,default_axe,Melee
+3,Bane,npc_dota_hero_bane,default_bane,Ranged
+4,Bloodseeker,npc_dota_hero_bloodseeker,default_bloodseeker,Melee
+5,Crystal Maiden,npc_dota_hero_crystal_maiden,default_crystal_maiden,Ranged
+6,Drow Ranger,npc_dota_hero_drow_ranger,default_drow_ranger,Ranged
+7,Earthshaker,npc_dota_hero_earthshaker,default_earthshaker,Melee
+8,Juggernaut,npc_dota_hero_juggernaut,default_juggernaut,Melee
+9,Mirana,npc_dota_hero_mirana,default_mirana,Ranged
+10,Morphling,npc_dota_hero_morphling,default_morphling,Ranged
+11,Shadow Fiend,npc_dota_hero_nevermore,default_nevermore,Ranged
+12,Phantom Lancer,npc_dota_hero_phantom_lancer,default_phantom_lancer,Melee
+13,Puck,npc_dota_hero_puck,default_puck,Ranged
+14,Pudge,npc_dota_hero_pudge,default_pudge,Melee
+15,Razor,npc_dota_hero_razor,default_razor,Ranged
+16,Sand King,npc_dota_hero_sand_king,default_sand_king,Melee
+17,Storm Spirit,npc_dota_hero_storm_spirit,default_storm_spirit,Ranged
+18,Sven,npc_dota_hero_sven,default_sven,Melee
+19,Tiny,npc_dota_hero_tiny,default_tiny,Melee
+20,Vengeful Spirit,npc_dota_hero_vengefulspirit,default_vengefulspirit,Mixed
+21,Windranger,npc_dota_hero_windrunner,default_windrunner,Ranged
+22,Zeus,npc_dota_hero_zuus,default_zuus,Ranged
+23,Kunkka,npc_dota_hero_kunkka,default_kunkka,Melee
+25,Lina,npc_dota_hero_lina,default_lina,Ranged
+26,Lion,npc_dota_hero_lion,default_lion,Ranged
+27,Shadow Shaman,npc_dota_hero_shadow_shaman,default_shadow_shaman,Ranged
+28,Slardar,npc_dota_hero_slardar,default_slardar,Melee
+29,Tidehunter,npc_dota_hero_tidehunter,default_tidehunter,Melee
+30,Witch Doctor,npc_dota_hero_witch_doctor,default_witch_doctor,Ranged
+31,Lich,npc_dota_hero_lich,default_lich,Ranged
+32,Riki,npc_dota_hero_riki,default_riki,Melee
+33,Enigma,npc_dota_hero_enigma,default_enigma,Ranged
+34,Tinker,npc_dota_hero_tinker,default_tinker,Ranged
+35,Sniper,npc_dota_hero_sniper,default_sniper,Ranged
+36,Necrophos,npc_dota_hero_necrolyte,default_necrolyte,Ranged
+37,Warlock,npc_dota_hero_warlock,default_warlock,Ranged
+38,Beastmaster,npc_dota_hero_beastmaster,default_beastmaster,Melee
+39,Queen of Pain,npc_dota_hero_queenofpain,default_queenofpain,Ranged
+40,Venomancer,npc_dota_hero_venomancer,default_venomancer,Ranged
+41,Faceless Void,npc_dota_hero_faceless_void,default_faceless_void,Melee
+42,Wraith King,npc_dota_hero_skeleton_king,default_skeleton_king,Melee
+43,Death Prophet,npc_dota_hero_death_prophet,default_death_prophet,Ranged
+44,Phantom Assassin,npc_dota_hero_phantom_assassin,default_phantom_assassin,Melee
+45,Pugna,npc_dota_hero_pugna,default_pugna,Ranged
+46,Templar Assassin,npc_dota_hero_templar_assassin,default_templar_assassin,Ranged
+47,Viper,npc_dota_hero_viper,default_viper,Ranged
+48,Luna,npc_dota_hero_luna,default_luna,Ranged
+49,Dragon Knight,npc_dota_hero_dragon_knight,default_dragon_knight,Melee
+50,Dazzle,npc_dota_hero_dazzle,default_dazzle,Ranged
+51,Clockwerk,npc_dota_hero_rattletrap,default_rattletrap,Melee
+52,Leshrac,npc_dota_hero_leshrac,default_leshrac,Ranged
+53,Nature's Prophet,npc_dota_hero_furion,default_furion,Ranged
+54,Lifestealer,npc_dota_hero_life_stealer,default_life_stealer,Melee
+55,Dark Seer,npc_dota_hero_dark_seer,default_dark_seer,Melee
+56,Clinkz,npc_dota_hero_clinkz,default_clinkz,Ranged
+57,Omniknight,npc_dota_hero_omniknight,default_omniknight,Melee
+58,Enchantress,npc_dota_hero_enchantress,default_enchantress,Ranged
+59,Huskar,npc_dota_hero_huskar,default_huskar,Ranged
+60,Night Stalker,npc_dota_hero_night_stalker,default_night_stalker,Melee
+61,Broodmother,npc_dota_hero_broodmother,default_broodmother,Melee
+62,Bounty Hunter,npc_dota_hero_bounty_hunter,default_bounty_hunter,Melee
+63,Weaver,npc_dota_hero_weaver,default_weaver,Ranged
+64,Jakiro,npc_dota_hero_jakiro,default_jakiro,Ranged
+65,Batrider,npc_dota_hero_batrider,default_batrider,Ranged
+66,Chen,npc_dota_hero_chen,default_chen,Ranged
+67,Spectre,npc_dota_hero_spectre,default_spectre,Melee
+68,Ancient Apparition,npc_dota_hero_ancient_apparition,default_ancient_apparition,Ranged
+69,Doom,npc_dota_hero_doom_bringer,default_doom_bringer,Melee
+70,Ursa,npc_dota_hero_ursa,default_ursa,Melee
+71,Spirit Breaker,npc_dota_hero_spirit_breaker,default_spirit_breaker,Melee
+72,Gyrocopter,npc_dota_hero_gyrocopter,default_gyrocopter,Ranged
+73,Alchemist,npc_dota_hero_alchemist,default_alchemist,Melee
+74,Invoker,npc_dota_hero_invoker,default_invoker,Ranged
+75,Silencer,npc_dota_hero_silencer,default_silencer,Ranged
+76,Outworld Destroyer,npc_dota_hero_obsidian_destroyer,default_obsidian_destroyer,Ranged
+77,Lycan,npc_dota_hero_lycan,default_lycan,Melee
+78,Brewmaster,npc_dota_hero_brewmaster,default_brewmaster,Melee
+79,Shadow Demon,npc_dota_hero_shadow_demon,default_shadow_demon,Ranged
+80,Lone Druid,npc_dota_hero_lone_druid,default_lone_druid,Ranged
+81,Chaos Knight,npc_dota_hero_chaos_knight,default_chaos_knight,Melee
+82,Meepo,npc_dota_hero_meepo,default_meepo,Melee
+83,Treant Protector,npc_dota_hero_treant,default_treant,Melee
+84,Ogre Magi,npc_dota_hero_ogre_magi,default_ogre_magi,Melee
+85,Undying,npc_dota_hero_undying,default_undying,Melee
+86,Rubick,npc_dota_hero_rubick,default_rubick,Ranged
+87,Disruptor,npc_dota_hero_disruptor,default_disruptor,Ranged
+88,Nyx Assassin,npc_dota_hero_nyx_assassin,default_nyx_assassin,Melee
+89,Naga Siren,npc_dota_hero_naga_siren,default_naga_siren,Melee
+90,Keeper of the Light,npc_dota_hero_keeper_of_the_light,default_keeper_of_the_light,Ranged
+91,Io,npc_dota_hero_wisp,default_wisp,Ranged
+92,Visage,npc_dota_hero_visage,default_visage,Ranged
+93,Slark,npc_dota_hero_slark,default_slark,Melee
+94,Medusa,npc_dota_hero_medusa,default_medusa,Ranged
+95,Troll Warlord,npc_dota_hero_troll_warlord,default_troll_warlord,Mixed
+96,Centaur Warrunner,npc_dota_hero_centaur,default_centaur,Melee
+97,Magnus,npc_dota_hero_magnataur,default_magnataur,Melee
+98,Timbersaw,npc_dota_hero_shredder,default_shredder,Melee
+99,Bristleback,npc_dota_hero_bristleback,default_bristleback,Melee
+100,Tusk,npc_dota_hero_tusk,default_tusk,Melee
+101,Skywrath Mage,npc_dota_hero_skywrath_mage,default_skywrath_mage,Ranged
+102,Abaddon,npc_dota_hero_abaddon,default_abaddon,Melee
+103,Elder Titan,npc_dota_hero_elder_titan,default_elder_titan,Melee
+104,Legion Commander,npc_dota_hero_legion_commander,default_legion_commander,Melee
+105,Techies,npc_dota_hero_techies,default_techies,Ranged
+106,Ember Spirit,npc_dota_hero_ember_spirit,default_ember_spirit,Melee
+107,Earth Spirit,npc_dota_hero_earth_spirit,default_earth_spirit,Melee
+108,Underlord,npc_dota_hero_abyssal_underlord,default_abyssal_underlord,Melee
+109,Terrorblade,npc_dota_hero_terrorblade,default_terrorblade,Mixed
+110,Phoenix,npc_dota_hero_phoenix,default_phoenix,Ranged
+111,Oracle,npc_dota_hero_oracle,default_oracle,Ranged
+112,Winter Wyvern,npc_dota_hero_winter_wyvern,default_winter_wyvern,Ranged
+113,Arc Warden,npc_dota_hero_arc_warden,default_arc_warden,Ranged
+114,Monkey King,npc_dota_hero_monkey_king,default_monkey_king,Melee
+119,Dark Willow,npc_dota_hero_dark_willow,default_dark_willow,Ranged
+120,Pangolier,npc_dota_hero_pangolier,default_pangolier,Melee
+121,Grimstroke,npc_dota_hero_grimstroke,default_grimstroke,Ranged
+123,Hoodwink,npc_dota_hero_hoodwink,default_hoodwink,Ranged
+126,Void Spirit,npc_dota_hero_void_spirit,default_void_spirit,Melee
+128,Snapfire,npc_dota_hero_snapfire,default_snapfire,Ranged
+129,Mars,npc_dota_hero_mars,default_mars,Melee
+131,Ringmaster,npc_dota_hero_ringmaster,default_ringmaster,Ranged
+135,Dawnbreaker,npc_dota_hero_dawnbreaker,default_dawnbreaker,Melee
+136,Marci,npc_dota_hero_marci,default_marci,Melee
+137,Primal Beast,npc_dota_hero_primal_beast,default_primal_beast,Melee
+138,Muerta,npc_dota_hero_muerta,default_muerta,Ranged

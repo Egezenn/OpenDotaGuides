@@ -3,36 +3,39 @@ import json
 import os
 
 from .utils import (
-    checkFlags,
     constants_heroes,
     constants_items,
     data_directory,
     itembuilds_directory,
-    project_name_shorthand,
     project_name,
+    project_name_shorthand,
     remove_repeated_elements,
-    search_csv,
+    search_csv_match_y_for_x,
 )
+from .opendota_api import create_constant_items_csv
 
 removed_items = ["ignore", "component"]
 categorized_items = ["team", "risky", "early"]
 
 
-def compile_scrape_to_guide(hero_id, remove_starting_items=0, compiler_version=1):
+def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_version=1):
+    if not os.path.exists(constants_items):
+        create_constant_items_csv()
     if remove_starting_items:
         removed_items.append("start")
     with open(f"{os.path.join(data_directory, hero_id)}.json") as f:
         hero_data = json.load(f)
 
-    guide_name = search_csv(constants_heroes, hero_id)
+    name = search_csv_match_y_for_x(constants_heroes, hero_id, 0, 2)
+    guide_name = search_csv_match_y_for_x(constants_heroes, hero_id, 0, 3)
     author = project_name
-    v1_hero_name = f"npc_dota_hero_{guide_name}"
+    v1_hero_name = name
     title = f"{project_name_shorthand} {datetime.date.today().isoformat()}"
-    hero_stages = []
+    hero_stages = []  # could rewrite this part because guide_name is available
     for stage in hero_data:
         hero_stage = []
         for item in hero_data[stage]:
-            hero_stage.append(f"item_{item}")
+            hero_stage.append(item)
         hero_stages.append(hero_stage)
 
     hero_stages = remove_repeated_elements(hero_stages)
@@ -43,13 +46,21 @@ def compile_scrape_to_guide(hero_id, remove_starting_items=0, compiler_version=1
     for stage in hero_stages:
         modified_hero_stage = []
         for item in stage:
-            if checkFlags(constants_items, item) not in removed_items:
-                if checkFlags(constants_items, item) in categorized_items:
-                    if checkFlags(constants_items, item) == "team":
+            if (
+                search_csv_match_y_for_x(constants_items, item, 2, 4)
+                not in removed_items
+            ):
+                if (
+                    search_csv_match_y_for_x(constants_items, item, 2, 4)
+                    in categorized_items
+                ):
+                    if search_csv_match_y_for_x(constants_items, item, 2, 4) == "team":
                         team_category.append(item)
-                    elif checkFlags(constants_items, item) == "risky":
+                    elif (
+                        search_csv_match_y_for_x(constants_items, item, 2, 4) == "risky"
+                    ):
                         risky_category.append(item)
-                    if checkFlags(constants_items, item) == "early":
+                    if search_csv_match_y_for_x(constants_items, item, 2, 4) == "early":
                         if remove_starting_items:
                             early_category.append(item)
                         else:
@@ -64,7 +75,7 @@ def compile_scrape_to_guide(hero_id, remove_starting_items=0, compiler_version=1
 
     if compiler_version == 1:
         with open(
-            os.path.join(itembuilds_directory, f"default_{guide_name}.txt"),
+            os.path.join(itembuilds_directory, f"{guide_name}.txt"),
             "w",
             newline="",
         ) as file:
@@ -108,11 +119,11 @@ def compile_scrape_to_guide(hero_id, remove_starting_items=0, compiler_version=1
     elif compiler_version == 2:
         # test case
         with open(
-            os.path.join(itembuilds_directory, f"default_{guide_name}.txt"),
+            os.path.join(itembuilds_directory, f"{guide_name}.txt"),
             "w",
             newline="",
         ) as file:
-            v2_hero_name = guide_name
+            v2_hero_name = name
             v2_role = "#DOTA_HeroGuide_Role_Core"
             v2_dota_version = "7.37c"
 

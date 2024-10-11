@@ -20,7 +20,7 @@ NOTE: If you've modified the contents of the folder while you were in Dota and i
 
 ## Local compilation
 
-Assuming you already have [python](https://www.python.org/downloads/)(3.11), [node](https://nodejs.org/en/download/prebuilt-installer/current)(22.9) and [git](https://git-scm.com/downloads) installed:  
+Assuming you already have [python](https://www.python.org/downloads/)(3.11) and [git](https://git-scm.com/downloads) installed:  
 First instruction set is for Windows, second is for Linux.
 
 1. `git clone https://github.com/Egezenn/OpenDotaGuides.git`
@@ -30,14 +30,9 @@ First instruction set is for Windows, second is for Linux.
    1. `.venv\Scripts\activate.bat`
    2. `source .venv/Scripts/activate`
 5. `pip install -r requirements`
-6. `nodeenv .nodeenv`
-7. Activate the node virtual environment:
-   1. `.nodeenv\Scripts\activate.bat`
-   2. `source .nodeenv/Scripts/activate`
-8. `npm install dotaconstants`
-9. `python -m odg`
-10. If the dota installation isn't detected
-    1. Remove `itembuilds` folder from dota2:
+6. `python -m odg` `-v -r -c -s`
+7. If the dota installation isn't detected
+    1. Remove `itembuilds` folder from Dota2:
         1. `rmdir <dota_install_path>\dota 2 beta\game\dota\itembuilds`
         2. `rm -r <dota_install_path>/dota 2 beta/game/dota/itembuilds`
     2. Move newly created guides:
@@ -46,21 +41,17 @@ First instruction set is for Windows, second is for Linux.
 
 ## TODO
 
-- [x] Package the repo
-  - [ ] Publish to PyPI
-- [ ] Remove npm, nodeenv and dotaconstants dependencies, the data is available on OpenDota API. Adjust compilation steps.
-  - GET /heroes
-  - GET /constants/{resource}
-  - [ ] Create a function that builds `constants/items.csv`. Then inject flag metadata from another json
-    - [ ] Add item display names and ids to `items.csv` and sort items based on it (looking at you, `angels_demise`)
-  - [ ] Create a function that builds `heroes.csv`
-    - [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
-      - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
-- [ ] Use `logging` library for debug printouts
-  - [ ] Make them print out the same thing
-    - task_name \<current_task\>/\<amount_of_tasks\> \<hero_name\>
 - [ ] Make CLI
   - [ ] Add optionals/customizations
+- [ ] Use `logging` library for debug printouts
+  - [x] Make them print out the same thing
+    - task_name \<current_task\>/\<amount_of_tasks\> \<hero_name\>
+- [x] Package the repo
+  - [ ] Publish to PyPI
+    - Learn about proper packaging
+- [ ] Add item display names and ids to `items.csv` and sort items based on it (looking at you, `angels_demise`)
+- [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
+  - [x] Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
 - [ ] Make the project an executable
 - [ ] Add ability guides and also maybe mayyyyyyyyyyyyybe add item tooltips
   - Workshop guide format doesn't work. see [example](constants/default_antimage.txt)
@@ -68,6 +59,12 @@ First instruction set is for Windows, second is for Linux.
 
 ### DONE
 
+- [x] Classify the args required for functions
+- [x] Remove npm, nodeenv and dotaconstants dependencies, the data is available on OpenDota API. Adjust compilation steps.
+  - GET /heroes
+  - GET /constants/{resource}
+- [x] Create a function that builds `constants/items.csv`. Then inject flag metadata from another json
+- [x] Create a function that builds `heroes.csv`
 - [x] for the complete removal of starting items category, would need to add items like basilius, bracer, orb of venom, blight stone etc
 - [x] Add an option to reduce or remove starting items category. I think that you should be using the normal shop panel for them anyway.
   - 500- gold, not a component and items not like soul booster and perseverance which you only buy it for the build up of items (like no one buying a buckler but basilius for the early mana regen)
