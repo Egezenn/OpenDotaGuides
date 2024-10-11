@@ -20,7 +20,8 @@ NOTE: If you've modified the contents of the folder while you were in Dota and i
 
 ## Local compilation
 
-Assuming you already have [python](https://www.python.org/downloads/)(3.11), [node](https://nodejs.org/en/download/prebuilt-installer/current)(22.9) and [git](https://git-scm.com/downloads) installed:
+Assuming you already have [python](https://www.python.org/downloads/)(3.11), [node](https://nodejs.org/en/download/prebuilt-installer/current)(22.9) and [git](https://git-scm.com/downloads) installed:  
+First instruction set is for Windows, second is for Linux.
 
 1. `git clone https://github.com/Egezenn/OpenDotaGuides.git`
 2. `cd OpenDotaGuides`
@@ -34,7 +35,7 @@ Assuming you already have [python](https://www.python.org/downloads/)(3.11), [no
    1. `.nodeenv\Scripts\activate.bat`
    2. `source .nodeenv/Scripts/activate`
 8. `npm install dotaconstants`
-9. `python main.py`
+9. `python -m odg`
 10. If the dota installation isn't detected
     1. Remove `itembuilds` folder from dota2:
         1. `rmdir <dota_install_path>\dota 2 beta\game\dota\itembuilds`
@@ -45,6 +46,8 @@ Assuming you already have [python](https://www.python.org/downloads/)(3.11), [no
 
 ## TODO
 
+- [x] Package the repo
+  - [ ] Publish to PyPI
 - [ ] Remove npm, nodeenv and dotaconstants dependencies, the data is available on OpenDota API. Adjust compilation steps.
   - GET /heroes
   - GET /constants/{resource}
@@ -53,12 +56,15 @@ Assuming you already have [python](https://www.python.org/downloads/)(3.11), [no
   - [ ] Create a function that builds `heroes.csv`
     - [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
       - Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
-- [ ] Add ability guides and also maybe mayyyyyyyyyyyyybe add item tooltips
-  - Workshop guide format doesn't work. see [example](constants/default_antimage.txt)
-    - Might have something to do with GuideFormatVersion
+- [ ] Use `logging` library for debug printouts
+  - [ ] Make them print out the same thing
+    - task_name \<current_task\>/\<amount_of_tasks\> \<hero_name\>
 - [ ] Make CLI
   - [ ] Add optionals/customizations
 - [ ] Make the project an executable
+- [ ] Add ability guides and also maybe mayyyyyyyyyyyyybe add item tooltips
+  - Workshop guide format doesn't work. see [example](constants/default_antimage.txt)
+    - Might have something to do with GuideFormatVersion
 
 ### DONE
 

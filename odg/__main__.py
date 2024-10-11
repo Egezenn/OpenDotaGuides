@@ -3,9 +3,9 @@ import os
 import shutil
 import time
 
-from compiler import compile_scrape_to_guide
-from opendota_api import get_hero_popularity_guide
-from utils import (
+from .compiler import compile_scrape_to_guide
+from .opendota_api import get_hero_popularity_guide
+from .utils import (
     cwd,
     data_directory,
     data_file__hero_ids,
@@ -16,19 +16,21 @@ from utils import (
 )
 
 task_debug = 1
-refresh_data = 0
+refresh_data = 1
 remove_start_items = 1
 
 if __name__ == "__main__":
     if refresh_data:
-        os.remove(data_directory)
-        os.remove(itembuilds_directory)
+        if os.path.exists(data_directory):
+            shutil.rmtree(data_directory)
+        if os.path.exists(itembuilds_directory):
+            shutil.rmtree(itembuilds_directory)
     os.makedirs(data_directory, exist_ok=True)
     os.makedirs(itembuilds_directory, exist_ok=True)
 
     # getting data
 
-    if os.path.isdir(dotaconstants_directory):
+    if os.path.exists(dotaconstants_directory):
         with open(dotaconstants_heroes) as f:
             heroes = json.load(f)
 

@@ -2,7 +2,7 @@ import datetime
 import json
 import os
 
-from utils import (
+from .utils import (
     checkFlags,
     constants_heroes,
     constants_items,
