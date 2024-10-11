@@ -29,7 +29,7 @@ First instruction set is for Windows, second is for Linux.
 4. Activate the python virtual environment:
    1. `.venv\Scripts\activate.bat`
    2. `source .venv/Scripts/activate`
-5. `pip install -r requirements`
+5. `pip install -r requirements.txt`
 6. `python -m odg` `-v -r -c -s`
 7. If the dota installation isn't detected
     1. Remove `itembuilds` folder from Dota2:
