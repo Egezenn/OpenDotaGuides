@@ -41,7 +41,8 @@ First instruction set is for Windows, second is for Linux.
 
 ## TODO
 
-- [ ] Use `logging` library for debug printouts
+- [x] Use `logging` library for debug printouts
+  - [ ] Didn't have time to check how to persist the logger's config throughout the submodules
   - [x] Make them print out the same thing
     - task_name \<current_task\>/\<amount_of_tasks\> \<hero_name\>
 - [x] Package the repo

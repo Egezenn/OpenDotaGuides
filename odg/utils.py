@@ -10,6 +10,7 @@ constants_file__items = r"items.csv"
 data_directory = r"data"
 data_file__hero_ids = r"hero_ids.json"
 itembuilds_directory = r"itembuilds"
+logfile = r"odg.log"
 project_name = r"OpenDotaGuides"
 project_name_shorthand = r"ODG"
 
