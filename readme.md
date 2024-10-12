@@ -30,7 +30,7 @@ First instruction set is for Windows, second is for Linux.
    1. `.venv\Scripts\activate.bat`
    2. `source .venv/Scripts/activate`
 5. `pip install -r requirements.txt`
-6. `python -m odg` `-v -r -c -s`
+6. `python -m odg` `-v -r -c -s` `-h`
 7. If the dota installation isn't detected
     1. Remove `itembuilds` folder from Dota2:
         1. `rmdir <dota_install_path>\dota 2 beta\game\dota\itembuilds`

@@ -2,17 +2,17 @@ import datetime
 import json
 import os
 
+from .opendota_api import create_constant_items_csv
 from .utils import (
     constants_heroes,
     constants_items,
+    csv_match_string_for_relevant_column,
     data_directory,
     itembuilds_directory,
     project_name,
     project_name_shorthand,
     remove_repeated_elements,
-    search_csv_match_y_for_x,
 )
-from .opendota_api import create_constant_items_csv
 
 removed_items = ["ignore", "component"]
 categorized_items = ["team", "risky", "early"]
@@ -26,8 +26,8 @@ def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_vers
     with open(f"{os.path.join(data_directory, hero_id)}.json") as f:
         hero_data = json.load(f)
 
-    name = search_csv_match_y_for_x(constants_heroes, hero_id, 0, 2)
-    guide_name = search_csv_match_y_for_x(constants_heroes, hero_id, 0, 3)
+    name = csv_match_string_for_relevant_column(constants_heroes, hero_id, 2)
+    guide_name = csv_match_string_for_relevant_column(constants_heroes, hero_id, 3)
     author = project_name
     v1_hero_name = name
     title = f"{project_name_shorthand} {datetime.date.today().isoformat()}"
@@ -47,20 +47,27 @@ def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_vers
         modified_hero_stage = []
         for item in stage:
             if (
-                search_csv_match_y_for_x(constants_items, item, 2, 4)
+                csv_match_string_for_relevant_column(constants_items, item, 4)
                 not in removed_items
             ):
                 if (
-                    search_csv_match_y_for_x(constants_items, item, 2, 4)
+                    csv_match_string_for_relevant_column(constants_items, item, 4)
                     in categorized_items
                 ):
-                    if search_csv_match_y_for_x(constants_items, item, 2, 4) == "team":
+                    if (
+                        csv_match_string_for_relevant_column(constants_items, item, 4)
+                        == "team"
+                    ):
                         team_category.append(item)
                     elif (
-                        search_csv_match_y_for_x(constants_items, item, 2, 4) == "risky"
+                        csv_match_string_for_relevant_column(constants_items, item, 4)
+                        == "risky"
                     ):
                         risky_category.append(item)
-                    if search_csv_match_y_for_x(constants_items, item, 2, 4) == "early":
+                    if (
+                        csv_match_string_for_relevant_column(constants_items, item, 4)
+                        == "early"
+                    ):
                         if remove_starting_items:
                             early_category.append(item)
                         else:

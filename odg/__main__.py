@@ -13,12 +13,12 @@ from .opendota_api import (
 from .utils import (
     constants_heroes,
     constants_items,
+    csv_match_string_for_relevant_column,
     cwd,
     data_directory,
     data_file__hero_ids,
     default_dota_itembuilds_windows_directory,
     itembuilds_directory,
-    search_csv_match_y_for_x,
 )
 
 parser = ArgumentParser(
@@ -92,7 +92,7 @@ if __name__ == "__main__":
             compile_scrape_to_guide(id, remove_starting_items=remove_start_items)
             if task_debug:
                 print(
-                    f"COMPILE {i}/{(len(data__ids))} {search_csv_match_y_for_x(constants_heroes,id,0,1)}"
+                    f"COMPILE {i}/{(len(data__ids))} {csv_match_string_for_relevant_column(constants_heroes,id,1)}"
                 )
 
     if os.path.exists(default_dota_itembuilds_windows_directory):
@@ -104,7 +104,7 @@ if __name__ == "__main__":
             )
             if task_debug:
                 print(
-                    f"MOVE {i}/{build_amt} {search_csv_match_y_for_x(constants_heroes,itembuild[:-4],3,1)}"
+                    f"MOVE {i}/{build_amt} {csv_match_string_for_relevant_column(constants_heroes,itembuild[:-4],1)}"
                 )
     else:
         print(

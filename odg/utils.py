@@ -1,7 +1,6 @@
 import csv
 import json
 import os
-import string
 
 cwd = os.getcwd()
 constants_directory = r"constants"
@@ -34,12 +33,15 @@ default_dota_itembuilds_windows_directory = os.path.join(
 )
 
 
-def search_csv_match_y_for_x(file_path: string, search_string: string, y: int, x: int):
+def csv_match_string_for_relevant_column(
+    file_path: str, search_string: str, x: int
+) -> str:
     with open(file_path, "r") as file:
         reader = csv.reader(file)
         for row in reader:
-            if row[y] == search_string:
-                return row[x]
+            for column in row:
+                if column == search_string:
+                    return row[x]
 
 
 def remove_repeated_elements(input_list: list):

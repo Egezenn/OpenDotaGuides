@@ -7,10 +7,10 @@ import requests
 from .utils import (
     constants_heroes,
     constants_items,
+    csv_match_string_for_relevant_column,
     data_directory,
     export_flags,
     import_flags,
-    search_csv_match_y_for_x,
 )
 
 opendota_api_url = "https://api.opendota.com/api"
@@ -26,7 +26,7 @@ def get_hero_popularity_guide(hero_id: str):
             stage = []
             for inner_keys in value.keys():
                 stage.append(
-                    search_csv_match_y_for_x(constants_items, inner_keys, 0, 2)
+                    csv_match_string_for_relevant_column(constants_items, inner_keys, 2)
                 )
             stages[key] = stage
 
