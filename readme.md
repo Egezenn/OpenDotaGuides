@@ -41,8 +41,6 @@ First instruction set is for Windows, second is for Linux.
 
 ## TODO
 
-- [ ] Make CLI
-  - [ ] Add optionals/customizations
 - [ ] Use `logging` library for debug printouts
   - [x] Make them print out the same thing
     - task_name \<current_task\>/\<amount_of_tasks\> \<hero_name\>
@@ -59,6 +57,8 @@ First instruction set is for Windows, second is for Linux.
 
 ### DONE
 
+- [x] Make CLI
+  - [x] Add optionals/customizations
 - [x] Classify the args required for functions
 - [x] Remove npm, nodeenv and dotaconstants dependencies, the data is available on OpenDota API. Adjust compilation steps.
   - GET /heroes
