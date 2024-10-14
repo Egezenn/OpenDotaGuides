@@ -16,8 +16,6 @@ from .utils import (
     csv_match_string_for_relevant_column,
     cwd,
     data_directory,
-    data_file__hero_ids,
-    data_hero_ids,
     default_dota_installation_windows_directory,
     default_dota_itembuilds_windows_directory,
     export_flags,

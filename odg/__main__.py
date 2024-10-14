@@ -17,7 +17,6 @@ from .utils import (
     csv_match_string_for_relevant_column,
     cwd,
     data_directory,
-    data_file__hero_ids,
     default_dota_itembuilds_windows_directory,
     itembuilds_directory,
     logfile,
@@ -118,11 +117,10 @@ if __name__ == "__main__":
         # if id == "1.json":  # GuideFormatVersion 2 test
         #     compile_scrape_to_guide(id.split(".")[0], 1, 2)
 
-        if id != data_file__hero_ids:
-            logger.info(
-                f"Compiling file {i}/{(len(data__ids))} {csv_match_string_for_relevant_column(constants_heroes,id,1)}"
-            )
-            compile_scrape_to_guide(id, remove_starting_items=remove_start_items)
+        logger.info(
+            f"Compiling file {i}/{(len(data__ids))} {csv_match_string_for_relevant_column(constants_heroes,id,1)}"
+        )
+        compile_scrape_to_guide(id, remove_starting_items=remove_start_items)
 
     if os.path.exists(default_dota_itembuilds_windows_directory):
         build_amt = len(os.listdir(itembuilds_directory))

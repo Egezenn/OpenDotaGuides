@@ -4,7 +4,7 @@
 
 Tired of streamlined, opinionated and slowly updating guides? Want to see many item recommendations from the pros for the newest patch?
 
-Then you're in luck, this project uses what [OpenDota](https://www.opendota.com) has to offer in in their [API](https://docs.opendota.com) and aims to replace *pretty* outdated default guides in `..<dota_install_path>/game/dota/itembuilds`.
+Then you're in luck, this project uses what [OpenDota](https://www.opendota.com) has to offer in in their [API](https://docs.opendota.com) and replaces *pretty* outdated and useless default guides in `..<dota_install_path>/game/dota/itembuilds`.
 
 ## How to install?
 
@@ -20,7 +20,7 @@ NOTE: If you've modified the contents of the folder while you were in Dota and i
 
 ## Local compilation
 
-Assuming you already have [python](https://www.python.org/downloads/)(3.11) and [git](https://git-scm.com/downloads) installed:  
+Assuming you already have [python](https://www.python.org/downloads/)(~=3.13) and [git](https://git-scm.com/downloads) installed:  
 First instruction set is for Windows, second is for Linux.
 
 1. `git clone https://github.com/Egezenn/OpenDotaGuides.git`
