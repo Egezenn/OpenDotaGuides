@@ -19,8 +19,6 @@ categorized_items = ["team", "risky", "early"]
 
 
 def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_version=1):
-    if not os.path.exists(constants_items):
-        create_constant_items_csv()
     if remove_starting_items:
         removed_items.append("start")
     with open(f"{os.path.join(data_directory, hero_id)}.json") as f:

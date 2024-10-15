@@ -116,7 +116,11 @@ if __name__ == "__main__":
     for i, id in enumerate(data__ids, start=1):
         # if id == "1.json":  # GuideFormatVersion 2 test
         #     compile_scrape_to_guide(id.split(".")[0], 1, 2)
-
+        if not os.path.exists(constants_items):
+            logger.warning(
+                f"{constants_items} doesn't exist! Creating {constants_items}.."
+            )
+            create_constant_items_csv()
         logger.info(
             f"Compiling file {i}/{(len(data__ids))} {csv_match_string_for_relevant_column(constants_heroes,id,1)}"
         )
