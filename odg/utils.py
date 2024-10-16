@@ -35,6 +35,16 @@ default_dota_itembuilds_windows_directory = os.path.join(
 def csv_match_string_for_relevant_column(
     file_path: str, search_string: str, x: int
 ) -> str:
+    """Searches a csv file for a matching string in every row, returns the desired column in that row.
+
+    Args:
+        file_path (str): File path.
+        search_string (str): String used to get the desired row.
+        x (int): Desired column.
+
+    Returns:
+        str: _description_
+    """
     with open(file_path, "r") as file:
         reader = csv.reader(file)
         for row in reader:
@@ -43,7 +53,15 @@ def csv_match_string_for_relevant_column(
                     return row[x]
 
 
-def remove_repeated_elements(input_list: list):
+def remove_repeated_elements(input_list: list) -> list:
+    """Removes duplicate elements in a nested list.
+
+    Args:
+        input_list (list): nested list.
+
+    Returns:
+        list: Returns the modified list.
+    """
     seen = set()
     result = []
 
@@ -56,6 +74,7 @@ def remove_repeated_elements(input_list: list):
 
 
 def export_flags():
+    """Exports the flags in `items.csv.`"""
     with open(constants_items, "r") as items_csv:
         reader = csv.reader(items_csv)
 
@@ -70,6 +89,7 @@ def export_flags():
 
 
 def import_flags():
+    """Imports the flags in `flags.json`."""
     with open(constants_items, "r+") as items_csv:
         reader = csv.reader(items_csv)
         writer = csv.writer(items_csv)

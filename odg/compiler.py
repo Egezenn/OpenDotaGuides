@@ -19,6 +19,13 @@ categorized_items = ["team", "risky", "early"]
 
 
 def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_version=1):
+    """Compiles a json file in `data` directory into the valve guide/itembuild format in `itembuilds` directory.
+
+    Args:
+        hero_id (str): Hero's id.
+        remove_starting_items (int, optional): Removes `starting items` category & injects impactful progression items into `early game` category. Defaults to 0.
+        compiler_version (int, optional): Experimental, requires research. Defaults to 1.
+    """
     if remove_starting_items:
         removed_items.append("start")
     with open(f"{os.path.join(data_directory, hero_id)}.json") as f:

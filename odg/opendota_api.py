@@ -17,6 +17,11 @@ opendota_api_url = "https://api.opendota.com/api"
 
 
 def get_hero_popularity_guide(hero_id: str):
+    """Gets the item popularies for the specified hero id.
+
+    Args:
+        hero_id (str): Hero's id.
+    """
     response = requests.get(f"{opendota_api_url}/heroes/{hero_id}/itemPopularity")
     guide = response.json()
 
@@ -38,6 +43,7 @@ def get_hero_popularity_guide(hero_id: str):
 
 
 def create_constant_heroes_csv():
+    """Creates hero constants csv file in `constants` directory."""
     response = requests.get(f"{opendota_api_url}/heroes")
     heroes = response.json()
     headers = ["id", "localized_name", "name", "guide_name", "attack_type"]
@@ -65,6 +71,7 @@ def create_constant_heroes_csv():
 
 
 def create_constant_items_csv():
+    """Creates item constants csv file in `constants` directory and automatically exports & imports the flag metadata."""
     if os.path.exists(constants_items):
         export_flags()
     response = requests.get(f"{opendota_api_url}/constants/items")
