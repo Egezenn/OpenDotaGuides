@@ -26,7 +26,7 @@ jobs:
       - name: Run project command
         run:
           |
-          python -m odg
+          python -m odg -r -c -s
           echo "RELEASE_NAME=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Zip itembuilds
