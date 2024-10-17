@@ -32,8 +32,8 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
+          body: Release on ${{ github.run.started_at }}
           tag_name: ${{ github.run_id }}
-          release_name: Release on ${{ github.run.started_at }}
           files: itembuilds.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
