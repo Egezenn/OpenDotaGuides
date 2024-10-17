@@ -24,7 +24,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run project command
-        run: python -m odg
+        run:
+          |
+          python -m odg
+          echo "RELEASE_NAME=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
       - name: Zip itembuilds
         run:
           |
@@ -35,8 +39,8 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          body: Release on ${{ github.run.started_at }}
-          tag_name: ${{ github.run_id }}
+          tag_name: ${{ env.RELEASE_NAME }}
+          body: Daily release
           files: itembuilds.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
