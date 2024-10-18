@@ -41,35 +41,50 @@ First instruction set is for Windows, second is for Linux.
 
 ## TODO
 
+- [ ] Add item display names and ids to `items.csv` and sort items based on it (looking at you, `angels_demise`)
+
+- [ ] Classify heroes as melee/ranged and don't insert items that don't work or not work in full effect
+  - [x] Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
+
+- [ ] Add ability guides and also maybe mayyyyyyyyyyyyybe add item tooltips
+  - Workshop guide format doesn't work on the default itembuilds. See [example](constants/default_antimage.txt).
+    - Might have something to do with GuideFormatVersion
+  - Can publish the guides to Dota2 and fetch the data from there
+    - A new project to overwrite userdata & dota2 files!
+  - There doesn't seem to be anything regarding ability paths in OpenDota API, research for a provider?
+
+- [x] Package the repo
+  - [ ] Publish to PyPI
+    - Learn about proper packaging
+
 - [x] Use `logging` library for debug printouts
   - [ ] Didn't have time to check how to persist the logger's config throughout the submodules
     - [ ] Move warnings back to the submodules
   - [x] Make them print out the same thing
     - task_name \<current_task\>/\<amount_of_tasks\> \<hero_name\>
-- [x] Package the repo
-  - [ ] Publish to PyPI
-    - Learn about proper packaging
-- [ ] Add item display names and ids to `items.csv` and sort items based on it (looking at you, `angels_demise`)
-- [ ] Classify heroes as melee/ranged don't insert items that don't work or not work in full effect
-  - [x] Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
-- [ ] Make the project an executable
-- [ ] Add ability guides and also maybe mayyyyyyyyyyyyybe add item tooltips
-  - Workshop guide format doesn't work. see [example](constants/default_antimage.txt)
-    - Might have something to do with GuideFormatVersion
 
 ### DONE
 
 - [x] Make CLI
   - [x] Add optionals/customizations
+
 - [x] Classify the args required for functions
+
 - [x] Remove npm, nodeenv and dotaconstants dependencies, the data is available on OpenDota API. Adjust compilation steps.
   - GET /heroes
   - GET /constants/{resource}
+
 - [x] Create a function that builds `constants/items.csv`. Then inject flag metadata from another json
+
 - [x] Create a function that builds `heroes.csv`
+
 - [x] for the complete removal of starting items category, would need to add items like basilius, bracer, orb of venom, blight stone etc
+
 - [x] Add an option to reduce or remove starting items category. I think that you should be using the normal shop panel for them anyway.
   - 500- gold, not a component and items not like soul booster and perseverance which you only buy it for the build up of items (like no one buying a buckler but basilius for the early mana regen)
+
 - [x] Make use of the [OpenDota API](https://docs.opendota.com/) and change repo name, *again*
+
 - [x] Assign variables to directories and files used throughout the project for easy management
+
 - [x] Categorize items like pipe, crimson guard in `team` category (items that you manage who should be the carrier or just support items like solar crest, glimmer cape)
