@@ -46,12 +46,12 @@ First instruction set is for Windows, second is for Linux.
 - [ ] Classify heroes as melee/ranged and don't insert items that don't work or not work in full effect
   - [x] Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
 
-- [ ] Add ability guides and also maybe mayyyyyyyyyyyyybe add item tooltips
+- [ ] Add ability guides, facets and also maybe mayyyyyyyyyyyyybe add item tooltips
   - Workshop guide format doesn't work on the default itembuilds. See [example](constants/default_antimage.txt).
     - Might have something to do with GuideFormatVersion
   - Can publish the guides to Dota2 and fetch the data from there
     - A new project to overwrite userdata & dota2 files!
-  - There doesn't seem to be anything regarding ability paths in OpenDota API, research for a provider?
+  - There doesn't seem to be anything regarding ability paths and facets in OpenDota API, research for a provider?
 
 - [x] Package the repo
   - [ ] Publish to PyPI
