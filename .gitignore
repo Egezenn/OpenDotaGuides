@@ -1,10 +1,11 @@
-.venv
 __pycache__
-data
-itembuilds
-ODG.log
 ????-??-??
 ????-??-??.zip
+.venv
 comparison.diff
+data
+itembuilds
+itembuilds.zip
+ODG.log
 
 Ξtestfile.ipynb
