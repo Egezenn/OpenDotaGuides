@@ -42,7 +42,7 @@ jobs:
         run:
           |
           echo "PREVIOUS_RELEASE_NAME=$(date -d "yesterday" +'%Y-%m-%d')" >> $GITHUB_ENV
-          curl -L -o "$(PREVIOUS_RELEASE_FILE_NAME).zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
+          curl -L -o "$(PREVIOUS_RELEASE_NAME).zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
           unzip "$(PREVIOUS_RELEASE_NAME).zip" -d "$(PREVIOUS_RELEASE_NAME)"
           sh odg/generate_diff.sh "itembuilds" "$(PREVIOUS_RELEASE_NAME)"
 
