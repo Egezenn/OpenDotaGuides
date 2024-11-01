@@ -26,25 +26,24 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run project command
-        run:
-          |
-          python -m odg -r -c -s
-          echo "RELEASE_NAME=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+        run: python -m odg -r -c -s
 
-      - name: Zip itembuilds
+      - name: Release preparations
         run:
           |
           cd itembuilds
           zip -r ../itembuilds.zip .
           cd ..
-
-      - name: Generate diff file
-        run:
-          |
+          echo "RELEASE_NAME=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           echo "PREVIOUS_RELEASE_NAME=$(date -d yesterday +%Y-%m-%d)" >> $GITHUB_ENV
-          curl -L -o "${{ env.PREVIOUS_RELEASE_NAME }}.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
-          unzip "${{ env.PREVIOUS_RELEASE_NAME }}.zip" -d "${{ env.PREVIOUS_RELEASE_NAME }}"
-          sh odg/generate_diff.sh "itembuilds" "${{ env.PREVIOUS_RELEASE_NAME }}"
+          echo $(echo $PREVIOUS_RELEASE_NAME)
+
+      # - name: Generate diff file
+      #   run:
+      #     |
+      #     curl -L -o "${{ env.PREVIOUS_RELEASE_NAME }}.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
+      #     unzip "${{ env.PREVIOUS_RELEASE_NAME }}.zip" -d "${{ env.PREVIOUS_RELEASE_NAME }}"
+      #     sh odg/generate_diff.sh "itembuilds" "${{ env.PREVIOUS_RELEASE_NAME }}"
 
       - name: Create Release
         id: create_release
@@ -60,4 +59,4 @@ jobs:
         run:
           |
           rm data itembuilds odg.log itembuilds.zip
-          rm "${{ env.PREVIOUS_RELEASE_NAME }}.zip" comparison.diff
+        # rm "${{ env.PREVIOUS_RELEASE_NAME }}.zip" comparison.diff
