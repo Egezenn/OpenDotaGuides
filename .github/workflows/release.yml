@@ -36,7 +36,6 @@ jobs:
           cd ..
           echo "RELEASE_NAME=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           echo "PREVIOUS_RELEASE_NAME=$(date -d yesterday +%Y-%m-%d)" >> $GITHUB_ENV
-          echo $(echo $PREVIOUS_RELEASE_NAME)
 
       # - name: Generate diff file
       #   run:
