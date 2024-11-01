@@ -41,9 +41,7 @@ jobs:
       - name: Generate diff file
         run:
           |
-          echo "PREVIOUS_RELEASE_NAME=$(date -d "yesterday" +'%Y-%m-%d')" >> $GITHUB_ENV
-          echo "$PREVIOUS_RELEASE_NAME"
-          echo "${{ env.PREVIOUS_RELEASE_NAME }}.zip"
+          echo "PREVIOUS_RELEASE_NAME=$(date -d yesterday +%Y-%m-%d)" >> $GITHUB_ENV
           curl -L -o "${{ env.PREVIOUS_RELEASE_NAME }}.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
           unzip "${{ env.PREVIOUS_RELEASE_NAME }}.zip" -d "${{ env.PREVIOUS_RELEASE_NAME }}"
           sh odg/generate_diff.sh "itembuilds" "${{ env.PREVIOUS_RELEASE_NAME }}"
@@ -61,4 +59,5 @@ jobs:
       - name: Cleanup
         run:
           |
-          rm "${{ env.PREVIOUS_RELEASE_NAME }}.zip" data itembuilds comparison.diff odg.log itembuilds.zip
+          rm data itembuilds odg.log itembuilds.zip
+          rm "${{ env.PREVIOUS_RELEASE_NAME }}.zip" comparison.diff
