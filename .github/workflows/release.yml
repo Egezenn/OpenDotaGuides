@@ -18,11 +18,13 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Install dependencies
         run:
           |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Run project command
         run:
           |
@@ -33,8 +35,17 @@ jobs:
         run:
           |
           cd itembuilds
-          zip -r ../itembuilds.zip .
+          zip ../itembuilds.zip .
           cd ..
+
+      - name: Generate diff file
+        run:
+          |
+          echo "PREVIOUS_RELEASE_NAME=$(date -d "yesterday" +'%Y-%m-%d')" >> $GITHUB_ENV
+          curl -L -o "$(PREVIOUS_RELEASE_FILE_NAME).zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
+          unzip "$(PREVIOUS_RELEASE_NAME).zip" -d "$(PREVIOUS_RELEASE_NAME)"
+          sh odg/generate_diff.sh "itembuilds" "$(PREVIOUS_RELEASE_NAME)"
+
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
@@ -44,3 +55,8 @@ jobs:
           files: itembuilds.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup
+        run:
+          |
+          rm "$(PREVIOUS_RELEASE_NAME).zip" data itembuilds comparison.diff odg.log itembuilds.zip

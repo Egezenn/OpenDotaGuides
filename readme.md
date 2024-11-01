@@ -41,6 +41,9 @@ First instruction set is for Windows, second is for Linux.
 
 ## TODO
 
+- [ ] Add a diff file to release
+  - [ ] Remove previous release(s) on release
+
 - [ ] Add item display names and ids to `items.csv` and sort items based on it (looking at you, `angels_demise`)
 
 - [ ] Classify heroes as melee/ranged and don't insert items that don't work or not work in full effect

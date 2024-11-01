@@ -126,7 +126,7 @@ def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_vers
                     file.write(f'\t\t\t"item"\t\t"{item}"\n')
                 file.write("\t\t}\n")
             file.write("\t}\n")
-            file.write("}")
+            file.write("}\n")
 
     elif compiler_version == 2:
         # test case
