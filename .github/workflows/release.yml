@@ -58,5 +58,6 @@ jobs:
       - name: Cleanup
         run:
           |
-          rm data itembuilds odg.log itembuilds.zip
+          rm -r data itembuilds
+          rm odg.log itembuilds.zip
         # rm "${{ env.PREVIOUS_RELEASE_NAME }}.zip" comparison.diff
