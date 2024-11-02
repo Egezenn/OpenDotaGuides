@@ -31,11 +31,13 @@ def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_vers
     with open(f"{os.path.join(data_directory, hero_id)}.json") as f:
         hero_data = json.load(f)
 
+    localized_name = csv_match_string_for_relevant_column(constants_heroes, hero_id, 1)
     name = csv_match_string_for_relevant_column(constants_heroes, hero_id, 2)
     guide_name = csv_match_string_for_relevant_column(constants_heroes, hero_id, 3)
     author = project_name
-    v1_hero_name = name
-    title = f"{project_name_shorthand} {datetime.date.today().isoformat()}"
+    title = (
+        f"{project_name_shorthand} {localized_name} {datetime.date.today().isoformat()}"
+    )
     hero_stages = []  # could rewrite this part because guide_name is available
     for stage in hero_data:
         hero_stage = []
@@ -93,7 +95,7 @@ def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_vers
         ) as file:
             file.write('"itembuilds"\n{\n')
             file.write(f'\t"Author"\t\t"{author}"\n')
-            file.write(f'\t"Hero"\t\t\t"{v1_hero_name}"\n')
+            file.write(f'\t"Hero"\t\t\t"{name}"\n')
             file.write(f'\t"Title"\t\t\t"{title}"\n')
             file.write('\n\t"Items"\n\t{\n')
             if modified_hero_stages[0] != []:

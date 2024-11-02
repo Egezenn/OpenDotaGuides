@@ -12,12 +12,12 @@ OUTPUT_FILE="comparison.diff"
 > "$OUTPUT_FILE"
 
 if [ ! -d "$DIR1" ]; then
-    echo "Directory $DIR1 does not exist." >> "$OUTPUT_FILE"
+    echo -e "Directory $DIR1 does not exist.\n" >> "$OUTPUT_FILE"
     exit 1
 fi
 
 if [ ! -d "$DIR2" ]; then
-    echo "Directory $DIR2 does not exist." >> "$OUTPUT_FILE"
+    echo -e "Directory $DIR2 does not exist.\n" >> "$OUTPUT_FILE"
     exit 1
 fi
 
@@ -25,15 +25,16 @@ for file in "$DIR1"/*; do
     filename=$(basename "$file")
 
     if [ -f "$DIR2/$filename" ]; then
-        echo "Comparing $file with $DIR2/$filename..."
-        diff_output=$(diff "$file" "$DIR2/$filename")
+        hero_name="${filename:8:${#filename}-12}"
+        # ignore title changes with grep
+        diff_output=$(diff -C 10 <(grep -v "Title" "$file") <(grep -v "Title" "$DIR2/$filename"))
         
         if [ -n "$diff_output" ]; then
-            echo "$diff_output" >> "$OUTPUT_FILE"
+            echo -e "Differences found for ===$hero_name===\n$diff_output\n" >> "$OUTPUT_FILE"
         else
-            echo "No differences found for $filename." >> "$OUTPUT_FILE"
+            echo -e "No differences found for ==="$hero_name"===\n" >> "$OUTPUT_FILE"
         fi
     else
-        echo "File $filename does not exist in $DIR2" >> "$OUTPUT_FILE"
+        echo -e "File $filename does not exist in $DIR2\n" >> "$OUTPUT_FILE"
     fi
 done
