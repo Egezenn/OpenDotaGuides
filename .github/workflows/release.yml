@@ -5,6 +5,10 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+env:
+  RELEASE_NAME: $(date +'%Y-%m-%d')
+  PREVIOUS_RELEASE_NAME: $(date -d 'yesterday' +'%Y-%m-%d')
+
 permissions:
   contents: write
 
@@ -20,29 +24,32 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
+        id: install-dependencies
         run:
           |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run project command
+        id: run-cmd
         run: python -m odg -r -c -s
 
       - name: Release preparations
+        id: release-prep
         run:
           |
           cd itembuilds
           zip -r ../itembuilds.zip .
           cd ..
           echo "RELEASE_NAME=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-          echo "PREVIOUS_RELEASE_NAME=$(date -d yesterday +%Y-%m-%d)" >> $GITHUB_ENV
 
-      # - name: Generate diff file
-      #   run:
-      #     |
-      #     curl -L -o "${{ env.PREVIOUS_RELEASE_NAME }}.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
-      #     unzip "${{ env.PREVIOUS_RELEASE_NAME }}.zip" -d "${{ env.PREVIOUS_RELEASE_NAME }}"
-      #     sh odg/generate_diff.sh "itembuilds" "${{ env.PREVIOUS_RELEASE_NAME }}"
+      - name: Generate diff file
+        id: gen-diff
+        run:
+          |
+          curl -L -o "PREVIOUS_RELEASE.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
+          unzip "PREVIOUS_RELEASE.zip" -d "PREVIOUS_RELEASE"
+          sh odg/scripts/diff.sh "itembuilds" "PREVIOUS_RELEASE"
 
       - name: Create Release
         id: create_release
@@ -59,4 +66,5 @@ jobs:
           |
           rm -r data itembuilds
           rm odg.log itembuilds.zip
-        # rm "${{ env.PREVIOUS_RELEASE_NAME }}.zip" comparison.diff
+          rm -r PREVIOUS_RELEASE
+          rm "PREVIOUS_RELEASE.zip" comparison.diff

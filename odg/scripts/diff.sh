@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Check if the correct number of arguments are provided
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <directory1> <directory2>"
     exit 1
@@ -24,8 +23,6 @@ fi
 
 for file in "$DIR1"/*; do
     filename=$(basename "$file")
-    echo $file
-    echo $filename
 
     if [ -f "$DIR2/$filename" ]; then
         echo "Comparing $file with $DIR2/$filename..."
