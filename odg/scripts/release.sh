@@ -2,25 +2,22 @@
 # source .venv/Scripts/activate
 # python -m pip install --upgrade pip
 # pip install -r requirements.txt
-rm -r release
-rm -r PREVIOUS_RELEASE
+RELEASE_NAME=$(date +'%Y-%m-%d')
+rm -r release/$RELEASE_NAME
 
-# python -m odg -r -c -s
+python -m odg -r -c -s
 
 cd itembuilds
-zip -r ../itembuilds.zip .
+zip -q -r ../itembuilds.zip .
 cd ..
-# RELEASE_NAME=$(date +'%Y-%m-%d')
 
-curl -L -o "PREVIOUS_RELEASE.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
-unzip "PREVIOUS_RELEASE.zip" -d "PREVIOUS_RELEASE"
-sh odg/scripts/diff.sh "itembuilds" "PREVIOUS_RELEASE"
+curl -s -L -o "PREVIOUS_RELEASE.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
+unzip -q "PREVIOUS_RELEASE.zip" -d "PREVIOUS_RELEASE"
+bash odg/scripts/diff.sh "itembuilds" "PREVIOUS_RELEASE"
 
-mkdir release
-mv itembuilds.zip release
-mv comparison.diff release
+mkdir -p release/$RELEASE_NAME
+mv itembuilds.zip release/$RELEASE_NAME
+mv comparison.diff release/$RELEASE_NAME
 
-rm -r data itembuilds
-rm odg.log itembuilds.zip
+rm odg.log PREVIOUS_RELEASE.zip
 rm -r PREVIOUS_RELEASE
-rm "PREVIOUS_RELEASE.zip" comparison.diff
