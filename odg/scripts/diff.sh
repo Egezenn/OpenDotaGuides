@@ -26,7 +26,7 @@ for file in "$DIR1"/*; do
 
     if [ -f "$DIR2/$filename" ]; then
         echo "Comparing $file with $DIR2/$filename..."
-        diff_output=$(git diff "$file" "$DIR2/$filename")
+        diff_output=$(diff "$file" "$DIR2/$filename")
         
         if [ -n "$diff_output" ]; then
             echo "$diff_output" >> "$OUTPUT_FILE"
