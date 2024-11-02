@@ -68,7 +68,5 @@ jobs:
       - name: Cleanup
         run:
           |
-          rm -r data itembuilds
-          rm odg.log itembuilds.zip
-          rm -r PREVIOUS_RELEASE
-          rm "PREVIOUS_RELEASE.zip" comparison.diff
+          rm -r data itembuilds PREVIOUS_RELEASE
+          rm odg.log itembuilds.zip PREVIOUS_RELEASE.zip comparison.diff
