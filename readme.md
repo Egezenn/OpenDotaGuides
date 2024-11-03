@@ -11,7 +11,7 @@ Then you're in luck, this project uses what [OpenDota](https://www.opendota.com)
 1. You can find the Dota2 installation path by going into `Steam` \> `Library` \> right click on `Dota 2` \> `Manage` \> `Browse Local Files`
 2. Then go into `game` \> `dota`
 3. Replace the `itembuilds` folder with
-    1. the one from the [release](https://github.com/Egezenn/OpenDotaGuides/releases)
+    1. the one from the [release](https://github.com/Egezenn/OpenDotaGuides/releases/latest)
     2. the one you locally make. Refer to [here](#local-compilation).
 4. Select the default guide in game
 5. Have fun!
@@ -43,14 +43,11 @@ First instruction set is for Windows, second is for Linux.
 
 - [ ] Add item display names and ids to `items.csv` and sort items based on it (looking at you, `angels_demise`)
 
-- [ ] Classify heroes as melee/ranged and don't insert items that don't work or not work in full effect
-  - [x] Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
-
 - [ ] Add ability guides, facets and also maybe mayyyyyyyyyyyyybe add item tooltips
   - Workshop guide format doesn't work on the default itembuilds. See [example](constants/default_antimage.txt).
     - Might have something to do with GuideFormatVersion
-  - Can publish the guides to Dota2 and fetch the data from there
-    - A new project to overwrite userdata & dota2 files!
+      - Can publish the guides to Dota2 and fetch the data from there as it uses the new format
+        - Could automate this with a new project to overwrite userdata & dota2 files
   - There doesn't seem to be anything regarding ability paths and facets in OpenDota API, research for a provider?
 
 - [x] Package the repo
@@ -63,30 +60,35 @@ First instruction set is for Windows, second is for Linux.
   - [x] Make them print out the same thing
     - task_name \<current_task\>/\<amount_of_tasks\> \<hero_name\>
 
-### DONE
+- [ ] Classify heroes as melee/ranged and don't insert items that don't work or not work in full effect
+  - [x] Exceptions: Terrorblade, Troll Warlord, Vengeful Spirit
+  - [ ] Expand `items.csv` to for the metadata that is required
+    - There doesn't seem to be an attribute in OpenDota's `dotaconstants` which directly tells whether item works or not on the attack type
+      - In the `description` of `abilities` of the item
+        - Unreliably check for ranged or melee in description?
+      - On `attrib`'s entries the `display` data has information such as `(Melee|Ranged Only)`
+        - Not all of them have it e.g: Echo Sabre, Harpoon
+      - There also isn't a doesn't work in full effect attribute
 
-- [x] Add a diff file to release
+    - [ ] Add metadata manually
+      - Melee
+        - Battlefury
+        - Echo Sabre
+        - Harpoon
+      - Ranged
+        - Dragon's Lance (i mean, for the longest of time Meepo actually bought this for its stats)
+        - Hurricane Pike
+      - Doesn't work in full effect aka Ranged penalties
+        - Not going to add stuff like Witch Blade's passive benefiting from intelligence attribute or neutral items
+          - Could be added to the item descriptions but then the guide format already doesn't work and you can just read the item's description
+          - The point of this attribute is to not add them to the guide at all
+        - Quelling Blade (can be an exclusion)
+        - Orb of Venom
+        - Phase Boots (can be an exclusion)
+        - Power Treads (can be an exclusion)
+        - Basher
+        - Abyssal Blade
 
-- [x] Make CLI
-  - [x] Add optionals/customizations
-
-- [x] Classify the args required for functions
-
-- [x] Remove npm, nodeenv and dotaconstants dependencies, the data is available on OpenDota API. Adjust compilation steps.
-  - GET /heroes
-  - GET /constants/{resource}
-
-- [x] Create a function that builds `constants/items.csv`. Then inject flag metadata from another json
-
-- [x] Create a function that builds `heroes.csv`
-
-- [x] for the complete removal of starting items category, would need to add items like basilius, bracer, orb of venom, blight stone etc
-
-- [x] Add an option to reduce or remove starting items category. I think that you should be using the normal shop panel for them anyway.
-  - 500- gold, not a component and items not like soul booster and perseverance which you only buy it for the build up of items (like no one buying a buckler but basilius for the early mana regen)
-
-- [x] Make use of the [OpenDota API](https://docs.opendota.com/) and change repo name, *again*
-
-- [x] Assign variables to directories and files used throughout the project for easy management
-
-- [x] Categorize items like pipe, crimson guard in `team` category (items that you manage who should be the carrier or just support items like solar crest, glimmer cape)
+  - Scrap the idea, pros wouldn't buy Echo Sabre on a ranged hero, *right*?
+    - Also there are many exclusions which kinda makes this irrelevant
+    - Remove attack type on `heroes.csv`
