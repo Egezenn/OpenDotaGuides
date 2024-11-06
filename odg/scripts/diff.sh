@@ -27,7 +27,7 @@ for file in "$DIR1"/*; do
     if [ -f "$DIR2/$filename" ]; then
         hero_name="${filename:8:${#filename}-12}"
         # ignore title changes with grep
-        diff_output=$(diff -C 10 <(grep -v "Title" "$DIR2/$filename") <(grep -v "Title" "$file"))
+        diff_output=$(diff -U 10 <(grep -v "Title" "$DIR2/$filename") <(grep -v "Title" "$file"))
         
         if [ -n "$diff_output" ]; then
             echo -e "Differences found for ===$hero_name===\n$diff_output\n" >> "$OUTPUT_FILE"
