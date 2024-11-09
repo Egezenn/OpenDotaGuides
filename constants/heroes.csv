@@ -124,3 +124,4 @@ id,localized_name,name,guide_name,attack_type
 136,Marci,npc_dota_hero_marci,default_marci,Melee
 137,Primal Beast,npc_dota_hero_primal_beast,default_primal_beast,Melee
 138,Muerta,npc_dota_hero_muerta,default_muerta,Ranged
+145,Kez,npc_dota_hero_kez,default_kez,Melee

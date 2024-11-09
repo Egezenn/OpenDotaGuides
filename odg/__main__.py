@@ -5,7 +5,7 @@ import shutil
 import time
 from argparse import ArgumentParser
 
-from .compiler import compile_scrape_to_guide
+from .compiler import compile_scrape_to_guide_vdf
 from .opendota_api import (
     create_constant_heroes_csv,
     create_constant_items_csv,
@@ -96,26 +96,27 @@ if __name__ == "__main__":
         reader = csv.reader(heroes_csv)
         rows = list(reader)[1:]
 
+        # VALVE FOR THE LOVE OF GOD INCLUDE NEW HEROES INTO PRO PLAY
+        for row in rows:  # RUBBERPATCH
+            for attr in rows:
+                if attr[0] == "131" or attr[0] == "145":
+                    rows.pop(row)
+
     for i, row in enumerate(rows, start=1):
-        if row[0] != "131" and f"{row[0]}.json" not in os.listdir(
-            data_directory
-        ):  # rubberpatch until there is data for ringmaster
-            call_successful = 0
-            logger.info(f"Doing API call {i}/{(len(rows)) - 1} {row[1]}")
-            while not call_successful:
-                try:
-                    get_hero_popularity_guide(row[0])
-                    call_successful = 1
-                except:
-                    logger.info(f"Waiting for API rate limit..")
-                    time.sleep(15)
-                    get_hero_popularity_guide(row[0])
-                    call_successful = 1
+        call_successful = 0
+        logger.info(f"Doing API call {i}/{(len(rows)) - 1} {row[1]}")
+        while not call_successful:
+            try:
+                get_hero_popularity_guide(row[0])
+                call_successful = 1
+            except:
+                logger.info(f"Waiting for API rate limit..")
+                time.sleep(15)
+                get_hero_popularity_guide(row[0])
+                call_successful = 1
 
     data__ids = [file.split(".")[0] for file in os.listdir(data_directory)]
     for i, id in enumerate(data__ids, start=1):
-        # if id == "1.json":  # GuideFormatVersion 2 test
-        #     compile_scrape_to_guide(id.split(".")[0], 1, 2)
         if not os.path.exists(constants_items):
             logger.warning(
                 f"{constants_items} doesn't exist! Creating {constants_items}.."
@@ -124,7 +125,7 @@ if __name__ == "__main__":
         logger.info(
             f"Compiling file {i}/{(len(data__ids))} {csv_match_string_for_relevant_column(constants_heroes,id,1)}"
         )
-        compile_scrape_to_guide(id, remove_starting_items=remove_start_items)
+        compile_scrape_to_guide_vdf(id, remove_starting_items=remove_start_items)
 
     if os.path.exists(default_dota_itembuilds_windows_directory):
         build_amt = len(os.listdir(itembuilds_directory))

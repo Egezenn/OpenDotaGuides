@@ -1,4 +1,4 @@
-from .compiler import categorized_items, compile_scrape_to_guide, removed_items
+from .compiler import categorized_items, compile_scrape_to_guide_vdf, removed_items
 from .opendota_api import (
     create_constant_heroes_csv,
     create_constant_items_csv,

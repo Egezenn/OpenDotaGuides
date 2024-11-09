@@ -18,8 +18,10 @@ removed_items = ["ignore", "component"]
 categorized_items = ["team", "risky", "early"]
 
 
-def compile_scrape_to_guide(hero_id: str, remove_starting_items=0, compiler_version=1):
-    """Compiles a json file in `data` directory into the valve guide/itembuild format in `itembuilds` directory.
+def compile_scrape_to_guide_vdf(
+    hero_id: str, remove_starting_items=0, compiler_version=1
+):
+    """Compiles a json file in `data` directory into the Valve Data File (VDF) format in `itembuilds` directory.
 
     Args:
         hero_id (str): Hero's id.

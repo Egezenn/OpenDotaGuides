@@ -44,7 +44,7 @@ First instruction set is for Windows, second is for Linux.
 - [ ] Add item display names and ids to `items.csv` and sort items based on it (looking at you, `angels_demise`)
 
 - [ ] Add ability guides, facets and also maybe mayyyyyyyyyyyyybe add item tooltips
-  - Workshop guide format doesn't work on the default itembuilds. See [example](constants/default_antimage.txt).
+  - Workshop guide's attributes doesn't work on the default itembuilds. See [example](constants/default_antimage.txt).
     - Might have something to do with GuideFormatVersion
       - Can publish the guides to Dota2 and fetch the data from there as it uses the new format
         - Could automate this with a new project to overwrite userdata & dota2 files
@@ -92,3 +92,11 @@ First instruction set is for Windows, second is for Linux.
   - Scrap the idea, pros wouldn't buy Echo Sabre on a ranged hero, *right*?
     - Also there are many exclusions which kinda makes this irrelevant
     - Remove attack type on `heroes.csv`
+
+- [ ] The god awful KeyValue format that's used in itembuilds is an actual file format and named Valve Data File (VDF) and used throughout Valve. I transformed- further transformed into a caveman just by knowing this.
+  - [ ] Implement the format properly with a serialization library
+    - or.. not?
+    - [vdf](https://pypi.org/project/vdf/)
+    - [python-valve](https://pypi.org/project/python-valve/)
+  - Why aren't they just using JSON to this day? :D
+  - Source of the "oh shit this is an actual file format" moment: [Primeagen's reaction](https://www.youtube.com/watch?v=Mzm4d0qyK00), [source](https://www.youtube.com/watch?v=ShsoED-goDg)
