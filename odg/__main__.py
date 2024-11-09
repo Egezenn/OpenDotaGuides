@@ -98,9 +98,8 @@ if __name__ == "__main__":
 
         # VALVE FOR THE LOVE OF GOD INCLUDE NEW HEROES INTO PRO PLAY
         for row in rows:  # RUBBERPATCH
-            for attr in rows:
-                if attr[0] == "131" or attr[0] == "145":
-                    rows.pop(row)
+            if row[0] == "131" or row[0] == "145":
+                rows.remove(row)
 
     for i, row in enumerate(rows, start=1):
         call_successful = 0
