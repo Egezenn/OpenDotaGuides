@@ -2,8 +2,8 @@ import datetime
 import json
 import os
 
-from .opendota_api import create_constant_items_csv
-from .utils import (
+from odg.opendota_api import create_constant_items_csv
+from odg.utils import (
     constants_heroes,
     constants_items,
     csv_match_string_for_relevant_column,
