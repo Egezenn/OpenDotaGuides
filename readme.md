@@ -17,7 +17,8 @@ You can run this script whenever you like, it'll ask once for your itembuild pat
 Put the script somewhere you like, create a task to run the command  
 `python <path-of-your-choosing>/autoReplace.py`  
 every day at ~2AM.  
-> [!NOTE] Run it first to input your itembuild path.
+> [!NOTE]
+> Run it first to input your itembuild path.
 
 ### Minify
 
@@ -33,11 +34,13 @@ Currently a [PR](https://github.com/robbyz512/dota2-minify/pull/24). You can che
 4. Select the default guide in game
 5. Have fun!
 
-> [!TIP] If you've modified the contents of the folder while you were in Dota and in a match, disconnect & reconnect to see the changes.
+> [!TIP]
+> If you've modified the contents of the folder while you were in Dota and in a match, disconnect & reconnect to see the changes.
 
 ## Local compilation
 
-> [!IMPORTANT] You need python(~=3.13) and git installed:
+> [!IMPORTANT]
+> You need python(~=3.13) and git installed:
 
 First instruction set is for Windows, second is for Linux.
 
