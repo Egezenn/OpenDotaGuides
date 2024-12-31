@@ -80,6 +80,7 @@ def create_constant_items_csv():
     item_attr_lists = []
     for item, item_attrs in items.items():
         if "dname" in item_attrs:
+            # to not trigger an exception for
             # items that are legacy or test items that are
             # forgotten and still in the dota for some reason
             item_attr_list = [

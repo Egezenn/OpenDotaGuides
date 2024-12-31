@@ -97,7 +97,7 @@ if __name__ == "__main__":
         rows = list(reader)[1:]
 
         # VALVE FOR THE LOVE OF GOD INCLUDE NEW HEROES INTO PRO PLAY
-        for row in rows:  # RUBBERPATCH
+        for row in rows:  # RUBBERPATCH, 131 is Ringmaster 145 is Kez
             if row[0] == "131" or row[0] == "145":
                 rows.remove(row)
 
