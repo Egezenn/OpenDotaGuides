@@ -47,7 +47,7 @@ jobs:
           curl -s -L -o "PREVIOUS_RELEASE.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
           unzip -q "PREVIOUS_RELEASE.zip" -d "PREVIOUS_RELEASE"
           chmod +x ./scripts/diff.sh
-          ./odg/scripts/diff.sh "itembuilds" "PREVIOUS_RELEASE"
+          ./scripts/diff.sh "itembuilds" "PREVIOUS_RELEASE"
 
       - name: Create Release
         id: create_release
