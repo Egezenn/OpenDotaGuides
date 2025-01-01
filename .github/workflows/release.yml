@@ -25,8 +25,7 @@ jobs:
 
       - name: Install dependencies
         id: install-dependencies
-        run:
-          |
+        run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
@@ -36,8 +35,7 @@ jobs:
 
       - name: Release preparations
         id: release-prep
-        run:
-          |
+        run: |
           cd itembuilds
           zip -q -r ../itembuilds.zip .
           cd ..
@@ -45,11 +43,10 @@ jobs:
 
       - name: Generate diff file
         id: gen-diff
-        run:
-          |
+        run: |
           curl -s -L -o "PREVIOUS_RELEASE.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
           unzip -q "PREVIOUS_RELEASE.zip" -d "PREVIOUS_RELEASE"
-          chmod +x ./odg/scripts/diff.sh
+          chmod +x ./scripts/diff.sh
           ./odg/scripts/diff.sh "itembuilds" "PREVIOUS_RELEASE"
 
       - name: Create Release
@@ -58,15 +55,13 @@ jobs:
         with:
           tag_name: ${{ env.RELEASE_NAME }}
           body: Daily release
-          files:
-            |
+          files: |
             itembuilds.zip
             comparison.diff
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cleanup
-        run:
-          |
+        run: |
           rm -r data itembuilds PREVIOUS_RELEASE
           rm odg.log itembuilds.zip PREVIOUS_RELEASE.zip comparison.diff
