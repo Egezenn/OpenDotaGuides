@@ -12,7 +12,7 @@ cd ..
 
 curl -s -L -o "PREVIOUS_RELEASE.zip" https://github.com/Egezenn/OpenDotaGuides/releases/latest/download/itembuilds.zip
 unzip -q "PREVIOUS_RELEASE.zip" -d "PREVIOUS_RELEASE"
-bash odg/scripts/diff.sh "itembuilds" "PREVIOUS_RELEASE"
+bash ./scripts/diff.sh "itembuilds" "PREVIOUS_RELEASE"
 
 mkdir -p release/"$RELEASE_NAME"
 mv itembuilds.zip release/"$RELEASE_NAME"
