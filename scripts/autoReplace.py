@@ -16,6 +16,7 @@ try:
         itembuilds_dir = os.path.normpath(file.readline())
 except:
     itembuilds_dir_input = input("Write your itembuild dir:\n")
+    itembuils_dir = itembuilds_dir_input
     with open("itembuilddir.txt", "w") as file:
         file.write(itembuilds_dir_input)
 
