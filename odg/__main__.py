@@ -96,9 +96,8 @@ if __name__ == "__main__":
         reader = csv.reader(heroes_csv)
         rows = list(reader)[1:]
 
-        # VALVE FOR THE LOVE OF GOD INCLUDE NEW HEROES INTO PRO PLAY
-        for row in rows:  # RUBBERPATCH, 131 is Ringmaster 145 is Kez
-            if row[0] == "131" or row[0] == "145":
+        for row in rows:  # RUBBERPATCH, Ringmaster 145 is Kez
+            if row[0] == "145":
                 rows.remove(row)
 
     for i, row in enumerate(rows, start=1):

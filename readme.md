@@ -1,4 +1,4 @@
-# OpenDotaGuides
+# OpenDotaGuides - 7.38 Wandering Waters
 
 <img alt="Windranger guide" style="padding-left:20px;" align="right" src="assets/image.png">
 
@@ -20,9 +20,9 @@ every day at ~2AM.
 > [!NOTE]
 > Run it first to input your itembuild path.
 
-### Minify
+## [Minify](https://github.com/Egezenn/dota2-minify)
 
-Currently a [PR](https://github.com/robbyz512/dota2-minify/pull/24). You can check the `OpenDotaGuides Guides` using the tool when it's merged.
+You can check the option `OpenDotaGuides Guides` here.
 
 ### Manually
 
@@ -59,3 +59,13 @@ First instruction set is for Windows, second is for Linux.
     2. Move newly created guides:
         1. `move .\itembuilds <dota_install_path>\game\dota\itembuilds`
         2. `mv ./itembuilds <dota_install_path>/game/dota/itembuilds`
+
+## Dependencies
+
+### Binaries
+
+[Python ~=3.11](https://www.python.org/) - Core language. Licensed under PSFL license.
+
+### Python packages
+
+[Python ~=3.11](https://www.python.org/) - Used to interact with OpenDota API. Licensed under Apache-2.0 license.

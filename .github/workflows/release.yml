@@ -31,7 +31,7 @@ jobs:
 
       - name: Run project command
         id: run-cmd
-        run: python -m odg -r -c -s
+        run: python -m odg -r -s
 
       - name: Release preparations
         id: release-prep

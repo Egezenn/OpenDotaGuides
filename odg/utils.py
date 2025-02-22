@@ -73,7 +73,7 @@ def remove_repeated_elements(input_list: list) -> list:
     return result
 
 
-def export_flags():
+def export_flags():  # doesn't work for some reason??
     """Exports the flags in `items.csv.`"""
     with open(constants_items, "r") as items_csv:
         reader = csv.reader(items_csv)
