@@ -2,6 +2,16 @@
 
 <img alt="Windranger guide" style="padding-left:20px;" align="right" src="assets/image.png">
 
+![license](https://img.shields.io/github/license/Egezenn/OpenDotaGuides?style=for-the-badge)
+![latest-release](https://img.shields.io/github/v/release/Egezenn/OpenDotaGuides?style=for-the-badge)
+![build-state](https://img.shields.io/github/actions/workflow/status/Egezenn/OpenDotaGuides/release.yml?style=for-the-badge)
+
+![downloads](https://img.shields.io/github/downloads/Egezenn/OpenDotaGuides/total?style=for-the-badge)
+![downloads-latest](https://img.shields.io/github/downloads/Egezenn/OpenDotaGuides/latest/total?style=for-the-badge)
+![size](https://img.shields.io/github/repo-size/Egezenn/OpenDotaGuides?style=for-the-badge)
+
+![commits-since](https://img.shields.io/github/commits-since/Egezenn/OpenDotaGuides/latest?style=for-the-badge)
+
 Tired of streamlined, opinionated and slowly updating guides? Want to see many item recommendations from the pros for the newest patch?
 
 Then you're in luck, this project uses what [OpenDota](https://www.opendota.com) has to offer in in their [API](https://docs.opendota.com) and replaces *pretty* outdated and useless default guides in `..<dota_install_path>/game/dota/itembuilds`.
