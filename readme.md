@@ -26,7 +26,7 @@ You can run this script whenever you like, it'll ask once for your itembuild pat
 
 Put the script somewhere you like, create a task to run the command  
 `python <path-of-your-choosing>/autoReplace.py`  
-every day at ~2AM.  
+every day at ~2AM (UTC).  
 > [!NOTE]
 > Run it first to input your itembuild path.
 
