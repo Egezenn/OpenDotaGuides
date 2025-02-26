@@ -74,8 +74,8 @@ First instruction set is for Windows, second is for Linux.
 
 ### Binaries
 
-[Python ~=3.11](https://www.python.org/) - Core language. Licensed under PSFL license.
+[Python ~=3.11](https://www.python.org) - Core language. Licensed under PSFL license.
 
 ### Python packages
 
-[Python ~=3.11](https://www.python.org/) - Used to interact with OpenDota API. Licensed under Apache-2.0 license.
+[requests](https://github.com/psf/requests) - Used to interact with OpenDota API. Licensed under Apache-2.0 license.
