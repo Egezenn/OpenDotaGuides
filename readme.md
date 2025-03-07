@@ -1,6 +1,6 @@
 # OpenDotaGuides - 7.38 Wandering Waters
 
-<img alt="Windranger guide" style="padding-left:20px;" align="right" src="assets/image.png">
+<img alt="Example guide" align="right" src="assets/image.png">
 
 ![license](https://img.shields.io/github/license/Egezenn/OpenDotaGuides?style=for-the-badge)
 ![latest-release](https://img.shields.io/github/v/release/Egezenn/OpenDotaGuides?style=for-the-badge)
@@ -16,7 +16,7 @@ Tired of streamlined, opinionated and slowly updating guides? Want to see many i
 
 Then you're in luck, this project uses what [OpenDota](https://www.opendota.com) has to offer in in their [API](https://docs.opendota.com) and replaces *pretty* outdated and useless default guides in `..<dota_install_path>/game/dota/itembuilds`.
 
-## How to install?
+## Installation
 
 ### Running [autoReplace](scripts/autoReplace.py)
 
@@ -47,7 +47,7 @@ You can check the option `OpenDotaGuides Guides` here.
 > [!TIP]
 > If you've modified the contents of the folder while you were in Dota and in a match, disconnect & reconnect to see the changes.
 
-## Local compilation
+## Local development
 
 > [!IMPORTANT]
 > You need python(~=3.13) and git installed:
@@ -59,7 +59,7 @@ First instruction set is for Windows, second is for Linux.
 3. `python -m venv .venv`
 4. Activate the python virtual environment:
    1. `.venv\Scripts\activate.bat`
-   2. `source .venv/Scripts/activate`
+   2. `source .venv/bin/activate`
 5. `pip install -r requirements.txt`
 6. `python -m odg` `-v -r -c -s` `-h`
 7. If the dota installation isn't detected
