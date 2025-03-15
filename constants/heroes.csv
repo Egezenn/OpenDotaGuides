@@ -18,7 +18,7 @@ id,localized_name,name,guide_name
 17,Storm Spirit,npc_dota_hero_storm_spirit,default_storm_spirit
 18,Sven,npc_dota_hero_sven,default_sven
 19,Tiny,npc_dota_hero_tiny,default_tiny
-20,Vengeful Spirit,npc_dota_hero_vengefulspirit,Mixed
+20,Vengeful Spirit,npc_dota_hero_vengefulspirit,default_vengefulspirit
 21,Windranger,npc_dota_hero_windrunner,default_windrunner
 22,Zeus,npc_dota_hero_zuus,default_zuus
 23,Kunkka,npc_dota_hero_kunkka,default_kunkka
@@ -92,7 +92,7 @@ id,localized_name,name,guide_name
 92,Visage,npc_dota_hero_visage,default_visage
 93,Slark,npc_dota_hero_slark,default_slark
 94,Medusa,npc_dota_hero_medusa,default_medusa
-95,Troll Warlord,npc_dota_hero_troll_warlord,Mixed
+95,Troll Warlord,npc_dota_hero_troll_warlord,default_troll_warlord
 96,Centaur Warrunner,npc_dota_hero_centaur,default_centaur
 97,Magnus,npc_dota_hero_magnataur,default_magnataur
 98,Timbersaw,npc_dota_hero_shredder,default_shredder
@@ -106,7 +106,7 @@ id,localized_name,name,guide_name
 106,Ember Spirit,npc_dota_hero_ember_spirit,default_ember_spirit
 107,Earth Spirit,npc_dota_hero_earth_spirit,default_earth_spirit
 108,Underlord,npc_dota_hero_abyssal_underlord,default_abyssal_underlord
-109,Terrorblade,npc_dota_hero_terrorblade,Mixed
+109,Terrorblade,npc_dota_hero_terrorblade,default_terrorblade
 110,Phoenix,npc_dota_hero_phoenix,default_phoenix
 111,Oracle,npc_dota_hero_oracle,default_oracle
 112,Winter Wyvern,npc_dota_hero_winter_wyvern,default_winter_wyvern

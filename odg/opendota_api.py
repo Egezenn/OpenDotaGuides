@@ -62,12 +62,7 @@ def create_constant_heroes_csv():
         writer = csv.writer(heroes_file)
         writer.writerow(headers)
         for hero in hero_attr_lists:
-            if hero[1] in ["Terrorblade", "Troll Warlord", "Vengeful Spirit"]:
-                hero_attrs_mixed = hero[:-1]
-                hero_attrs_mixed.append("Mixed")
-                writer.writerow(hero_attrs_mixed)
-            else:
-                writer.writerow(hero[:])
+            writer.writerow(hero[:])
 
 
 def create_constant_items_csv():
