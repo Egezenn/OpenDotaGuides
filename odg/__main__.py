@@ -24,7 +24,6 @@ from odg.utils import (
 
 logger = logging.getLogger(__name__)
 
-
 if __name__ == "__main__":
     parser = ArgumentParser(
         prog="OpenDotaGuides",
@@ -96,22 +95,23 @@ if __name__ == "__main__":
         reader = csv.reader(heroes_csv)
         rows = list(reader)[1:]
 
-        for row in rows:  # RUBBERPATCH, Ringmaster 145 is Kez
+        for row in rows:  # RUBBERPATCH, 145 is Kez
             if row[0] == "145":
                 rows.remove(row)
 
-    for i, row in enumerate(rows, start=1):
-        call_successful = 0
-        logger.info(f"Doing API call {i}/{(len(rows)) - 1} {row[1]}")
-        while not call_successful:
-            try:
-                get_hero_popularity_guide(row[0])
-                call_successful = 1
-            except:
-                logger.info(f"Waiting for API rate limit..")
-                time.sleep(15)
-                get_hero_popularity_guide(row[0])
-                call_successful = 1
+    if refresh_data:
+        for i, row in enumerate(rows, start=1):
+            call_successful = 0
+            logger.info(f"Doing API call {i}/{(len(rows)) - 1} {row[1]}")
+            while not call_successful:
+                try:
+                    get_hero_popularity_guide(row[0])
+                    call_successful = 1
+                except:
+                    logger.info(f"Waiting for API rate limit..")
+                    time.sleep(15)
+                    get_hero_popularity_guide(row[0])
+                    call_successful = 1
 
     data__ids = [file.split(".")[0] for file in os.listdir(data_directory)]
     for i, id in enumerate(data__ids, start=1):
@@ -121,7 +121,7 @@ if __name__ == "__main__":
             )
             create_constant_items_csv()
         logger.info(
-            f"Compiling file {i}/{(len(data__ids))} {csv_match_string_for_relevant_column(constants_heroes,id,1)}"
+            f"Compiling file {i}/{(len(data__ids))} {csv_match_string_for_relevant_column(constants_heroes, id, 1)}"
         )
         compile_scrape_to_guide_vdf(id, remove_starting_items=remove_start_items)
 
@@ -129,7 +129,7 @@ if __name__ == "__main__":
         build_amt = len(os.listdir(itembuilds_directory))
         for i, itembuild in enumerate(os.listdir(itembuilds_directory), start=1):
             logger.info(
-                f"Moving file {i}/{build_amt} {csv_match_string_for_relevant_column(constants_heroes,itembuild[:-4],1)}"
+                f"Moving file {i}/{build_amt} {csv_match_string_for_relevant_column(constants_heroes, itembuild[:-4], 1)}"
             )
             shutil.copy(
                 os.path.join(cwd, itembuilds_directory, itembuild),

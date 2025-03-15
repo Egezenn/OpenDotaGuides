@@ -1,5 +1,6 @@
 import csv
 import json
+import logging
 import os
 
 import requests
@@ -46,7 +47,7 @@ def create_constant_heroes_csv():
     """Creates hero constants csv file in `constants` directory."""
     response = requests.get(f"{opendota_api_url}/heroes")
     heroes = response.json()
-    headers = ["id", "localized_name", "name", "guide_name", "attack_type"]
+    headers = ["id", "localized_name", "name", "guide_name"]
     hero_attr_lists = []
     for hero in heroes:
         hero_attr_list = [
@@ -54,7 +55,6 @@ def create_constant_heroes_csv():
             hero["localized_name"],
             hero["name"],
             f"default_{hero['name'][14:]}",
-            hero["attack_type"],
         ]
         hero_attr_lists.append(hero_attr_list)
 

@@ -40,7 +40,7 @@ You can check the option `OpenDotaGuides Guides` here.
 2. Then go into `game` \> `dota`
 3. Replace the `itembuilds` directory's contents with
     1. the contents of [release](https://github.com/Egezenn/OpenDotaGuides/releases/latest)
-    2. the contents of your local run. Refer to [here](#local-compilation).
+    2. the contents of your local run. Refer to [here](#local-development).
 4. Select the default guide in game
 5. Have fun!
 
