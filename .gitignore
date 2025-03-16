@@ -2,7 +2,7 @@ __pycache__
 .venv
 data
 itembuilds
-ODG.log
+odg.log
 
 todo.md
 Ξtestfile.ipynb
