@@ -17,24 +17,14 @@ constants_flags = os.path.join(constants_directory, constants_file__flags)
 constants_heroes = os.path.join(constants_directory, constants_file__heroes)
 constants_items = os.path.join(constants_directory, constants_file__items)
 default_dota_installation_windows_directory = os.path.join(
-    "C:\\",
-    r"Program Files (x86)",
-    r"Steam",
-    r"steamapps",
-    r"common",
-    r"dota 2 beta",
+    "C:\\", r"Program Files (x86)", r"Steam", r"steamapps", r"common", r"dota 2 beta"
 )
 default_dota_itembuilds_windows_directory = os.path.join(
-    default_dota_installation_windows_directory,
-    r"game",
-    r"dota",
-    r"itembuilds",
+    default_dota_installation_windows_directory, r"game", r"dota", r"itembuilds"
 )
 
 
-def csv_match_string_for_relevant_column(
-    file_path: str, search_string: str, x: int
-) -> str:
+def csv_match_string_for_relevant_column(file_path: str, search_string: str, x: int) -> str:
     """Searches a csv file for a matching string in every row, returns the desired column in that row.
 
     Args:

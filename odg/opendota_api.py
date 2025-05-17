@@ -1,6 +1,5 @@
 import csv
 import json
-import logging
 import os
 
 import requests
@@ -31,9 +30,7 @@ def get_hero_popularity_guide(hero_id: str):
         for key, value in guide.items():
             stage = []
             for inner_keys in value.keys():
-                stage.append(
-                    csv_match_string_for_relevant_column(constants_items, inner_keys, 2)
-                )
+                stage.append(csv_match_string_for_relevant_column(constants_items, inner_keys, 2))
             stages[key] = stage
 
         with open(os.path.join(data_directory, f"{hero_id}.json"), "w") as json_file:

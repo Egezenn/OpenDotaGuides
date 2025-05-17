@@ -1,6 +1,5 @@
 import datetime
 import json
-import logging
 import os
 
 from odg.utils import (
@@ -34,9 +33,7 @@ def compile_scrape_to_guide_vdf(hero_id: str, remove_starting_items=0):
     name = csv_match_string_for_relevant_column(constants_heroes, hero_id, 2)
     guide_name = csv_match_string_for_relevant_column(constants_heroes, hero_id, 3)
     author = project_name
-    title = (
-        f"{project_name_shorthand} {localized_name} {datetime.date.today().isoformat()}"
-    )
+    title = f"{project_name_shorthand} {localized_name} {datetime.date.today().isoformat()}"
     hero_stages = []
     for stage in hero_data:
         hero_stage = []
@@ -52,28 +49,13 @@ def compile_scrape_to_guide_vdf(hero_id: str, remove_starting_items=0):
     for stage in hero_stages:
         modified_hero_stage = []
         for item in stage:
-            if (
-                csv_match_string_for_relevant_column(constants_items, item, 4)
-                not in removed_items
-            ):
-                if (
-                    csv_match_string_for_relevant_column(constants_items, item, 4)
-                    in categorized_items
-                ):
-                    if (
-                        csv_match_string_for_relevant_column(constants_items, item, 4)
-                        == "team"
-                    ):
+            if csv_match_string_for_relevant_column(constants_items, item, 4) not in removed_items:
+                if csv_match_string_for_relevant_column(constants_items, item, 4) in categorized_items:
+                    if csv_match_string_for_relevant_column(constants_items, item, 4) == "team":
                         team_category.append(item)
-                    elif (
-                        csv_match_string_for_relevant_column(constants_items, item, 4)
-                        == "risky"
-                    ):
+                    elif csv_match_string_for_relevant_column(constants_items, item, 4) == "risky":
                         risky_category.append(item)
-                    if (
-                        csv_match_string_for_relevant_column(constants_items, item, 4)
-                        == "early"
-                    ):
+                    if csv_match_string_for_relevant_column(constants_items, item, 4) == "early":
                         if remove_starting_items:
                             early_category.append(item)
                         else:
@@ -86,11 +68,7 @@ def compile_scrape_to_guide_vdf(hero_id: str, remove_starting_items=0):
     risky_category.sort()
     early_category.sort()
 
-    with open(
-        os.path.join(itembuilds_directory, f"{guide_name}.txt"),
-        "w",
-        newline="",
-    ) as file:
+    with open(os.path.join(itembuilds_directory, f"{guide_name}.txt"), "w", newline="") as file:
         file.write('"itembuilds"\n{\n')
         file.write(f'\t"Author"\t\t"{author}"\n')
         file.write(f'\t"Hero"\t\t\t"{name}"\n')

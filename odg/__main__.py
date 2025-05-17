@@ -6,11 +6,7 @@ import time
 from argparse import ArgumentParser
 
 from odg.compiler import compile_scrape_to_guide_vdf
-from odg.opendota_api import (
-    create_constant_heroes_csv,
-    create_constant_items_csv,
-    get_hero_popularity_guide,
-)
+from odg.opendota_api import create_constant_heroes_csv, create_constant_items_csv, get_hero_popularity_guide
 from odg.utils import (
     constants_heroes,
     constants_items,
@@ -32,14 +28,9 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "-v",
-        choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
-        default="WARNING",
-        help="Set the logging level",
+        "-v", choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"], default="WARNING", help="Set the logging level"
     )
-    parser.add_argument(
-        "-r", action="store_true", help="Refreshes the data pulled from the API"
-    )
+    parser.add_argument("-r", action="store_true", help="Refreshes the data pulled from the API")
     parser.add_argument("-c", action="store_true", help="Recreates the constants")
     parser.add_argument("-s", action="store_true", help="Remove start items")
     args = parser.parse_args()
@@ -50,11 +41,7 @@ if __name__ == "__main__":
 
     if os.path.exists(logfile):
         os.remove(logfile)
-    logging.basicConfig(
-        format="%(asctime)s - %(levelname)s - %(message)s",
-        level=verbosity,
-        filename=logfile,
-    )
+    logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s", level=verbosity, filename=logfile)
     logger.debug(
         f"Got CLI args as:\n\tv(verbosity): {args.v}\n\tr(refresh_data): {args.r}\n\tc(create_constants): {args.c}\n\ts(remove_start_items): {args.s}"
     )
@@ -86,9 +73,7 @@ if __name__ == "__main__":
     logger.debug(f"Creating {itembuilds_directory} directory..")
 
     if not os.path.exists(constants_heroes):
-        logger.warning(
-            f"{constants_heroes} doesn't exist! Creating {constants_heroes}.."
-        )
+        logger.warning(f"{constants_heroes} doesn't exist! Creating {constants_heroes}..")
         create_constant_heroes_csv()
 
     with open(constants_heroes) as heroes_csv:
@@ -116,9 +101,7 @@ if __name__ == "__main__":
     data__ids = [file.split(".")[0] for file in os.listdir(data_directory)]
     for i, id in enumerate(data__ids, start=1):
         if not os.path.exists(constants_items):
-            logger.warning(
-                f"{constants_items} doesn't exist! Creating {constants_items}.."
-            )
+            logger.warning(f"{constants_items} doesn't exist! Creating {constants_items}..")
             create_constant_items_csv()
         logger.info(
             f"Compiling file {i}/{(len(data__ids))} {csv_match_string_for_relevant_column(constants_heroes, id, 1)}"
@@ -136,6 +119,4 @@ if __name__ == "__main__":
                 os.path.join(default_dota_itembuilds_windows_directory, itembuild),
             )
     else:
-        logger.error(
-            "Couldn't find steam installation path, manually replace itembuilds folder."
-        )
+        logger.error("Couldn't find steam installation path, manually replace itembuilds folder.")
