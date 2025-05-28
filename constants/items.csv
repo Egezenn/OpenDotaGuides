@@ -424,23 +424,23 @@ id,dname,guide_name,item_name,flag
 1607,Magnifying Monocle,item_magnifying_monocle,magnifying_monocle,ignore
 1608,Pyrrhic Cloak,item_pyrrhic_cloak,pyrrhic_cloak,ignore
 1609,Madstone Bundle,item_madstone_bundle,madstone_bundle,ignore
-1636,Crystal Raindrop,item_crystal_raindrop,crystal_raindrop,
-1637,Kobold Cup,item_kobold_cup,kobold_cup,
-1638,Dormant Curio,item_dormant_curio,dormant_curio,
-1639,Sister's Shroud,item_sisters_shroud,sisters_shroud,
-1640,Jidi Pollen Bag,item_jidi_pollen_bag,jidi_pollen_bag,
-1641,Outworld Staff,item_outworld_staff,outworld_staff,
-1642,Dezun Bloodrite,item_dezun_bloodrite,dezun_bloodrite,
-1643,Giant's Maul,item_giant_maul,giant_maul,
-1644,Divine Regalia,item_divine_regalia,divine_regalia,
-1645,Disgraced Regalia,item_divine_regalia_broken,divine_regalia_broken,
-1646,Circlet of the Flayed Twins,item_circlet_of_the_flayed_twins,circlet_of_the_flayed_twins,
-1647,Fierce,item_enhancement_fierce,enhancement_fierce,
-1648,Dominant,item_enhancement_dominant,enhancement_dominant,
-1649,Restorative,item_enhancement_restorative,enhancement_restorative,
-1650,Thick,item_enhancement_thick,enhancement_thick,
-1651,Unleashed,item_enhancement_curious,enhancement_curious,
-1652,Bag of Gold,item_furion_gold_bag,furion_gold_bag,
+1636,Crystal Raindrop,item_crystal_raindrop,crystal_raindrop,ignore
+1637,Kobold Cup,item_kobold_cup,kobold_cup,ignore
+1638,Dormant Curio,item_dormant_curio,dormant_curio,ignore
+1639,Sister's Shroud,item_sisters_shroud,sisters_shroud,ignore
+1640,Jidi Pollen Bag,item_jidi_pollen_bag,jidi_pollen_bag,ignore
+1641,Outworld Staff,item_outworld_staff,outworld_staff,ignore
+1642,Dezun Bloodrite,item_dezun_bloodrite,dezun_bloodrite,ignore
+1643,Giant's Maul,item_giant_maul,giant_maul,ignore
+1644,Divine Regalia,item_divine_regalia,divine_regalia,ignore
+1645,Disgraced Regalia,item_divine_regalia_broken,divine_regalia_broken,ignore
+1646,Circlet of the Flayed Twins,item_circlet_of_the_flayed_twins,circlet_of_the_flayed_twins,ignore
+1647,Fierce,item_enhancement_fierce,enhancement_fierce,ignore
+1648,Dominant,item_enhancement_dominant,enhancement_dominant,ignore
+1649,Restorative,item_enhancement_restorative,enhancement_restorative,ignore
+1650,Thick,item_enhancement_thick,enhancement_thick,ignore
+1651,Unleashed,item_enhancement_curious,enhancement_curious,ignore
+1652,Bag of Gold,item_furion_gold_bag,furion_gold_bag,ignore
 1802,Tiara of Selemene,item_tiara_of_selemene,tiara_of_selemene,component
 1803,Doubloon,item_doubloon,doubloon,ignore
 1804,Roshan's Banner,item_roshans_banner,roshans_banner,ignore

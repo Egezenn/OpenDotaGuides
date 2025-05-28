@@ -91,3 +91,4 @@ def create_constant_items_csv():
         writer.writerows(item_attr_lists)
 
     import_flags()
+    export_flags()
