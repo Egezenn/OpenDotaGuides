@@ -1,4 +1,4 @@
-# OpenDotaGuides - 7.38 Wandering Waters
+# OpenDotaGuides
 
 <img alt="Example guide" align="right" src="assets/image.png">
 
@@ -74,7 +74,7 @@ First instruction set is for Windows, second is for Linux.
 
 ### Binaries
 
-[Python ~=3.11](https://www.python.org) - Core language. Licensed under PSFL license.
+[Python ~=3.13](https://www.python.org) - Core language. Licensed under PSFL license.
 
 ### Python packages
 
