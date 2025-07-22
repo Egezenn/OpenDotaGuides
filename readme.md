@@ -1,4 +1,4 @@
-# OpenDotaGuides - 7.38 Wandering Waters
+# OpenDotaGuides
 
 <img alt="Example guide" align="right" src="assets/image.png">
 
