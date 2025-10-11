@@ -74,8 +74,8 @@ def export_flags():
                 if row[4] != "":
                     item_flags[row[3]] = row[4]
 
-    with open(constants_flags, "w") as flags_csv:
-        json.dump(item_flags, flags_csv, indent=2)
+    with open(constants_flags, "w") as flags_json:
+        json.dump(item_flags, flags_json, indent=2)
 
 
 def import_flags():

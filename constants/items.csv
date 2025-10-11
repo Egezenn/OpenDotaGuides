@@ -28,7 +28,7 @@ id,dname,guide_name,item_name,flag
 27,Ring of Regen,item_ring_of_regen,ring_of_regen,component
 28,Sage's Mask,item_sobi_mask,sobi_mask,component
 29,Boots of Speed,item_boots,boots,component
-30,Gem of True Sight,item_gem,gem,team
+30,Gem of True Sight,item_gem,gem,risky
 31,Cloak,item_cloak,cloak,component
 32,Talisman of Evasion,item_talisman_of_evasion,talisman_of_evasion,component
 33,Cheese,item_cheese,cheese,ignore
@@ -36,15 +36,15 @@ id,dname,guide_name,item_name,flag
 35,Magic Wand Recipe,item_recipe_magic_wand,recipe_magic_wand,component
 36,Magic Wand,item_magic_wand,magic_wand,early
 37,Ghost Scepter,item_ghost,ghost,
-38,Clarity,item_clarity,clarity,ignore
-39,Healing Salve,item_flask,flask,ignore
-40,Dust of Appearance,item_dust,dust,ignore
+38,Clarity,item_clarity,clarity,consumable
+39,Healing Salve,item_flask,flask,consumable
+40,Dust of Appearance,item_dust,dust,consumable
 41,Bottle,item_bottle,bottle,early
-42,Observer Ward,item_ward_observer,ward_observer,ignore
-43,Sentry Ward,item_ward_sentry,ward_sentry,ignore
+42,Observer Ward,item_ward_observer,ward_observer,consumable
+43,Sentry Ward,item_ward_sentry,ward_sentry,consumable
 44,Tango,item_tango,tango,start
 45,Animal Courier,item_courier,courier,ignore
-46,Town Portal Scroll,item_tpscroll,tpscroll,ignore
+46,Town Portal Scroll,item_tpscroll,tpscroll,consumable
 47,Boots of Travel Recipe,item_recipe_travel_boots,recipe_travel_boots,component
 48,Boots of Travel,item_travel_boots,travel_boots,
 50,Phase Boots,item_phase_boots,phase_boots,
@@ -130,7 +130,7 @@ id,dname,guide_name,item_name,flag
 146,Manta Style Recipe,item_recipe_manta,recipe_manta,component
 147,Manta Style,item_manta,manta,
 148,Crystalys Recipe,item_recipe_lesser_crit,recipe_lesser_crit,component
-149,Crystalys,item_lesser_crit,lesser_crit,component
+149,Crystalys,item_lesser_crit,lesser_crit,
 150,Armlet of Mordiggian Recipe,item_recipe_armlet,recipe_armlet,component
 151,Armlet of Mordiggian,item_armlet,armlet,
 152,Shadow Blade,item_invis_sword,invis_sword,
@@ -140,13 +140,13 @@ id,dname,guide_name,item_name,flag
 158,Mjollnir,item_mjollnir,mjollnir,
 160,Eye of Skadi,item_skadi,skadi,
 161,Sange Recipe,item_recipe_sange,recipe_sange,component
-162,Sange,item_sange,sange,component
+162,Sange,item_sange,sange,
 163,Helm of the Dominator Recipe,item_recipe_helm_of_the_dominator,recipe_helm_of_the_dominator,component
 164,Helm of the Dominator,item_helm_of_the_dominator,helm_of_the_dominator,
 166,Maelstrom,item_maelstrom,maelstrom,
 168,Desolator,item_desolator,desolator,
 169,Yasha Recipe,item_recipe_yasha,recipe_yasha,component
-170,Yasha,item_yasha,yasha,component
+170,Yasha,item_yasha,yasha,
 172,Mask of Madness,item_mask_of_madness,mask_of_madness,
 173,Diffusal Blade Recipe,item_recipe_diffusal_blade,recipe_diffusal_blade,component
 174,Diffusal Blade,item_diffusal_blade,diffusal_blade,
@@ -161,16 +161,16 @@ id,dname,guide_name,item_name,flag
 184,Drum of Endurance Recipe,item_recipe_ancient_janggo,recipe_ancient_janggo,component
 185,Drum of Endurance,item_ancient_janggo,ancient_janggo,team
 187,Medallion of Courage,item_medallion_of_courage,medallion_of_courage,
-188,Smoke of Deceit,item_smoke_of_deceit,smoke_of_deceit,ignore
+188,Smoke of Deceit,item_smoke_of_deceit,smoke_of_deceit,consumable
 189,Veil of Discord Recipe,item_recipe_veil_of_discord,recipe_veil_of_discord,component
 190,Veil of Discord,item_veil_of_discord,veil_of_discord,component
 193,Necronomicon,item_necronomicon_2,necronomicon_2,ignore
 194,Necronomicon,item_necronomicon_3,necronomicon_3,ignore
 196,Diffusal Blade,item_diffusal_blade_2,diffusal_blade_2,
-201,Dagon,item_dagon_2,dagon_2,ignore
-202,Dagon,item_dagon_3,dagon_3,ignore
-203,Dagon,item_dagon_4,dagon_4,ignore
-204,Dagon,item_dagon_5,dagon_5,ignore
+201,Dagon,item_dagon_2,dagon_2,component
+202,Dagon,item_dagon_3,dagon_3,component
+203,Dagon,item_dagon_4,dagon_4,component
+204,Dagon,item_dagon_5,dagon_5,component
 205,Rod of Atos Recipe,item_recipe_rod_of_atos,recipe_rod_of_atos,component
 206,Rod of Atos,item_rod_of_atos,rod_of_atos,
 207,Abyssal Blade Recipe,item_recipe_abyssal_blade,recipe_abyssal_blade,component
@@ -215,14 +215,14 @@ id,dname,guide_name,item_name,flag
 254,Glimmer Cape,item_glimmer_cape,glimmer_cape,team
 255,Aeon Disk Recipe,item_recipe_aeon_disk,recipe_aeon_disk,component
 256,Aeon Disk,item_aeon_disk,aeon_disk,
-257,Tome of Knowledge,item_tome_of_knowledge,tome_of_knowledge,ignoore
+257,Tome of Knowledge,item_tome_of_knowledge,tome_of_knowledge,ignore
 258,Kaya Recipe,item_recipe_kaya,recipe_kaya,component
-259,Kaya,item_kaya,kaya,component
+259,Kaya,item_kaya,kaya,
 260,Refresher Shard,item_refresher_shard,refresher_shard,ignore
 261,Crown,item_crown,crown,component
 262,Hurricane Pike Recipe,item_recipe_hurricane_pike,recipe_hurricane_pike,component
 263,Hurricane Pike,item_hurricane_pike,hurricane_pike,
-265,Infused Raindrops,item_infused_raindrop,infused_raindrop,start
+265,Infused Raindrops,item_infused_raindrop,infused_raindrop,consumable
 266,Spirit Vessel Recipe,item_recipe_spirit_vessel,recipe_spirit_vessel,component
 267,Spirit Vessel,item_spirit_vessel,spirit_vessel,team
 268,Holy Locket Recipe,item_recipe_holy_locket,recipe_holy_locket,component
@@ -390,7 +390,7 @@ id,dname,guide_name,item_name,flag
 1441,Gris-Gris,item_grisgris,grisgris,ignore
 1466,Gleipnir,item_gungir,gungir,
 1565,Gleipnir Recipe,item_recipe_gungir,recipe_gungir,component
-1575,Orb of Frost,item_orb_of_frost,orb_of_frost,component
+1575,Orb of Frost,item_orb_of_frost,orb_of_frost,early
 1576,Vast,item_enhancement_vast,enhancement_vast,ignore
 1577,Quickened,item_enhancement_quickened,enhancement_quickened,ignore
 1578,Accursed,item_cursed_circlet,cursed_circlet,ignore

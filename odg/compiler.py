@@ -13,8 +13,8 @@ from odg.utils import (
     remove_repeated_elements,
 )
 
-removed_items = ["ignore", "component"]
-categorized_items = ["team", "risky", "early"]
+removed_items = ["component", "consumable", "ignore"]
+categorized_items = ["early", "risky", "team"]
 
 
 def compile_scrape_to_guide_vdf(hero_id: str, remove_starting_items=0):
@@ -55,6 +55,7 @@ def compile_scrape_to_guide_vdf(hero_id: str, remove_starting_items=0):
                         team_category.append(item)
                     elif csv_match_string_for_relevant_column(constants_items, item, 4) == "risky":
                         risky_category.append(item)
+                    # append to early if starting items are removed
                     if csv_match_string_for_relevant_column(constants_items, item, 4) == "early":
                         if remove_starting_items:
                             early_category.append(item)

@@ -70,6 +70,103 @@ First instruction set is for Windows, second is for Linux.
         1. `move .\itembuilds <dota_install_path>\game\dota\itembuilds`
         2. `mv ./itembuilds <dota_install_path>/game/dota/itembuilds`
 
+## Philosophy of the item flags
+
+### Start
+
+Will be assumed to be bought with the starting gold. It'll not be included by default (`-s` flag) because it holds little to no importance.
+
+```
+Blood Grenade
+Enchanted Mango
+Faerie Fire
+Iron Branch
+Magic Stick
+Quelling Blade
+Tango
+```
+
+### Consumable
+
+These are consumable items that you are expected to buy irregardless of the hero you're playing but _mostly_ not as a starting item. Will not be included.
+
+```
+Clarity
+Dust of Appearance
+Healing Salve
+Infused Raindrops
+Observer Ward
+Sentry Ward
+Smoke of Deceit
+Town Portal Scroll
+```
+
+### Ignore
+
+Items that appear in the game files even if they aren't used anywhere or can't be bought normally (roshan drops, neutral items). Will not be included.
+
+## Early
+
+These are generally not intended to be bought as a starting item (can mostly be bought with the starting gold), rather as the first small item you're going to be completing. They'll be included into the guides (inserted to the early section if `-s` argument is given, else to the starting section) as they are more likely to be bought more distinctively. For example:
+
+- Tinker buying bottle irregardless of position for faster regen inside the fountain and having a source of regen in the early game.
+- Venomancer buying orbs to stack it's innate damage.
+- Medusa buying Ring of Basilius for cheap constant mana regen.
+
+```
+Bottle
+Bracer
+Magic Wand
+Null Talisman
+Orb of Blight
+Orb of Frost
+Orb of Venom
+Ring of Basilius
+Wraith Band
+```
+
+### Component
+
+These items (recipes, small stat items) are mostly bought with the intention of building a bigger item, it doesn't hold a value as to what the hero is building, so they won't be included.
+
+### Team
+
+Bought mostly to be used with the team.
+
+```
+Assault Cuirass
+Boots of Bearing
+Crimson Guard
+Drum of Endurance
+Force Staff
+Glimmer Cape
+Guardian Greaves
+Holy Locket
+Lotus Orb
+Mekansm
+Pipe of Insight
+Solar Crest
+Spirit Vessel
+Urn of Shadows
+Vladmir's Offering
+```
+
+### Risky
+
+Items that have drop when the wielder dies / items that appear often as fun purchases.
+
+```
+Gem of True Sight
+Hand of Midas
+Dagon
+Divine Rapier
+Meteor Hammer
+```
+
+### No flag
+
+Will be included in the first section they appear in the data. These are full items (Shiva's Guard, Linken's Sphere).
+
 ## Dependencies
 
 ### Binaries
