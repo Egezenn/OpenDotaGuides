@@ -4,7 +4,7 @@ import os
 
 import requests
 
-from odg.utils import (
+from utils import (
     constants_heroes,
     constants_items,
     csv_match_string_for_relevant_column,

@@ -5,9 +5,9 @@ import shutil
 import time
 from argparse import ArgumentParser
 
-from odg.compiler import compile_scrape_to_guide_vdf
-from odg.opendota_api import create_constant_heroes_csv, create_constant_items_csv, get_hero_popularity_guide
-from odg.utils import (
+from compiler import compile_scrape_to_guide_vdf
+from opendota_api import create_constant_heroes_csv, create_constant_items_csv, get_hero_popularity_guide
+from utils import (
     constants_heroes,
     constants_items,
     csv_match_string_for_relevant_column,

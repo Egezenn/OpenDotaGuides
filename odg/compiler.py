@@ -2,7 +2,7 @@ import datetime
 import json
 import os
 
-from odg.utils import (
+from utils import (
     constants_heroes,
     constants_items,
     csv_match_string_for_relevant_column,
@@ -63,11 +63,20 @@ def compile_scrape_to_guide_vdf(hero_id: str, remove_starting_items=0):
                             modified_hero_stage.append(item)
                 else:
                     modified_hero_stage.append(item)
-        modified_hero_stage.sort()
+        modified_hero_stage = sorted(
+            modified_hero_stage,
+            key=lambda item: csv_match_string_for_relevant_column(constants_items, item, 1) or item,
+        )
         modified_hero_stages.append(modified_hero_stage)
-    team_category.sort()
-    risky_category.sort()
-    early_category.sort()
+    team_category = sorted(
+        team_category, key=lambda item: csv_match_string_for_relevant_column(constants_items, item, 1) or item
+    )
+    risky_category = sorted(
+        risky_category, key=lambda item: csv_match_string_for_relevant_column(constants_items, item, 1) or item
+    )
+    early_category = sorted(
+        early_category, key=lambda item: csv_match_string_for_relevant_column(constants_items, item, 1) or item
+    )
 
     with open(os.path.join(itembuilds_directory, f"{guide_name}.txt"), "w", newline="") as file:
         file.write('"itembuilds"\n{\n')

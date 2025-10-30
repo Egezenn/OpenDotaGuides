@@ -1,0 +1,7 @@
+[project]
+name = "opendotaguides"
+version = "1"
+description = " Non-sequential, mostly unopinionated, roleless and most importantly maintainerless guides for Dota2!"
+readme = "readme.md"
+requires-python = ">=3.13"
+dependencies = ["requests>=2.32.5"]

@@ -1,11 +1,11 @@
-from odg.compiler import categorized_items, compile_scrape_to_guide_vdf, removed_items
-from odg.opendota_api import (
+from compiler import categorized_items, compile_scrape_to_guide_vdf, removed_items
+from opendota_api import (
     create_constant_heroes_csv,
     create_constant_items_csv,
     get_hero_popularity_guide,
     opendota_api_url,
 )
-from odg.utils import (
+from utils import (
     constants_directory,
     constants_file__flags,
     constants_file__heroes,
