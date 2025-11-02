@@ -4,14 +4,7 @@ import os
 
 import requests
 
-from utils import (
-    constants_heroes,
-    constants_items,
-    csv_match_string_for_relevant_column,
-    data_directory,
-    export_flags,
-    import_flags,
-)
+import utils
 
 opendota_api_url = "https://api.opendota.com/api"
 
@@ -30,10 +23,10 @@ def get_hero_popularity_guide(hero_id: str):
         for key, value in guide.items():
             stage = []
             for inner_keys in value.keys():
-                stage.append(csv_match_string_for_relevant_column(constants_items, inner_keys, 2))
+                stage.append(utils.csv_match_string_for_relevant_column(utils.constants_items, inner_keys, 2))
             stages[key] = stage
 
-        with open(os.path.join(data_directory, f"{hero_id}.json"), "w") as json_file:
+        with open(os.path.join(utils.data_directory, f"{hero_id}.json"), "w") as json_file:
             json.dump(stages, json_file, indent=2)
 
     except AttributeError:  # if response is not a json?
@@ -55,7 +48,7 @@ def create_constant_heroes_csv():
         ]
         hero_attr_lists.append(hero_attr_list)
 
-    with open(constants_heroes, "w", newline="") as heroes_file:
+    with open(utils.constants_heroes, "w", newline="") as heroes_file:
         writer = csv.writer(heroes_file)
         writer.writerow(headers)
         for hero in hero_attr_lists:
@@ -64,8 +57,8 @@ def create_constant_heroes_csv():
 
 def create_constant_items_csv():
     """Creates item constants csv file in `constants` directory and automatically exports & imports the flag metadata."""
-    if os.path.exists(constants_items):
-        export_flags()
+    if os.path.exists(utils.constants_items):
+        utils.export_flags()
     response = requests.get(f"{opendota_api_url}/constants/items")
     items = response.json()
     headers = ["id", "dname", "guide_name", "item_name", "flag"]
@@ -85,10 +78,10 @@ def create_constant_items_csv():
             item_attr_lists.append(item_attr_list)
     item_attr_lists = sorted(item_attr_lists, key=lambda x: x[0])
 
-    with open(constants_items, "w", newline="") as items_csv:
+    with open(utils.constants_items, "w", newline="") as items_csv:
         writer = csv.writer(items_csv)
         writer.writerow(headers)
         writer.writerows(item_attr_lists)
 
-    import_flags()
-    export_flags()
+    utils.import_flags()
+    utils.export_flags()

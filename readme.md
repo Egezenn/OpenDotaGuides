@@ -50,27 +50,13 @@ You can check the option `OpenDotaGuides Guides` here.
 ## Local development
 
 > [!IMPORTANT]
-> You need python(~=3.13) and git installed:
-
-First instruction set is for Windows, second is for Linux.
+> You need `python`(~=3.13), `uv` and `git` installed:
 
 1. `git clone https://github.com/Egezenn/OpenDotaGuides.git`
 2. `cd OpenDotaGuides`
-3. `python -m venv .venv`
-4. Activate the python virtual environment:
-   1. `.venv\Scripts\activate.bat`
-   2. `source .venv/bin/activate`
-5. `pip install -r requirements.txt`
-6. `python -m odg` `-v -r -c -s` `-h`
-7. If the dota installation isn't detected
-    1. Remove `itembuilds` folder from Dota2:
-        1. `rmdir <dota_install_path>\dota 2 beta\game\dota\itembuilds`
-        2. `rm -r <dota_install_path>/dota 2 beta/game/dota/itembuilds`
-    2. Move newly created guides:
-        1. `move .\itembuilds <dota_install_path>\game\dota\itembuilds`
-        2. `mv ./itembuilds <dota_install_path>/game/dota/itembuilds`
+3. `uv run odg`
 
-## Philosophy of the item flags
+## Meaning of the item flags
 
 ### Start
 

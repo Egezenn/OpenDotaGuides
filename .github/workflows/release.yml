@@ -31,7 +31,9 @@ jobs:
 
       - name: Run project command
         id: run-cmd
-        run: python -m odg -r -c -s
+        run: |
+          cd odg
+          python __main__.py -r -c -s
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:

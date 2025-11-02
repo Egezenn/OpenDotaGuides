@@ -2,25 +2,26 @@ import csv
 import json
 import os
 
-cwd = os.getcwd()
-constants_directory = r"constants"
-constants_file__flags = r"flags.json"
-constants_file__heroes = r"heroes.csv"
-constants_file__items = r"items.csv"
-data_directory = r"data"
-itembuilds_directory = r"itembuilds"
-logfile = r"odg.log"
-project_name = r"OpenDotaGuides"
-project_name_shorthand = r"ODG"
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+constants_directory = os.path.join(project_root, "constants")
+constants_file__flags = "flags.json"
+constants_file__heroes = "heroes.csv"
+constants_file__items = "items.csv"
+data_directory = os.path.join(project_root, "data")
+itembuilds_directory = os.path.join(project_root, "itembuilds")
+logfile = os.path.join(project_root, "odg.log")
+project_name = "OpenDotaGuides"
+project_name_shorthand = "ODG"
 
 constants_flags = os.path.join(constants_directory, constants_file__flags)
 constants_heroes = os.path.join(constants_directory, constants_file__heroes)
 constants_items = os.path.join(constants_directory, constants_file__items)
 default_dota_installation_windows_directory = os.path.join(
-    "C:\\", r"Program Files (x86)", r"Steam", r"steamapps", r"common", r"dota 2 beta"
+    "C:\\", "Program Files (x86)", "Steam", "steamapps", "common", "dota 2 beta"
 )
 default_dota_itembuilds_windows_directory = os.path.join(
-    default_dota_installation_windows_directory, r"game", r"dota", r"itembuilds"
+    default_dota_installation_windows_directory, "game", "dota", "itembuilds"
 )
 
 
@@ -35,7 +36,7 @@ def csv_match_string_for_relevant_column(file_path: str, search_string: str, x: 
     Returns:
         str: _description_
     """
-    with open(file_path, "r") as file:
+    with open(file_path) as file:
         reader = csv.reader(file)
         for row in reader:
             for column in row:
@@ -65,7 +66,7 @@ def remove_repeated_elements(input_list: list) -> list:
 
 def export_flags():
     """Exports the flags in `items.csv.`"""
-    with open(constants_items, "r") as items_csv:
+    with open(constants_items) as items_csv:
         reader = csv.reader(items_csv)
 
         item_flags = {}
@@ -85,7 +86,7 @@ def import_flags():
         writer = csv.writer(items_csv)
         rows = list(reader)
 
-        with open(constants_flags, "r") as flags_json:
+        with open(constants_flags) as flags_json:
             data = json.load(flags_json)
 
         for row in rows:

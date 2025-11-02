@@ -14,7 +14,7 @@ most_likely_path = os.path.join(
 os.makedirs(base_path, exist_ok=True)
 if not os.path.exists(os.path.join(most_likely_path, "default_antimage.txt")):
     try:
-        with open("itembuilddir.txt", "r") as file:
+        with open("itembuilddir.txt") as file:
             itembuilds_dir = os.path.normpath(file.readline())
     except:
         itembuilds_dir_input = input("Write your itembuild dir:\n")
