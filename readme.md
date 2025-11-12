@@ -62,7 +62,7 @@ You can check the option `OpenDotaGuides Guides` here.
 
 Will be assumed to be bought with the starting gold. It'll not be included by default (`-s` flag) because it holds little to no importance.
 
-```
+```plaintext
 Blood Grenade
 Enchanted Mango
 Faerie Fire
@@ -74,9 +74,9 @@ Tango
 
 ### Consumable
 
-These are consumable items that you are expected to buy irregardless of the hero you're playing but _mostly_ not as a starting item. Will not be included.
+These are consumable items that you are expected to buy irregardless of the hero you're playing but *mostly* not as a starting item. Will not be included.
 
-```
+```plaintext
 Clarity
 Dust of Appearance
 Healing Salve
@@ -99,7 +99,7 @@ These are generally not intended to be bought as a starting item (can mostly be 
 - Venomancer buying orbs to stack it's innate damage.
 - Medusa buying Ring of Basilius for cheap constant mana regen.
 
-```
+```plaintext
 Bottle
 Bracer
 Magic Wand
@@ -119,7 +119,7 @@ These items (recipes, small stat items) are mostly bought with the intention of 
 
 Bought mostly to be used with the team.
 
-```
+```plaintext
 Assault Cuirass
 Boots of Bearing
 Crimson Guard
@@ -141,7 +141,7 @@ Vladmir's Offering
 
 Items that have drop when the wielder dies / items that appear often as fun purchases.
 
-```
+```plaintext
 Gem of True Sight
 Hand of Midas
 Dagon
