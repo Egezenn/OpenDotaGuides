@@ -91,7 +91,7 @@ Town Portal Scroll
 
 Items that appear in the game files even if they aren't used anywhere or can't be bought normally (roshan drops, neutral items). Will not be included.
 
-## Early
+### Early
 
 These are generally not intended to be bought as a starting item (can mostly be bought with the starting gold), rather as the first small item you're going to be completing. They'll be included into the guides (inserted to the early section if `-s` argument is given, else to the starting section) as they are more likely to be bought more distinctively. For example:
 
