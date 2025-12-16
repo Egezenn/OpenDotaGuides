@@ -189,6 +189,7 @@ id,dname,guide_name,item_name,flag
 225,Nullifier,item_nullifier,nullifier,
 226,Lotus Orb,item_lotus_orb,lotus_orb,team
 227,Solar Crest Recipe,item_recipe_solar_crest,recipe_solar_crest,component
+228,Octarine Core Recipe,item_recipe_octarine_core,recipe_octarine_core,
 229,Solar Crest,item_solar_crest,solar_crest,team
 230,Guardian Greaves Recipe,item_recipe_guardian_greaves,recipe_guardian_greaves,component
 231,Guardian Greaves,item_guardian_greaves,guardian_greaves,team
@@ -343,7 +344,6 @@ id,dname,guide_name,item_name,flag
 908,Wraith Pact,item_wraith_pact,wraith_pact,ignore
 910,Revenant's Brooch Recipe,item_recipe_revenants_brooch,recipe_revenants_brooch,component
 911,Revenant's Brooch,item_revenants_brooch,revenants_brooch,
-930,Boots of Bearing Recipe,item_recipe_boots_of_bearing,recipe_boots_of_bearing,component
 931,Boots of Bearing,item_boots_of_bearing,boots_of_bearing,team
 939,Harpoon,item_harpoon,harpoon,
 945,Seeds of Serenity,item_seeds_of_serenity,seeds_of_serenity,ignore
@@ -441,12 +441,17 @@ id,dname,guide_name,item_name,flag
 1650,Thick,item_enhancement_thick,enhancement_thick,ignore
 1651,Unleashed,item_enhancement_curious,enhancement_curious,ignore
 1652,Bag of Gold,item_furion_gold_bag,furion_gold_bag,ignore
+1716,Weighted Dice,item_weighted_dice,weighted_dice,
+1717,Ash Legion Shield,item_ash_legion_shield,ash_legion_shield,
+1718,Riftshadow Prism,item_riftshadow_prism,riftshadow_prism,
+1719,Metamorphic Mandible,item_metamorphic_mandible,metamorphic_mandible,
+1720,Idol of Scree'Auk,item_idol_of_screeauk,idol_of_screeauk,
+1721,Flayer's Bota,item_flayers_bota,flayers_bota,
 1802,Tiara of Selemene,item_tiara_of_selemene,tiara_of_selemene,component
 1803,Doubloon,item_doubloon,doubloon,ignore
 1804,Roshan's Banner,item_roshans_banner,roshans_banner,ignore
 1805,Parasma Recipe,item_recipe_devastator,recipe_devastator,component
 1806,Parasma,item_devastator,devastator,
-1807,Khanda Recipe,item_recipe_angels_demise,recipe_angels_demise,component
 1808,Khanda,item_angels_demise,angels_demise,
 2091,Tier 1 Token,item_tier1_token,tier1_token,ignore
 2092,Tier 2 Token,item_tier2_token,tier2_token,ignore

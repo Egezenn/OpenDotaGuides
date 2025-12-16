@@ -125,3 +125,4 @@ id,localized_name,name,guide_name
 137,Primal Beast,npc_dota_hero_primal_beast,default_primal_beast
 138,Muerta,npc_dota_hero_muerta,default_muerta
 145,Kez,npc_dota_hero_kez,default_kez
+155,Largo,npc_dota_hero_largo,default_largo
