@@ -72,8 +72,12 @@ if __name__ == "__main__":
         reader = csv.reader(heroes_csv)
         rows = list(reader)[1:]
 
-        for row in rows:  # RUBBERPATCH, 145 is Kez
-            if row[0] == "145":
+        # RUBBERPATCH, 155 is Largo
+        # TODO: detect hero additions and add a column to control
+        # whether or not it's going to be pulled from the api.
+        # should be removed after the hero is available in Captains Mode
+        for row in rows:
+            if row[0] == "155":
                 rows.remove(row)
 
     if refresh_data:
