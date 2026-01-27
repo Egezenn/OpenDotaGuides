@@ -33,7 +33,7 @@ jobs:
         id: run-cmd
         run: |
           cd odg
-          python __main__.py -r -c -s
+          python __main__.py -r -c
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:

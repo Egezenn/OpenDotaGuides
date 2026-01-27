@@ -189,7 +189,7 @@ id,dname,guide_name,item_name,flag
 225,Nullifier,item_nullifier,nullifier,
 226,Lotus Orb,item_lotus_orb,lotus_orb,team
 227,Solar Crest Recipe,item_recipe_solar_crest,recipe_solar_crest,component
-228,Octarine Core Recipe,item_recipe_octarine_core,recipe_octarine_core,
+228,Octarine Core Recipe,item_recipe_octarine_core,recipe_octarine_core,component
 229,Solar Crest,item_solar_crest,solar_crest,team
 230,Guardian Greaves Recipe,item_recipe_guardian_greaves,recipe_guardian_greaves,component
 231,Guardian Greaves,item_guardian_greaves,guardian_greaves,team
@@ -441,12 +441,12 @@ id,dname,guide_name,item_name,flag
 1650,Thick,item_enhancement_thick,enhancement_thick,ignore
 1651,Unleashed,item_enhancement_curious,enhancement_curious,ignore
 1652,Bag of Gold,item_furion_gold_bag,furion_gold_bag,ignore
-1716,Weighted Dice,item_weighted_dice,weighted_dice,
-1717,Ash Legion Shield,item_ash_legion_shield,ash_legion_shield,
-1718,Riftshadow Prism,item_riftshadow_prism,riftshadow_prism,
-1719,Metamorphic Mandible,item_metamorphic_mandible,metamorphic_mandible,
-1720,Idol of Scree'Auk,item_idol_of_screeauk,idol_of_screeauk,
-1721,Flayer's Bota,item_flayers_bota,flayers_bota,
+1716,Weighted Dice,item_weighted_dice,weighted_dice,ignore
+1717,Ash Legion Shield,item_ash_legion_shield,ash_legion_shield,ignore
+1718,Riftshadow Prism,item_riftshadow_prism,riftshadow_prism,ignore
+1719,Metamorphic Mandible,item_metamorphic_mandible,metamorphic_mandible,ignore
+1720,Idol of Scree'Auk,item_idol_of_screeauk,idol_of_screeauk,ignore
+1721,Flayer's Bota,item_flayers_bota,flayers_bota,ignore
 1802,Tiara of Selemene,item_tiara_of_selemene,tiara_of_selemene,component
 1803,Doubloon,item_doubloon,doubloon,ignore
 1804,Roshan's Banner,item_roshans_banner,roshans_banner,ignore

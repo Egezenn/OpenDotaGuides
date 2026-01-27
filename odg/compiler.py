@@ -8,14 +8,14 @@ removed_items = ["component", "consumable", "ignore"]
 categorized_items = ["early", "risky", "team"]
 
 
-def compile_scrape_to_guide_vdf(hero_id: str, remove_starting_items=0):
+def compile_scrape_to_guide_vdf(hero_id: str, keep_starting_items=0):
     """Compiles a json file in `data` directory into the Valve Data File (VDF) format in `itembuilds` directory.
 
     Args:
         hero_id (str): Hero's id.
-        remove_starting_items (int, optional): Removes `starting items` category & injects impactful progression items into `early game` category. Defaults to 0.
+        keep_starting_items (int, optional): Removes `starting items` category & injects impactful progression items into `early game` category. Defaults to 0.
     """
-    if remove_starting_items:
+    if not keep_starting_items:
         removed_items.append("start")
     with open(f"{os.path.join(utils.data_directory, hero_id)}.json") as f:
         hero_data = json.load(f)
@@ -48,7 +48,7 @@ def compile_scrape_to_guide_vdf(hero_id: str, remove_starting_items=0):
                         risky_category.append(item)
                     # append to early if starting items are removed
                     if utils.csv_match_string_for_relevant_column(utils.constants_items, item, 4) == "early":
-                        if remove_starting_items:
+                        if not keep_starting_items:
                             early_category.append(item)
                         else:
                             modified_hero_stage.append(item)
