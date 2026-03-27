@@ -326,7 +326,6 @@ id,dname,guide_name,item_name,flag
 676,Ceremonial Robe,item_ceremonial_robe,ceremonial_robe,ignore
 677,Book of Shadows,item_book_of_shadows,book_of_shadows,ignore
 678,Giant's Ring,item_giants_ring,giants_ring,ignore
-679,Shadow of Vengeance,item_vengeances_shadow,vengeances_shadow,ignore
 680,Bullwhip,item_bullwhip,bullwhip,ignore
 686,Quicksilver Amulet,item_quicksilver_amulet,quicksilver_amulet,ignore
 691,Eternal Shroud Recipe,item_recipe_eternal_shroud,recipe_eternal_shroud,component
@@ -365,7 +364,6 @@ id,dname,guide_name,item_name,flag
 1076,Specialist's Array,item_specialists_array,specialists_array,ignore
 1077,Dagger of Ristul,item_dagger_of_ristul,dagger_of_ristul,ignore
 1090,Mercy & Grace,item_muertas_gun,muertas_gun,ignore
-1095,Lunar Crest,item_lunar_crest,lunar_crest,ignore
 1096,Disperser Recipe,item_recipe_disperser,recipe_disperser,component
 1097,Disperser,item_disperser,disperser,
 1101,Harpoon Recipe,item_recipe_harpoon,recipe_harpoon,component
@@ -386,16 +384,13 @@ id,dname,guide_name,item_name,flag
 1161,Unwavering Condition,item_unwavering_condition,unwavering_condition,ignore
 1167,Light Collector,item_light_collector,light_collector,ignore
 1168,Rattlecage,item_rattlecage,rattlecage,ignore
-1440,Black Grimoire,item_black_grimoire,black_grimoire,ignore
+1440,Black Grimoire\n(Warlock),item_black_grimoire,black_grimoire,ignore
 1441,Gris-Gris,item_grisgris,grisgris,ignore
 1466,Gleipnir,item_gungir,gungir,
 1565,Gleipnir Recipe,item_recipe_gungir,recipe_gungir,component
 1575,Orb of Frost,item_orb_of_frost,orb_of_frost,early
 1576,Vast,item_enhancement_vast,enhancement_vast,ignore
 1577,Quickened,item_enhancement_quickened,enhancement_quickened,ignore
-1578,Accursed,item_cursed_circlet,cursed_circlet,ignore
-1579,Restorative,item_ogre_heart,ogre_heart,ignore
-1580,Elusive,item_neutral_tabi,neutral_tabi,ignore
 1581,Audacious,item_enhancement_audacious,enhancement_audacious,ignore
 1583,Mystical,item_enhancement_mystical,enhancement_mystical,ignore
 1584,Alert,item_enhancement_alert,enhancement_alert,ignore
@@ -424,7 +419,6 @@ id,dname,guide_name,item_name,flag
 1607,Magnifying Monocle,item_magnifying_monocle,magnifying_monocle,ignore
 1608,Pyrrhic Cloak,item_pyrrhic_cloak,pyrrhic_cloak,ignore
 1609,Madstone Bundle,item_madstone_bundle,madstone_bundle,ignore
-1636,Crystal Raindrop,item_crystal_raindrop,crystal_raindrop,ignore
 1637,Kobold Cup,item_kobold_cup,kobold_cup,ignore
 1638,Dormant Curio,item_dormant_curio,dormant_curio,ignore
 1639,Sister's Shroud,item_sisters_shroud,sisters_shroud,ignore
@@ -434,7 +428,6 @@ id,dname,guide_name,item_name,flag
 1643,Giant's Maul,item_giant_maul,giant_maul,ignore
 1644,Divine Regalia,item_divine_regalia,divine_regalia,ignore
 1645,Disgraced Regalia,item_divine_regalia_broken,divine_regalia_broken,ignore
-1646,Circlet of the Flayed Twins,item_circlet_of_the_flayed_twins,circlet_of_the_flayed_twins,ignore
 1647,Fierce,item_enhancement_fierce,enhancement_fierce,ignore
 1648,Dominant,item_enhancement_dominant,enhancement_dominant,ignore
 1649,Restorative,item_enhancement_restorative,enhancement_restorative,ignore
@@ -445,7 +438,7 @@ id,dname,guide_name,item_name,flag
 1717,Ash Legion Shield,item_ash_legion_shield,ash_legion_shield,ignore
 1718,Riftshadow Prism,item_riftshadow_prism,riftshadow_prism,ignore
 1719,Metamorphic Mandible,item_metamorphic_mandible,metamorphic_mandible,ignore
-1720,Idol of Scree'Auk,item_idol_of_screeauk,idol_of_screeauk,ignore
+1720,Idol of Scree'auk,item_idol_of_screeauk,idol_of_screeauk,ignore
 1721,Flayer's Bota,item_flayers_bota,flayers_bota,ignore
 1802,Tiara of Selemene,item_tiara_of_selemene,tiara_of_selemene,component
 1803,Doubloon,item_doubloon,doubloon,ignore
@@ -453,6 +446,34 @@ id,dname,guide_name,item_name,flag
 1805,Parasma Recipe,item_recipe_devastator,recipe_devastator,component
 1806,Parasma,item_devastator,devastator,
 1808,Khanda,item_angels_demise,angels_demise,
+1847,Splintmail,item_splintmail,splintmail,
+1848,Shawl,item_shawl,shawl,
+1849,Wizard Hat,item_wizard_hat,wizard_hat,
+1850,Eldwurm's Edda,item_eldwurms_edda,eldwurms_edda,
+1851,Essence Distiller Recipe,item_recipe_essence_distiller,recipe_essence_distiller,
+1852,Essence Distiller,item_essence_distiller,essence_distiller,
+1853,Consecrated Wraps Recipe,item_recipe_consecrated_wraps,recipe_consecrated_wraps,
+1854,Consecrated Wraps,item_consecrated_wraps,consecrated_wraps,
+1855,Crella's Crozier Recipe,item_recipe_crellas_crozier,recipe_crellas_crozier,
+1856,Crella's Crozier,item_crellas_crozier,crellas_crozier,
+1858,Hydra's Breath,item_hydras_breath,hydras_breath,
+1859,Spellslinger,item_spellslinger,spellslinger,
+1860,Prophet's Pendulum,item_prophets_pendulum,prophets_pendulum,
+1861,Stonefeather Satchel,item_stonefeather_satchel,stonefeather_satchel,
+1862,Enchanter's Bauble,item_enchanters_bauble,enchanters_bauble,
+1863,Harmonizer,item_harmonizer,harmonizer,
+1864,Conjurer's Catalyst,item_conjurers_catalyst,conjurers_catalyst,
+1865,Vital,item_enhancement_vital,enhancement_vital,
+1866,Hulking,item_enhancement_hulking,enhancement_hulking,
+1867,Manic,item_enhancement_manic,enhancement_manic,
+1868,Forager's Kit,item_foragers_kit,foragers_kit,
+1869,Vital Toadstool,item_foragers_health,foragers_health,
+1870,Ironwood Nut,item_foragers_stats,foragers_stats,
+1871,Tomo'kan Ringcap,item_foragers_mana,foragers_mana,
+1872,Chasm Stone,item_chasm_stone,chasm_stone,
+1873,Partisan's Brand,item_partisans_brand,partisans_brand,
+1874,Nimble,item_enhancement_nimble,enhancement_nimble,
+1875,Leviathan's Fish,item_tidehunter_fish,tidehunter_fish,
 2091,Tier 1 Token,item_tier1_token,tier1_token,ignore
 2092,Tier 2 Token,item_tier2_token,tier2_token,ignore
 2093,Tier 3 Token,item_tier3_token,tier3_token,ignore
