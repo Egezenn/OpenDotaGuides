@@ -8,9 +8,6 @@
 
 ![downloads](https://img.shields.io/github/downloads/Egezenn/OpenDotaGuides/total?style=for-the-badge)
 ![downloads-latest](https://img.shields.io/github/downloads/Egezenn/OpenDotaGuides/latest/total?style=for-the-badge)
-![size](https://img.shields.io/github/repo-size/Egezenn/OpenDotaGuides?style=for-the-badge)
-
-![commits-since](https://img.shields.io/github/commits-since/Egezenn/OpenDotaGuides/latest?style=for-the-badge)
 
 Tired of streamlined, opinionated and slowly updating guides? Want to see many item recommendations from the pros for the newest patch?
 

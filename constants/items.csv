@@ -446,34 +446,34 @@ id,dname,guide_name,item_name,flag
 1805,Parasma Recipe,item_recipe_devastator,recipe_devastator,component
 1806,Parasma,item_devastator,devastator,
 1808,Khanda,item_angels_demise,angels_demise,
-1847,Splintmail,item_splintmail,splintmail,
-1848,Shawl,item_shawl,shawl,
-1849,Wizard Hat,item_wizard_hat,wizard_hat,
-1850,Eldwurm's Edda,item_eldwurms_edda,eldwurms_edda,
-1851,Essence Distiller Recipe,item_recipe_essence_distiller,recipe_essence_distiller,
+1847,Splintmail,item_splintmail,splintmail,component
+1848,Shawl,item_shawl,shawl,component
+1849,Wizard Hat,item_wizard_hat,wizard_hat,component
+1850,Eldwurm's Edda,item_eldwurms_edda,eldwurms_edda,ignore
+1851,Essence Distiller Recipe,item_recipe_essence_distiller,recipe_essence_distiller,component
 1852,Essence Distiller,item_essence_distiller,essence_distiller,
-1853,Consecrated Wraps Recipe,item_recipe_consecrated_wraps,recipe_consecrated_wraps,
+1853,Consecrated Wraps Recipe,item_recipe_consecrated_wraps,recipe_consecrated_wraps,component
 1854,Consecrated Wraps,item_consecrated_wraps,consecrated_wraps,
-1855,Crella's Crozier Recipe,item_recipe_crellas_crozier,recipe_crellas_crozier,
+1855,Crella's Crozier Recipe,item_recipe_crellas_crozier,recipe_crellas_crozier,component
 1856,Crella's Crozier,item_crellas_crozier,crellas_crozier,
 1858,Hydra's Breath,item_hydras_breath,hydras_breath,
-1859,Spellslinger,item_spellslinger,spellslinger,
-1860,Prophet's Pendulum,item_prophets_pendulum,prophets_pendulum,
-1861,Stonefeather Satchel,item_stonefeather_satchel,stonefeather_satchel,
-1862,Enchanter's Bauble,item_enchanters_bauble,enchanters_bauble,
-1863,Harmonizer,item_harmonizer,harmonizer,
-1864,Conjurer's Catalyst,item_conjurers_catalyst,conjurers_catalyst,
-1865,Vital,item_enhancement_vital,enhancement_vital,
-1866,Hulking,item_enhancement_hulking,enhancement_hulking,
-1867,Manic,item_enhancement_manic,enhancement_manic,
-1868,Forager's Kit,item_foragers_kit,foragers_kit,
-1869,Vital Toadstool,item_foragers_health,foragers_health,
-1870,Ironwood Nut,item_foragers_stats,foragers_stats,
-1871,Tomo'kan Ringcap,item_foragers_mana,foragers_mana,
+1859,Spellslinger,item_spellslinger,spellslinger,ignore
+1860,Prophet's Pendulum,item_prophets_pendulum,prophets_pendulum,ignore
+1861,Stonefeather Satchel,item_stonefeather_satchel,stonefeather_satchel,ignore
+1862,Enchanter's Bauble,item_enchanters_bauble,enchanters_bauble,ignore
+1863,Harmonizer,item_harmonizer,harmonizer,ignore
+1864,Conjurer's Catalyst,item_conjurers_catalyst,conjurers_catalyst,ignore
+1865,Vital,item_enhancement_vital,enhancement_vital,ignore
+1866,Hulking,item_enhancement_hulking,enhancement_hulking,ignore
+1867,Manic,item_enhancement_manic,enhancement_manic,ignore
+1868,Forager's Kit,item_foragers_kit,foragers_kit,ignore
+1869,Vital Toadstool,item_foragers_health,foragers_health,ignore
+1870,Ironwood Nut,item_foragers_stats,foragers_stats,ignore
+1871,Tomo'kan Ringcap,item_foragers_mana,foragers_mana,ignore
 1872,Chasm Stone,item_chasm_stone,chasm_stone,
-1873,Partisan's Brand,item_partisans_brand,partisans_brand,
-1874,Nimble,item_enhancement_nimble,enhancement_nimble,
-1875,Leviathan's Fish,item_tidehunter_fish,tidehunter_fish,
+1873,Partisan's Brand,item_partisans_brand,partisans_brand,ignore
+1874,Nimble,item_enhancement_nimble,enhancement_nimble,ignore
+1875,Leviathan's Fish,item_tidehunter_fish,tidehunter_fish,ignore
 2091,Tier 1 Token,item_tier1_token,tier1_token,ignore
 2092,Tier 2 Token,item_tier2_token,tier2_token,ignore
 2093,Tier 3 Token,item_tier3_token,tier3_token,ignore
