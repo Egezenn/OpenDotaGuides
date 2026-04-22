@@ -1,0 +1,65 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_hoodwink"
+	"Title"			"ODG Hoodwink 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_blight_stone"
+			"item"		"item_arcane_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_aghanims_shard"
+			"item"		"item_blink"
+			"item"		"item_essence_distiller"
+			"item"		"item_cyclone"
+			"item"		"item_ghost"
+			"item"		"item_gungir"
+			"item"		"item_maelstrom"
+			"item"		"item_mage_slayer"
+			"item"		"item_rod_of_atos"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_black_king_bar"
+			"item"		"item_travel_boots"
+			"item"		"item_lesser_crit"
+			"item"		"item_hurricane_pike"
+			"item"		"item_hydras_breath"
+			"item"		"item_kaya"
+			"item"		"item_sphere"
+			"item"		"item_moon_shard"
+			"item"		"item_octarine_core"
+			"item"		"item_orchid"
+			"item"		"item_sheepstick"
+			"item"		"item_wind_waker"
+			"item"		"item_yasha"
+			"item"		"item_yasha_and_kaya"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_crimson_guard"
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_guardian_greaves"
+			"item"		"item_lotus_orb"
+			"item"		"item_mekansm"
+			"item"		"item_pipe"
+			"item"		"item_solar_crest"
+			"item"		"item_spirit_vessel"
+			"item"		"item_urn_of_shadows"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_dagon"
+		}
+	}
+}

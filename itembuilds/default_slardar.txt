@@ -1,0 +1,68 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_slardar"
+	"Title"			"ODG Slardar 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_wraith_band"
+			"item"		"item_blink"
+			"item"		"item_mask_of_madness"
+			"item"		"item_lifesteal"
+			"item"		"item_phase_boots"
+			"item"		"item_power_treads"
+			"item"		"item_soul_ring"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_black_king_bar"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_echo_sabre"
+			"item"		"item_cyclone"
+			"item"		"item_harpoon"
+			"item"		"item_orchid"
+			"item"		"item_sange"
+			"item"		"item_sange_and_yasha"
+			"item"		"item_vanguard"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_travel_boots"
+			"item"		"item_desolator"
+			"item"		"item_heart"
+			"item"		"item_sphere"
+			"item"		"item_mage_slayer"
+			"item"		"item_moon_shard"
+			"item"		"item_nullifier"
+			"item"		"item_octarine_core"
+			"item"		"item_overwhelming_blink"
+			"item"		"item_satanic"
+			"item"		"item_sheepstick"
+			"item"		"item_invis_sword"
+			"item"		"item_silver_edge"
+			"item"		"item_wind_waker"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_assault"
+			"item"		"item_crimson_guard"
+			"item"		"item_force_staff"
+			"item"		"item_lotus_orb"
+			"item"		"item_pipe"
+		}
+		"RISKY"
+		{
+			"item"		"item_hand_of_midas"
+		}
+	}
+}

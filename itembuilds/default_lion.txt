@@ -1,0 +1,48 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_lion"
+	"Title"			"ODG Lion 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_power_treads"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_aether_lens"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_blink"
+			"item"		"item_lesser_crit"
+			"item"		"item_echo_sabre"
+			"item"		"item_ghost"
+			"item"		"item_invis_sword"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_black_king_bar"
+			"item"		"item_greater_crit"
+			"item"		"item_cyclone"
+			"item"		"item_silver_edge"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_ancient_janggo"
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_solar_crest"
+		}
+		"RISKY"
+		{
+			"item"		"item_hand_of_midas"
+		}
+	}
+}

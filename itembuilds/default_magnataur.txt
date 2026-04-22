@@ -1,0 +1,66 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_magnataur"
+	"Title"			"ODG Magnus 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_bracer"
+			"item"		"item_null_talisman"
+			"item"		"item_wraith_band"
+			"item"		"item_arcane_boots"
+			"item"		"item_blink"
+			"item"		"item_echo_sabre"
+			"item"		"item_kaya"
+			"item"		"item_mask_of_madness"
+			"item"		"item_lifesteal"
+			"item"		"item_phase_boots"
+			"item"		"item_power_treads"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_black_king_bar"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_lesser_crit"
+			"item"		"item_greater_crit"
+			"item"		"item_cyclone"
+			"item"		"item_harpoon"
+			"item"		"item_octarine_core"
+			"item"		"item_orchid"
+			"item"		"item_refresher"
+			"item"		"item_sange"
+			"item"		"item_sange_and_yasha"
+			"item"		"item_invis_sword"
+			"item"		"item_yasha"
+			"item"		"item_yasha_and_kaya"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_arcane_blink"
+			"item"		"item_bloodthorn"
+			"item"		"item_travel_boots"
+			"item"		"item_sphere"
+			"item"		"item_nullifier"
+			"item"		"item_overwhelming_blink"
+			"item"		"item_satanic"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_assault"
+			"item"		"item_force_staff"
+			"item"		"item_guardian_greaves"
+			"item"		"item_lotus_orb"
+			"item"		"item_mekansm"
+			"item"		"item_vladmir"
+		}
+	}
+}

@@ -1,0 +1,65 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_tinker"
+	"Title"			"ODG Tinker 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_arcane_boots"
+			"item"		"item_blink"
+			"item"		"item_kaya"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_black_king_bar"
+			"item"		"item_ethereal_blade"
+			"item"		"item_ghost"
+			"item"		"item_kaya_and_sange"
+			"item"		"item_phylactery"
+			"item"		"item_sange"
+			"item"		"item_shivas_guard"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_arcane_blink"
+			"item"		"item_bloodstone"
+			"item"		"item_cyclone"
+			"item"		"item_angels_demise"
+			"item"		"item_sphere"
+			"item"		"item_moon_shard"
+			"item"		"item_overwhelming_blink"
+			"item"		"item_refresher"
+			"item"		"item_sheepstick"
+			"item"		"item_wind_waker"
+			"item"		"item_yasha"
+			"item"		"item_yasha_and_kaya"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_guardian_greaves"
+			"item"		"item_holy_locket"
+			"item"		"item_lotus_orb"
+			"item"		"item_mekansm"
+			"item"		"item_pipe"
+			"item"		"item_solar_crest"
+		}
+		"RISKY"
+		{
+			"item"		"item_dagon"
+			"item"		"item_meteor_hammer"
+		}
+	}
+}

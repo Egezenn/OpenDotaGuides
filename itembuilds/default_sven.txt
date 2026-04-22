@@ -1,0 +1,58 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_sven"
+	"Title"			"ODG Sven 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_wraith_band"
+			"item"		"item_kaya"
+			"item"		"item_mask_of_madness"
+			"item"		"item_lifesteal"
+			"item"		"item_power_treads"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_black_king_bar"
+			"item"		"item_blink"
+			"item"		"item_bloodthorn"
+			"item"		"item_lesser_crit"
+			"item"		"item_greater_crit"
+			"item"		"item_echo_sabre"
+			"item"		"item_harpoon"
+			"item"		"item_orchid"
+			"item"		"item_sange"
+			"item"		"item_sange_and_yasha"
+			"item"		"item_invis_sword"
+			"item"		"item_silver_edge"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_sphere"
+			"item"		"item_manta"
+			"item"		"item_monkey_king_bar"
+			"item"		"item_nullifier"
+			"item"		"item_refresher"
+			"item"		"item_revenants_brooch"
+			"item"		"item_satanic"
+			"item"		"item_swift_blink"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_assault"
+			"item"		"item_solar_crest"
+		}
+		"RISKY"
+		{
+			"item"		"item_hand_of_midas"
+			"item"		"item_meteor_hammer"
+		}
+	}
+}

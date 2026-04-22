@@ -1,0 +1,75 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_snapfire"
+	"Title"			"ODG Snapfire 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_blight_stone"
+			"item"		"item_ring_of_basilius"
+			"item"		"item_arcane_boots"
+			"item"		"item_blink"
+			"item"		"item_travel_boots"
+			"item"		"item_kaya"
+			"item"		"item_maelstrom"
+			"item"		"item_phase_boots"
+			"item"		"item_power_treads"
+			"item"		"item_rod_of_atos"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_armlet"
+			"item"		"item_black_king_bar"
+			"item"		"item_lesser_crit"
+			"item"		"item_greater_crit"
+			"item"		"item_desolator"
+			"item"		"item_dragon_lance"
+			"item"		"item_cyclone"
+			"item"		"item_ghost"
+			"item"		"item_gungir"
+			"item"		"item_hurricane_pike"
+			"item"		"item_hydras_breath"
+			"item"		"item_revenants_brooch"
+			"item"		"item_invis_sword"
+			"item"		"item_yasha"
+			"item"		"item_yasha_and_kaya"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_ethereal_blade"
+			"item"		"item_monkey_king_bar"
+			"item"		"item_refresher"
+			"item"		"item_sheepstick"
+			"item"		"item_shivas_guard"
+			"item"		"item_silver_edge"
+			"item"		"item_basher"
+			"item"		"item_swift_blink"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_guardian_greaves"
+			"item"		"item_lotus_orb"
+			"item"		"item_mekansm"
+			"item"		"item_pipe"
+			"item"		"item_solar_crest"
+			"item"		"item_spirit_vessel"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_meteor_hammer"
+		}
+	}
+}

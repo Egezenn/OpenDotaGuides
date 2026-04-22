@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dota 2 Hero Guides Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/index-K8ySBeIy.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D0N3c3bm.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="top-nav">
+        <div class="logo">
+          <a href="https://github.com/Egezenn/OpenDotaGuides" target="_blank" class="logo-link">
+            <img id="logo-symbol" alt="Dota 2" class="logo-icon" />
+            <span class="logo-text">Open<span class="accent">Dota</span>Guides</span>
+          </a>
+        </div>
+        <div class="search-container">
+          <input type="text" id="hero-search" placeholder="Search heroes..." autocomplete="off" />
+          <div class="search-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      <main class="container">
+        <section id="hero-grid" class="hero-grid">
+          <!-- Heroes will be injected here -->
+          <div class="loader">
+            <div class="spinner"></div>
+            <span>Fetching hero data...</span>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <img id="footer-logo" class="footer-icon" alt="Dota 2">
+          <div class="footer-info">
+            <p>Data provided by <a href="https://github.com/Egezenn/dota2-datawrapper" target="_blank">dota2-datawrapper</a></p>
+            <p class="data-date">Last updated: <span id="last-update">Fetching...</span></p>
+          </div>
+        </div>
+      </footer>
+
+      <div id="hero-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <button id="close-modal" class="close-btn">&times;</button>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

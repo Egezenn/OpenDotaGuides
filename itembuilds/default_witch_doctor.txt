@@ -1,0 +1,50 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_witch_doctor"
+	"Title"			"ODG Witch Doctor 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_null_talisman"
+			"item"		"item_ring_of_basilius"
+			"item"		"item_arcane_boots"
+			"item"		"item_soul_ring"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_blink"
+			"item"		"item_essence_distiller"
+			"item"		"item_ghost"
+			"item"		"item_power_treads"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_black_king_bar"
+			"item"		"item_cyclone"
+			"item"		"item_orchid"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_guardian_greaves"
+			"item"		"item_holy_locket"
+			"item"		"item_pipe"
+			"item"		"item_solar_crest"
+			"item"		"item_spirit_vessel"
+			"item"		"item_urn_of_shadows"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_dagon"
+		}
+	}
+}

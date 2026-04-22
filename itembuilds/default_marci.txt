@@ -1,0 +1,74 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_marci"
+	"Title"			"ODG Marci 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_orb_of_frost"
+			"item"		"item_wraith_band"
+			"item"		"item_armlet"
+			"item"		"item_helm_of_the_dominator"
+			"item"		"item_phase_boots"
+			"item"		"item_soul_ring"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_bfury"
+			"item"		"item_black_king_bar"
+			"item"		"item_blink"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_lesser_crit"
+			"item"		"item_diffusal_blade"
+			"item"		"item_essence_distiller"
+			"item"		"item_cyclone"
+			"item"		"item_mage_slayer"
+			"item"		"item_manta"
+			"item"		"item_orb_of_corrosion"
+			"item"		"item_orchid"
+			"item"		"item_sange"
+			"item"		"item_sange_and_yasha"
+			"item"		"item_basher"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_abyssal_blade"
+			"item"		"item_travel_boots"
+			"item"		"item_greater_crit"
+			"item"		"item_skadi"
+			"item"		"item_kaya"
+			"item"		"item_sphere"
+			"item"		"item_monkey_king_bar"
+			"item"		"item_nullifier"
+			"item"		"item_revenants_brooch"
+			"item"		"item_invis_sword"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_ancient_janggo"
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_lotus_orb"
+			"item"		"item_solar_crest"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_rapier"
+			"item"		"item_hand_of_midas"
+			"item"		"item_meteor_hammer"
+		}
+	}
+}

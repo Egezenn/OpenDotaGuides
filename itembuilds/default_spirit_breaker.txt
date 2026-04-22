@@ -1,0 +1,54 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_spirit_breaker"
+	"Title"			"ODG Spirit Breaker 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_bracer"
+			"item"		"item_null_talisman"
+			"item"		"item_kaya"
+			"item"		"item_phase_boots"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_essence_distiller"
+			"item"		"item_cyclone"
+			"item"		"item_invis_sword"
+			"item"		"item_yasha"
+			"item"		"item_yasha_and_kaya"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_black_king_bar"
+			"item"		"item_blade_mail"
+			"item"		"item_travel_boots"
+			"item"		"item_heavens_halberd"
+			"item"		"item_octarine_core"
+			"item"		"item_sange"
+			"item"		"item_silver_edge"
+			"item"		"item_wind_waker"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_boots_of_bearing"
+			"item"		"item_ancient_janggo"
+			"item"		"item_lotus_orb"
+			"item"		"item_solar_crest"
+			"item"		"item_spirit_vessel"
+			"item"		"item_urn_of_shadows"
+		}
+		"RISKY"
+		{
+			"item"		"item_hand_of_midas"
+		}
+	}
+}

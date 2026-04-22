@@ -1,0 +1,72 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_visage"
+	"Title"			"ODG Visage 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_blight_stone"
+			"item"		"item_wraith_band"
+			"item"		"item_arcane_boots"
+			"item"		"item_lifesteal"
+			"item"		"item_orb_of_corrosion"
+			"item"		"item_phylactery"
+			"item"		"item_power_treads"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_black_king_bar"
+			"item"		"item_travel_boots"
+			"item"		"item_kaya"
+			"item"		"item_kaya_and_sange"
+			"item"		"item_angels_demise"
+			"item"		"item_maelstrom"
+			"item"		"item_mjollnir"
+			"item"		"item_orchid"
+			"item"		"item_rod_of_atos"
+			"item"		"item_sange"
+			"item"		"item_shivas_guard"
+			"item"		"item_vanguard"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_blink"
+			"item"		"item_bloodthorn"
+			"item"		"item_cyclone"
+			"item"		"item_hurricane_pike"
+			"item"		"item_sphere"
+			"item"		"item_nullifier"
+			"item"		"item_octarine_core"
+			"item"		"item_sheepstick"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_assault"
+			"item"		"item_boots_of_bearing"
+			"item"		"item_crimson_guard"
+			"item"		"item_ancient_janggo"
+			"item"		"item_force_staff"
+			"item"		"item_guardian_greaves"
+			"item"		"item_lotus_orb"
+			"item"		"item_mekansm"
+			"item"		"item_pipe"
+			"item"		"item_solar_crest"
+			"item"		"item_spirit_vessel"
+			"item"		"item_urn_of_shadows"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_dagon"
+		}
+	}
+}

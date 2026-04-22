@@ -1,0 +1,51 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_oracle"
+	"Title"			"ODG Oracle 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_arcane_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_aghanims_shard"
+			"item"		"item_blink"
+			"item"		"item_essence_distiller"
+			"item"		"item_cyclone"
+			"item"		"item_ghost"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_travel_boots"
+			"item"		"item_crellas_crozier"
+			"item"		"item_sphere"
+			"item"		"item_invis_sword"
+			"item"		"item_wind_waker"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_guardian_greaves"
+			"item"		"item_holy_locket"
+			"item"		"item_lotus_orb"
+			"item"		"item_mekansm"
+			"item"		"item_solar_crest"
+			"item"		"item_spirit_vessel"
+			"item"		"item_urn_of_shadows"
+		}
+		"RISKY"
+		{
+			"item"		"item_hand_of_midas"
+		}
+	}
+}

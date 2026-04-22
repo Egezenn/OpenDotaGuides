@@ -1,0 +1,57 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_naga_siren"
+	"Title"			"ODG Naga Siren 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_magic_wand"
+			"item"		"item_wraith_band"
+			"item"		"item_arcane_boots"
+			"item"		"item_falcon_blade"
+			"item"		"item_power_treads"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aghanims_shard"
+			"item"		"item_blink"
+			"item"		"item_bloodthorn"
+			"item"		"item_butterfly"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_diffusal_blade"
+			"item"		"item_skadi"
+			"item"		"item_heart"
+			"item"		"item_mage_slayer"
+			"item"		"item_manta"
+			"item"		"item_orchid"
+			"item"		"item_invis_sword"
+			"item"		"item_silver_edge"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_black_king_bar"
+			"item"		"item_travel_boots"
+			"item"		"item_disperser"
+			"item"		"item_moon_shard"
+			"item"		"item_nullifier"
+			"item"		"item_refresher"
+			"item"		"item_sheepstick"
+			"item"		"item_basher"
+			"item"		"item_swift_blink"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_guardian_greaves"
+			"item"		"item_mekansm"
+			"item"		"item_solar_crest"
+		}
+	}
+}

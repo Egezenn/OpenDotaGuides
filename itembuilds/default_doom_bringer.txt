@@ -1,0 +1,74 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_doom_bringer"
+	"Title"			"ODG Doom 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_wraith_band"
+			"item"		"item_lifesteal"
+			"item"		"item_phase_boots"
+			"item"		"item_soul_ring"
+			"item"		"item_tranquil_boots"
+			"item"		"item_vanguard"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_black_king_bar"
+			"item"		"item_blink"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_diffusal_blade"
+			"item"		"item_echo_sabre"
+			"item"		"item_cyclone"
+			"item"		"item_harpoon"
+			"item"		"item_manta"
+			"item"		"item_octarine_core"
+			"item"		"item_radiance"
+			"item"		"item_sange"
+			"item"		"item_sange_and_yasha"
+			"item"		"item_invis_sword"
+			"item"		"item_shivas_guard"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_abyssal_blade"
+			"item"		"item_blade_mail"
+			"item"		"item_travel_boots"
+			"item"		"item_butterfly"
+			"item"		"item_heavens_halberd"
+			"item"		"item_sphere"
+			"item"		"item_nullifier"
+			"item"		"item_overwhelming_blink"
+			"item"		"item_refresher"
+			"item"		"item_satanic"
+			"item"		"item_silver_edge"
+			"item"		"item_basher"
+			"item"		"item_swift_blink"
+			"item"		"item_wind_waker"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_assault"
+			"item"		"item_boots_of_bearing"
+			"item"		"item_crimson_guard"
+			"item"		"item_ancient_janggo"
+			"item"		"item_lotus_orb"
+			"item"		"item_pipe"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_rapier"
+			"item"		"item_hand_of_midas"
+		}
+	}
+}

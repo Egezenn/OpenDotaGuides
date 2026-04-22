@@ -1,0 +1,63 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_phoenix"
+	"Title"			"ODG Phoenix 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bracer"
+			"item"		"item_power_treads"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_armlet"
+			"item"		"item_black_king_bar"
+			"item"		"item_bloodstone"
+			"item"		"item_travel_boots"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_cyclone"
+			"item"		"item_ghost"
+			"item"		"item_heart"
+			"item"		"item_kaya"
+			"item"		"item_orchid"
+			"item"		"item_radiance"
+			"item"		"item_shivas_guard"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_aether_lens"
+			"item"		"item_blink"
+			"item"		"item_kaya_and_sange"
+			"item"		"item_devastator"
+			"item"		"item_refresher"
+			"item"		"item_sange"
+			"item"		"item_sheepstick"
+			"item"		"item_witch_blade"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_boots_of_bearing"
+			"item"		"item_crimson_guard"
+			"item"		"item_ancient_janggo"
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_lotus_orb"
+			"item"		"item_pipe"
+			"item"		"item_solar_crest"
+			"item"		"item_spirit_vessel"
+			"item"		"item_urn_of_shadows"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_meteor_hammer"
+		}
+	}
+}

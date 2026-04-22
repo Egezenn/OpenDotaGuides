@@ -1,0 +1,74 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_brewmaster"
+	"Title"			"ODG Brewmaster 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_echo_sabre"
+			"item"		"item_essence_distiller"
+			"item"		"item_kaya"
+			"item"		"item_lifesteal"
+			"item"		"item_phase_boots"
+			"item"		"item_soul_ring"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_blink"
+			"item"		"item_travel_boots"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_harpoon"
+			"item"		"item_heavens_halberd"
+			"item"		"item_mage_slayer"
+			"item"		"item_manta"
+			"item"		"item_orchid"
+			"item"		"item_power_treads"
+			"item"		"item_radiance"
+			"item"		"item_vanguard"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_abyssal_blade"
+			"item"		"item_aeon_disk"
+			"item"		"item_black_king_bar"
+			"item"		"item_bloodthorn"
+			"item"		"item_butterfly"
+			"item"		"item_lesser_crit"
+			"item"		"item_sphere"
+			"item"		"item_moon_shard"
+			"item"		"item_octarine_core"
+			"item"		"item_overwhelming_blink"
+			"item"		"item_refresher"
+			"item"		"item_sange"
+			"item"		"item_sheepstick"
+			"item"		"item_shivas_guard"
+			"item"		"item_basher"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_assault"
+			"item"		"item_crimson_guard"
+			"item"		"item_guardian_greaves"
+			"item"		"item_lotus_orb"
+			"item"		"item_pipe"
+			"item"		"item_spirit_vessel"
+			"item"		"item_urn_of_shadows"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_hand_of_midas"
+			"item"		"item_meteor_hammer"
+		}
+	}
+}

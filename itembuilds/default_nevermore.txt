@@ -1,0 +1,66 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_nevermore"
+	"Title"			"ODG Shadow Fiend 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_wraith_band"
+			"item"		"item_arcane_boots"
+			"item"		"item_blink"
+			"item"		"item_dragon_lance"
+			"item"		"item_falcon_blade"
+			"item"		"item_kaya"
+			"item"		"item_mask_of_madness"
+			"item"		"item_lifesteal"
+			"item"		"item_power_treads"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_black_king_bar"
+			"item"		"item_travel_boots"
+			"item"		"item_butterfly"
+			"item"		"item_lesser_crit"
+			"item"		"item_greater_crit"
+			"item"		"item_desolator"
+			"item"		"item_cyclone"
+			"item"		"item_hurricane_pike"
+			"item"		"item_hydras_breath"
+			"item"		"item_manta"
+			"item"		"item_monkey_king_bar"
+			"item"		"item_orchid"
+			"item"		"item_sange"
+			"item"		"item_sange_and_yasha"
+			"item"		"item_invis_sword"
+			"item"		"item_silver_edge"
+			"item"		"item_yasha_and_kaya"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_bloodthorn"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_skadi"
+			"item"		"item_sphere"
+			"item"		"item_refresher"
+			"item"		"item_revenants_brooch"
+			"item"		"item_satanic"
+			"item"		"item_swift_blink"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_force_staff"
+			"item"		"item_guardian_greaves"
+			"item"		"item_mekansm"
+			"item"		"item_vladmir"
+		}
+	}
+}

@@ -1,0 +1,42 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_shadow_demon"
+	"Title"			"ODG Shadow Demon 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_magic_wand"
+			"item"		"item_ring_of_basilius"
+			"item"		"item_arcane_boots"
+			"item"		"item_tranquil_boots"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_blink"
+			"item"		"item_ghost"
+			"item"		"item_kaya"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_travel_boots"
+			"item"		"item_cyclone"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_guardian_greaves"
+			"item"		"item_lotus_orb"
+			"item"		"item_mekansm"
+			"item"		"item_solar_crest"
+			"item"		"item_vladmir"
+		}
+	}
+}

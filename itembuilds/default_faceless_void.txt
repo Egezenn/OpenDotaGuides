@@ -1,0 +1,65 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_faceless_void"
+	"Title"			"ODG Faceless Void 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_wraith_band"
+			"item"		"item_helm_of_the_dominator"
+			"item"		"item_mask_of_madness"
+			"item"		"item_lifesteal"
+			"item"		"item_power_treads"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_bfury"
+			"item"		"item_black_king_bar"
+			"item"		"item_diffusal_blade"
+			"item"		"item_essence_distiller"
+			"item"		"item_skadi"
+			"item"		"item_sphere"
+			"item"		"item_maelstrom"
+			"item"		"item_manta"
+			"item"		"item_mjollnir"
+			"item"		"item_radiance"
+			"item"		"item_invis_sword"
+			"item"		"item_vanguard"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_bloodthorn"
+			"item"		"item_butterfly"
+			"item"		"item_consecrated_wraps"
+			"item"		"item_lesser_crit"
+			"item"		"item_greater_crit"
+			"item"		"item_disperser"
+			"item"		"item_monkey_king_bar"
+			"item"		"item_nullifier"
+			"item"		"item_orchid"
+			"item"		"item_refresher"
+			"item"		"item_sange"
+			"item"		"item_sange_and_yasha"
+			"item"		"item_satanic"
+			"item"		"item_silver_edge"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_urn_of_shadows"
+		}
+		"RISKY"
+		{
+			"item"		"item_rapier"
+			"item"		"item_hand_of_midas"
+		}
+	}
+}

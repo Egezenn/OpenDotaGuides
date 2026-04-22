@@ -1,0 +1,63 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_earthshaker"
+	"Title"			"ODG Earthshaker 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bottle"
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_blight_stone"
+			"item"		"item_arcane_boots"
+			"item"		"item_blink"
+			"item"		"item_kaya"
+			"item"		"item_phase_boots"
+			"item"		"item_power_treads"
+			"item"		"item_soul_ring"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_black_king_bar"
+			"item"		"item_travel_boots"
+			"item"		"item_lesser_crit"
+			"item"		"item_greater_crit"
+			"item"		"item_cyclone"
+			"item"		"item_kaya_and_sange"
+			"item"		"item_refresher"
+			"item"		"item_sange"
+			"item"		"item_yasha"
+			"item"		"item_yasha_and_kaya"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_aeon_disk"
+			"item"		"item_aether_lens"
+			"item"		"item_blade_mail"
+			"item"		"item_bloodstone"
+			"item"		"item_sphere"
+			"item"		"item_octarine_core"
+			"item"		"item_overwhelming_blink"
+			"item"		"item_invis_sword"
+			"item"		"item_shivas_guard"
+			"item"		"item_wind_waker"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_lotus_orb"
+			"item"		"item_pipe"
+		}
+		"RISKY"
+		{
+			"item"		"item_rapier"
+		}
+	}
+}

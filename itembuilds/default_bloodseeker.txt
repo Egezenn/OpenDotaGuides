@@ -1,0 +1,67 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_bloodseeker"
+	"Title"			"ODG Bloodseeker 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bracer"
+			"item"		"item_magic_wand"
+			"item"		"item_null_talisman"
+			"item"		"item_wraith_band"
+			"item"		"item_maelstrom"
+			"item"		"item_orb_of_corrosion"
+			"item"		"item_phase_boots"
+			"item"		"item_power_treads"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_bfury"
+			"item"		"item_black_king_bar"
+			"item"		"item_blade_mail"
+			"item"		"item_butterfly"
+			"item"		"item_echo_sabre"
+			"item"		"item_cyclone"
+			"item"		"item_skadi"
+			"item"		"item_heavens_halberd"
+			"item"		"item_manta"
+			"item"		"item_mjollnir"
+			"item"		"item_radiance"
+			"item"		"item_sange"
+			"item"		"item_sange_and_yasha"
+			"item"		"item_invis_sword"
+			"item"		"item_silver_edge"
+			"item"		"item_basher"
+			"item"		"item_vanguard"
+			"item"		"item_yasha"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_abyssal_blade"
+			"item"		"item_blink"
+			"item"		"item_diffusal_blade"
+			"item"		"item_disperser"
+			"item"		"item_sphere"
+			"item"		"item_monkey_king_bar"
+			"item"		"item_nullifier"
+			"item"		"item_orchid"
+			"item"		"item_refresher"
+			"item"		"item_satanic"
+			"item"		"item_swift_blink"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_spirit_vessel"
+			"item"		"item_urn_of_shadows"
+		}
+		"RISKY"
+		{
+			"item"		"item_hand_of_midas"
+		}
+	}
+}

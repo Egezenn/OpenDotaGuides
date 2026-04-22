@@ -1,0 +1,56 @@
+"itembuilds"
+{
+	"Author"		"OpenDotaGuides"
+	"Hero"			"npc_dota_hero_ogre_magi"
+	"Title"			"ODG Ogre Magi 2026-04-22"
+
+	"Items"
+	{
+		"#DOTA_Item_Build_Early_Game"
+		{
+			"item"		"item_bracer"
+			"item"		"item_ring_of_basilius"
+			"item"		"item_arcane_boots"
+			"item"		"item_power_treads"
+			"item"		"item_soul_ring"
+			"item"		"item_tranquil_boots"
+			"item"		"item_vanguard"
+		}
+		"#DOTA_Item_Build_Mid_Items"
+		{
+			"item"		"item_aether_lens"
+			"item"		"item_ultimate_scepter"
+			"item"		"item_aghanims_shard"
+			"item"		"item_blade_mail"
+			"item"		"item_blink"
+			"item"		"item_cyclone"
+			"item"		"item_ghost"
+			"item"		"item_orchid"
+		}
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"		"item_travel_boots"
+			"item"		"item_ethereal_blade"
+			"item"		"item_phylactery"
+			"item"		"item_sheepstick"
+		}
+		"TEAM UTILITIES"
+		{
+			"item"		"item_boots_of_bearing"
+			"item"		"item_crimson_guard"
+			"item"		"item_ancient_janggo"
+			"item"		"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_guardian_greaves"
+			"item"		"item_lotus_orb"
+			"item"		"item_solar_crest"
+			"item"		"item_spirit_vessel"
+			"item"		"item_vladmir"
+		}
+		"RISKY"
+		{
+			"item"		"item_dagon"
+			"item"		"item_hand_of_midas"
+		}
+	}
+}
