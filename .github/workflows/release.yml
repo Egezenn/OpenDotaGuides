@@ -11,6 +11,8 @@ env:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -56,6 +58,30 @@ jobs:
           files: itembuilds.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: docs/package-lock.json
+
+      - name: Build Docs
+        run: |
+          mkdir -p docs/public/itembuilds
+          cp -r itembuilds/* docs/public/itembuilds/
+          cd docs
+          npm install
+          npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs/dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Cleanup
         run: |
