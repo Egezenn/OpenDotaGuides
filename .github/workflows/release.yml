@@ -40,6 +40,9 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Constant changes"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
 
       - name: Release preparations
         id: release-prep
@@ -58,6 +61,15 @@ jobs:
           files: itembuilds.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release (Codeberg)
+        uses: akkuman/gitea-release-action@v1
+        with:
+          server_url: https://codeberg.org
+          token: ${{ secrets.CODEBERG_TOKEN }}
+          tag_name: ${{ env.RELEASE_NAME }}
+          body: Daily release
+          files: "itembuilds.zip"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
