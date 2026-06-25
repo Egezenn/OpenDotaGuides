@@ -1,6 +1,6 @@
 id,localized_name,name,guide_name
 1,Anti-Mage,npc_dota_hero_antimage,default_antimage
-2,Axe,npc_dota_hero_axe,default_axe
+2,Axe?,npc_dota_hero_axe,default_axe
 3,Bane,npc_dota_hero_bane,default_bane
 4,Bloodseeker,npc_dota_hero_bloodseeker,default_bloodseeker
 5,Crystal Maiden,npc_dota_hero_crystal_maiden,default_crystal_maiden
