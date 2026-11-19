@@ -143,6 +143,7 @@ id,dname,guide_name,item_name,flag
 162,Sange,item_sange,sange,
 163,Helm of the Dominator Recipe,item_recipe_helm_of_the_dominator,recipe_helm_of_the_dominator,component
 164,Helm of the Dominator,item_helm_of_the_dominator,helm_of_the_dominator,
+165,Maelstrom Recipe,item_recipe_maelstrom,recipe_maelstrom,
 166,Maelstrom,item_maelstrom,maelstrom,
 168,Desolator,item_desolator,desolator,
 169,Yasha Recipe,item_recipe_yasha,recipe_yasha,component
@@ -240,7 +241,7 @@ id,dname,guide_name,item_name,flag
 289,Quickening Charm,item_quickening_charm,quickening_charm,ignore
 290,Philosopher's Stone,item_philosophers_stone,philosophers_stone,ignore
 291,Force Boots,item_force_boots,force_boots,ignore
-292,Stygian Desolator,item_desolator_2,desolator_2,ignore
+292,Stygian Desolator,item_stygian_desolator,stygian_desolator,
 293,Phoenix Ash,item_phoenix_ash,phoenix_ash,ignore
 294,Seer Stone,item_seer_stone,seer_stone,ignore
 297,Vampire Fangs,item_vampire_fangs,vampire_fangs,ignore
@@ -341,7 +342,6 @@ id,dname,guide_name,item_name,flag
 838,Pig Pole,item_unstable_wand,unstable_wand,ignore
 840,Tumbler's Toy,item_pogo_stick,pogo_stick,ignore
 908,Wraith Pact,item_wraith_pact,wraith_pact,ignore
-910,Revenant's Brooch Recipe,item_recipe_revenants_brooch,recipe_revenants_brooch,component
 911,Revenant's Brooch,item_revenants_brooch,revenants_brooch,
 931,Boots of Bearing,item_boots_of_bearing,boots_of_bearing,team
 939,Harpoon,item_harpoon,harpoon,
@@ -366,7 +366,6 @@ id,dname,guide_name,item_name,flag
 1090,Mercy & Grace,item_muertas_gun,muertas_gun,ignore
 1096,Disperser Recipe,item_recipe_disperser,recipe_disperser,component
 1097,Disperser,item_disperser,disperser,
-1101,Harpoon Recipe,item_recipe_harpoon,recipe_harpoon,component
 1106,Phylactery Recipe,item_recipe_phylactery,recipe_phylactery,component
 1107,Phylactery,item_phylactery,phylactery,
 1122,Diadem,item_diadem,diadem,component
@@ -434,6 +433,7 @@ id,dname,guide_name,item_name,flag
 1650,Thick,item_enhancement_thick,enhancement_thick,ignore
 1651,Unleashed,item_enhancement_curious,enhancement_curious,ignore
 1652,Bag of Gold,item_furion_gold_bag,furion_gold_bag,ignore
+1715,Specialist's Array Recipe,item_recipe_specialists_array,recipe_specialists_array,
 1716,Weighted Dice,item_weighted_dice,weighted_dice,ignore
 1717,Ash Legion Shield,item_ash_legion_shield,ash_legion_shield,ignore
 1718,Riftshadow Prism,item_riftshadow_prism,riftshadow_prism,ignore
@@ -456,6 +456,7 @@ id,dname,guide_name,item_name,flag
 1854,Consecrated Wraps,item_consecrated_wraps,consecrated_wraps,
 1855,Crella's Crozier Recipe,item_recipe_crellas_crozier,recipe_crellas_crozier,component
 1856,Crella's Crozier,item_crellas_crozier,crellas_crozier,
+1857,Hydra's Breath Recipe,item_recipe_hydras_breath,recipe_hydras_breath,
 1858,Hydra's Breath,item_hydras_breath,hydras_breath,
 1859,Spellslinger,item_spellslinger,spellslinger,ignore
 1860,Prophet's Pendulum,item_prophets_pendulum,prophets_pendulum,ignore
@@ -474,6 +475,26 @@ id,dname,guide_name,item_name,flag
 1873,Partisan's Brand,item_partisans_brand,partisans_brand,ignore
 1874,Nimble,item_enhancement_nimble,enhancement_nimble,ignore
 1875,Leviathan's Fish,item_tidehunter_fish,tidehunter_fish,ignore
+1880,Red Ledger,item_red_ledger,red_ledger,
+1881,Berserker's Hood,item_berserkers_hood,berserkers_hood,
+1882,Vile Phial,item_vile_phial,vile_phial,
+1883,Nothl Sigil,item_nothl_sigil,nothl_sigil,
+1884,Claszian Timepiece,item_claszian_timepiece,claszian_timepiece,
+1911,Helm of the Hivemind,item_helm_of_the_hivemind,helm_of_the_hivemind,
+1916,Brick,item_brick,brick,
+1917,Balmhook,item_balmhook,balmhook,
+1942,Bloodslinger,item_bloodslinger,bloodslinger,
+1944,Ristul's Devotion,item_ristuls_devotion,ristuls_devotion,
+1945,Starforge Recipe,item_recipe_starforge,recipe_starforge,
+1946,Starforge,item_starforge,starforge,
+1947,Skypiercer Recipe,item_recipe_skypiercer,recipe_skypiercer,
+1948,Skypiercer,item_skypiercer,skypiercer,
+1949,Stone of Recall,item_stone_of_recall,stone_of_recall,
+1950,Horn of Battle,item_horn_of_battle,horn_of_battle,
+1951,Greater Horn of Battle,item_horn_of_battle_greater,horn_of_battle_greater,
+1953,Sabatons of Mordiggian,item_berserkers_sabatons,berserkers_sabatons,
+1954,Caduceus Recipe,item_recipe_caduceus,recipe_caduceus,
+1955,Caduceus,item_caduceus,caduceus,
 2091,Tier 1 Token,item_tier1_token,tier1_token,ignore
 2092,Tier 2 Token,item_tier2_token,tier2_token,ignore
 2093,Tier 3 Token,item_tier3_token,tier3_token,ignore
